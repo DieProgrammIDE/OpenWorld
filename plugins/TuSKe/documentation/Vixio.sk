@@ -1,0 +1,1612 @@
+Events:
+	On Discord Command:
+		ID: discord_command
+		Patterns:
+			[on] discord command <([^\s]+)( .+)?$>
+		Event values:
+			event-messagechannel
+			event-guild
+			event-bot
+			event-channel
+			event-message
+			event-member
+			event-discordcommand
+			event-user
+		Cancellable: true
+	On bot connect:
+		ID: bot_connect
+		Patterns:
+			[on] [vixio] bot (login|connect) [seen by %-string%]
+		Event values:
+			event-bot
+		Cancellable: false
+	On bot join guild:
+		ID: bot_join_guild
+		Patterns:
+			[on] bot (join|enter) [new] guild [seen by %-string%]
+		Event values:
+			event-guild
+			event-bot
+		Cancellable: false
+	On bot leave guild:
+		ID: bot_leave_guild
+		Patterns:
+			[on] bot (leave|exit) guild [seen by %-string%]
+		Event values:
+			event-guild
+			event-bot
+		Cancellable: false
+	On guild message received:
+		ID: guild_message_received
+		Patterns:
+			[on] (guild|server) message (1¦receive[d] [seen]|2¦ sent) [by %-string%]
+		Event values:
+			event-messagechannel
+			event-guild
+			event-bot
+			event-channel
+			event-message
+			event-member
+			event-string
+			event-user
+		Cancellable: false
+	On join voice:
+		ID: join_voice
+		Patterns:
+			[on] user join voice [seen by %-string%]
+			[on] voice [channel] join [seen by %-string%]
+		Event values:
+			event-guild
+			event-bot
+			event-voicechannel
+			event-channel
+			event-member
+			event-user
+		Cancellable: false
+	On leave voice:
+		ID: leave_voice
+		Patterns:
+			[on] user leave voice [seen by %-string%]
+			[on] voice [channel] leave [seen by %-string%]
+		Event values:
+			event-guild
+			event-bot
+			event-voicechannel
+			event-channel
+			event-member
+			event-user
+		Cancellable: false
+	On member add role:
+		ID: member_add_role
+		Patterns:
+			[on] member role add[ed] [seen by %-string%]
+		Event values:
+			event-guild
+			event-bot
+			event-member
+			event-user
+			event-role
+		Cancellable: false
+	On member nickname change:
+		ID: member_nickname_change
+		Patterns:
+			[on] [member] nick[name] (change|update) [seen by %-string%]
+		Event values:
+			event-guild
+			event-bot
+			event-member
+			event-user
+		Cancellable: false
+	On member remove role:
+		ID: member_remove_role
+		Patterns:
+			[on] member role remove[d] [seen by %-string%]
+		Event values:
+			event-guild
+			event-bot
+			event-member
+			event-user
+			event-role
+		Cancellable: false
+	On member switch voice channel:
+		ID: member_switch_voice_channel
+		Patterns:
+			[on] member (switch|move) [voice] channel [seen by %-string%]
+		Event values:
+			event-guild
+			event-bot
+			event-channel
+			event-member
+			event-user
+		Cancellable: false
+	On message delete[d]:
+		ID: message_delete[d]
+		Patterns:
+			[on] message delete[d] [seen by %-string%]
+		Event values:
+			event-messagechannel
+			event-guild
+			event-bot
+			event-message
+			event-channel
+		Cancellable: false
+	On message received:
+		ID: message_received
+		Patterns:
+			[on] message receive[d] [seen by %-string%]
+		Event values:
+			event-messagechannel
+			event-guild
+			event-bot
+			event-message
+			event-channel
+			event-member
+			event-string
+			event-user
+		Cancellable: false
+	On private message received:
+		ID: private_message_received
+		Patterns:
+			[on] (private message|direct message) <receive(d)?( seen)?|sent> [by %-string%]
+		Event values:
+			event-messagechannel
+			event-bot
+			event-message
+			event-user
+		Cancellable: false
+	On reaction added:
+		ID: reaction_added
+		Patterns:
+			[on] reaction add[ed] [seen by %-string%]
+		Event values:
+			event-messagechannel
+			event-emote
+			event-guild
+			event-bot
+			event-message
+			event-channel
+			event-member
+			event-user
+		Cancellable: false
+	On reaction remove[d]:
+		ID: reaction_remove[d]
+		Patterns:
+			[on] reaction remove[d] [seen by %-string%]
+		Event values:
+			event-messagechannel
+			event-emote
+			event-guild
+			event-bot
+			event-message
+			event-channel
+			event-member
+			event-user
+		Cancellable: false
+	On track end:
+		ID: track_end
+		Patterns:
+			[on] track end [seen by %-string%]
+		Event values:
+			event-guild
+			event-bot
+			event-track
+		Cancellable: false
+	On track start:
+		ID: track_start
+		Patterns:
+			[on] track seek [seen by %-string%]
+		Event values:
+			event-guild
+			event-bot
+			event-track
+		Cancellable: false
+	On track start:
+		ID: track_start
+		Patterns:
+			[on] track start [seen by %-string%]
+		Event values:
+			event-guild
+			event-bot
+			event-track
+		Cancellable: false
+	On user banned:
+		ID: user_banned
+		Patterns:
+			[on] user ban[ned] [seen by %-string%]
+		Event values:
+			event-guild
+			event-bot
+			event-user
+		Cancellable: false
+	On user join guild:
+		ID: user_join_guild
+		Patterns:
+			[on] (user|member) join (guild|server) [seen by %-string%]
+		Event values:
+			event-guild
+			event-bot
+			event-member
+			event-user
+		Cancellable: false
+	On user join guild:
+		ID: user_join_guild
+		Patterns:
+			[on] (guild|member) leave (guild|server) [seen by %-string%]
+		Event values:
+			event-guild
+			event-bot
+			event-member
+			event-user
+		Cancellable: false
+	On user unbanned:
+		ID: user_unbanned
+		Patterns:
+			[on] user unban[ned] [seen by %-string%]
+		Event values:
+			event-guild
+			event-bot
+			event-user
+		Cancellable: false
+	On vixio command event:
+		ID: vixio_command_event
+		Patterns:
+			[on] vixio command [%-string%]
+		Event values:
+			event-messagechannel
+			event-guild
+			event-bot
+			event-channel
+			event-message
+			event-member
+			event-discordcommand
+			event-user
+		Cancellable: true
+Conditions:
+	CondAttachmentIsImage:
+		ID: CondAttachmentIsImage
+		Patterns:
+			%attachments% (is|are) [a[n]] image[s]
+			%attachments% (is|are)(n't| not) [a[n]] image[s]
+	CondBotPaused:
+		ID: CondBotPaused
+		Patterns:
+			%bot/string% is paused [in %guild%]
+			%bot/string% (is|are)(n't| not) paused [in %guild%]
+	CondBotPlaying:
+		ID: CondBotPlaying
+		Patterns:
+			%bot/string% is playing [in %guild%]
+			%bot/string% (is|are)(n't| not) playing [in %guild%]
+	CondDeafened:
+		ID: CondDeafened
+		Patterns:
+			%members% (is|are) [<guild>] deafened
+			%members% (is|are)(n't| not) [<guild>] deafened
+	CondEmoteAnimated:
+		ID: CondEmoteAnimated
+		Patterns:
+			%emotes% (is|are) animated
+			%emotes% (is|are)(n't| not) animated
+	CondHasPermission:
+		ID: CondHasPermission
+		Patterns:
+			%member% has permission %permission% [in %-channel%]
+			%user% has permission %permission% [in %guild/channel%]
+			%member% (doesn[']t|does not) have permission %permission% [in %-channel%]
+			%user% (doesn[']t|does not) have permission %permission% [in %guild/channel%]
+	CondMemberRole:
+		ID: CondMemberRole
+		Patterns:
+			%member% (has|have) [the] role %role%
+			%member% (does[n[']t]|does not) have [the] role %role%
+			%member% (has|have) [the] role [named] %string%
+			%member% (does[n[']t]|does not) have [the] role [named] %string%
+	CondMuted:
+		ID: CondMuted
+		Patterns:
+			%members% (is|are) [<guild>] muted
+			%members% (is|are)(n't| not) [<guild>] muted
+	CondNsfw:
+		ID: CondNsfw
+		Patterns:
+			%channelbuilders/channels% (is|are) nsfw
+			%channelbuilders/channels% (is|are) sfw
+	ScopeMakeBot:
+		ID: ScopeMakeBot
+		Patterns:
+			(make|create) vixio bot
+	ScopeMakeChannel:
+		ID: ScopeMakeChannel
+		Patterns:
+			(make|create) [text] channel
+			(make|create) voice channel
+	ScopeMakeEmbed:
+		ID: ScopeMakeEmbed
+		Patterns:
+			(make|create) (embed|embed %-embedbuilder%)
+			(make|create) (embed|embed %-embedbuilder%) and send [(it|the embed)] to %users/channels% [(with|using) %bot/string%] [and store (it|the message) in %-objects%]
+			(make|create) (embed|embed %-embedbuilder%) and reply with [(it|the embed)] [and store (it|the message) in %-objects%]
+	ScopeMakeInvite:
+		ID: ScopeMakeInvite
+		Patterns:
+			(make|create) [a[n]] invite to %channel% [(with|as) %bot/string%]
+Effects:
+	EffAddReaction:
+		ID: EffAddReaction
+		Patterns:
+			add %emotes% to %messages% [with %bot/string%]
+	EffAppendToBuilder:
+		ID: EffAppendToBuilder
+		Patterns:
+			append [(1¦line)] %strings% [to %-messagebuilder%]
+	EffBanUser:
+		ID: EffBanUser
+		Patterns:
+			ban %users/strings% from %guild% [(due to|with reason|because of) %-string%] [and delete %-number% days [worth] of messages] [(with|as) %bot/string%]
+	EffChange:
+		ID: EffChange
+		Patterns:
+			(add|give) %objects% to (%~objects%) [(with|using) %-bot/string%]
+			increase %~objects% by (%objects%) [(with|using) %-bot/string%]
+			give %~objects% (%objects%) as %-bot/string%
+			set %~objects% to (%objects%) [(with|using) %-bot/string%]
+			remove (all|every) %objects% from (%~objects%) [(with|using) %-bot/string%]
+			(remove|subtract) %objects% from (%~objects%) [(with|using) %-bot/string%]
+			reduce %~objects% by (%objects%) [(with|using) %-bot/string%]
+			(delete|clear) (%~objects%) [(with|using) %-bot/string%]
+			reset (%~objects%) [(with|using) %-bot/string%]
+	EffChannelWithName:
+		ID: EffChannelWithName
+		Patterns:
+			create text[(-| )]channel [named] %string% [in %guild%] [(as|with) %bot/string%]
+			create voice[(-| )]channel [named] %string% [in %guild%] [(as|with) %bot/string%]
+	EffCloneChannel:
+		ID: EffCloneChannel
+		Patterns:
+			clone %channel% [in[to] %guild%] [with [the] [new] name %-string%] [(with|as) %bot/string%] [and store (it|the channel) in %-objects%]
+	EffCreateChannelBuilder:
+		ID: EffCreateChannelBuilder
+		Patterns:
+			create %channelbuilder% in %guild% [(with|as) %bot/string%] [and store (it|the channel) in %-objects%]
+	EffCreateEmote:
+		ID: EffCreateEmote
+		Patterns:
+			create emote %string% with [the] name %string% [in %guild%] [with %bot/string%]
+	EffCreateInvite:
+		ID: EffCreateInvite
+		Patterns:
+			create a[n] (invite|invitation) to %channel% [with %bot/string%] [and store it in %-objects%]
+	EffDeafen:
+		ID: EffDeafen
+		Patterns:
+			[<un>]deafen %members% [(with|using) %bot%]
+	EffDeleteDiscordEntity:
+		ID: EffDeleteDiscordEntity
+		Patterns:
+			delete discord entit(y|ies) %messages/channels/roles/guilds/categories/emote% [with %bot/string%]
+	EffEdit:
+		ID: EffEdit
+		Patterns:
+			edit %messages% to (show|say) %message/string%
+	EffEnableIntent:
+		ID: EffEnableIntent
+		Patterns:
+			enable [the] %gatewayintent% [gateway] intent [for bot]
+	EffForce:
+		ID: EffForce
+		Patterns:
+			force [%bot/string% to] play %string/track% [in %guild%]
+	EffGrabBanned:
+		ID: EffGrabBanned
+		Patterns:
+			(retrieve|grab) [the] (bans|ban list) of %guild%
+	EffGrabMessages:
+		ID: EffGrabMessages
+		Patterns:
+			grab [the] last %number% messages in %textchannel/channel% [and store (them|the messages|it) in %-objects%]
+	EffGrabPins:
+		ID: EffGrabPins
+		Patterns:
+			(retrieve|grab) pinned messages (of|in|with) %textchannel/channel/user% [with %bot/string%]
+	EffJoinVoice:
+		ID: EffJoinVoice
+		Patterns:
+			join %voicechannel/channel% [with %bot/string%]
+	EffKickUser:
+		ID: EffKickUser
+		Patterns:
+			kick %users/strings% from %guild% [(due to|with reason|because of) %-string%] [(with|as) %bot/string%]
+	EffLeaveGuild:
+		ID: EffLeaveGuild
+		Patterns:
+			make %bot/string% leave %guild%
+	EffLeaveVoice:
+		ID: EffLeaveVoice
+		Patterns:
+			make %bots/strings% (leave|disconnect from) (voice|vc) [in %guild%]
+	EffLogin:
+		ID: EffLogin
+		Patterns:
+			(login|connect) to %string% (using|with) [the] name %string%
+	EffMarkGametype:
+		ID: EffMarkGametype
+		Patterns:
+			mark %bot/string% as %gametype% [to] [with title] %string% [(and|on|with|at) url %-string%]
+	EffMoveMember:
+		ID: EffMoveMember
+		Patterns:
+			move %member% to %channel/voicechannel% [with %bot/string%]
+	EffMute:
+		ID: EffMute
+		Patterns:
+			[<un>]mute %members% [(with|using) %bot%]
+	EffNsfw:
+		ID: EffNsfw
+		Patterns:
+			(make|mark) %channels% [as] [<n>]sfw (with|using) %bot/string%
+	EffPause:
+		ID: EffPause
+		Patterns:
+			pause [the] (track|song) %bot/string% is playing [in %guild%]
+	EffPermissionOverride:
+		ID: EffPermissionOverride
+		Patterns:
+			(allow|1¦deny) %roles/members% [the] permission[s] %permissions% [in %channels%] [with %bot/string%]
+	EffPinMessage:
+		ID: EffPinMessage
+		Patterns:
+			pin %messages% [with %bot/string%]
+	EffPlay:
+		ID: EffPlay
+		Patterns:
+			play %strings/tracks% [in %guild%] [with %bot/string%]
+	EffPurge:
+		ID: EffPurge
+		Patterns:
+			purge %messages% with %bot/string%
+	EffRemoveReaction:
+		ID: EffRemoveReaction
+		Patterns:
+			remove %emotes% added by %user% from %message% [with %bot/string%]
+	EffReplyWith:
+		ID: EffReplyWith
+		Patterns:
+			reply with %messages/strings% [and store (it|the message) in %-objects%]
+	EffResume:
+		ID: EffResume
+		Patterns:
+			resume [the] (track|song|music) %bot/string% (is playing|has paused) [in %guild%]
+	EffRetrieveInvites:
+		ID: EffRetrieveInvites
+		Patterns:
+			(grab|retrieve) the invite(s| link[s]) of %guild/channel%
+	EffRetrieveMessage:
+		ID: EffRetrieveMessage
+		Patterns:
+			retrieve message [with id] %string% [(in|from) %channel/user%]
+	EffRetrieveUser:
+		ID: EffRetrieveUser
+		Patterns:
+			(retrieve|grab) [the] user with id %string% [and store (them|the user) in %-objects%]
+	EffSearch:
+		ID: EffSearch
+		Patterns:
+			search %searchablesite% for %strings% [and store the results in %-objects%]
+	EffSendMessage:
+		ID: EffSendMessage
+		Patterns:
+			send %messages/strings% to %users/channels% with %bot/string% [and store (it|the message) in %-objects%]
+	EffSendTyping:
+		ID: EffSendTyping
+		Patterns:
+			send typing (to|in) %channel/user% [with %bot/string%]
+	EffShuffle:
+		ID: EffShuffle
+		Patterns:
+			shuffle [the] queue of %bot/string% [in %guild%]
+	EffShutdown:
+		ID: EffShutdown
+		Patterns:
+			(logout [of]|shutdown) %bot/string%
+	EffSkip:
+		ID: EffSkip
+		Patterns:
+			skip [the] (track|song)[s] %bot/string% is playing [in %guilds%]
+	EffStop:
+		ID: EffStop
+		Patterns:
+			stop [the] (track|song) %bot/string% is playing [in %guild%]
+	EffTTS:
+		ID: EffTTS
+		Patterns:
+			(1¦enable|2¦disable) t[ext ]t[o ]s[peech] for %messagebuilders%
+	EffUnbanUser:
+		ID: EffUnbanUser
+		Patterns:
+			unban %users/strings% from %guild% [(with|as) %bot/string%]
+	EffUpdates:
+		ID: EffUpdates
+		Patterns:
+			<pause|resume> updates (for|to) %messages%
+	EffUploadFile:
+		ID: EffUploadFile
+		Patterns:
+			upload %string% [with (message|embed) %-message/string%] to %user/channel% [with %bot/string%] [and store (it|the message) in %-objects%]
+Expressions:
+	ExprAfkChannel:
+		ID: ExprAfkChannel
+		Return type: voicechannel
+		Changers:
+			unknown
+		Patterns:
+			[the] afk channel[s] of %guilds%
+			%guilds%'[s] afk channel[s]
+	ExprAlias:
+		ID: ExprAlias
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] used alias
+	ExprAliases:
+		ID: ExprAliases
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] [<usable>] aliases[s] of %discordcommands%
+			%discordcommands%'[s] [<usable>] aliases[s]
+	ExprArgument:
+		ID: ExprArgument
+		Return type: Object
+		Changers:
+			unknown
+		Patterns:
+			[][the] last arg[ument][s]
+			[][the] arg[ument][s](-| )<(\d+)>
+			[][the] <(\d*1)st|(\d*2)nd|(\d*3)rd|(\d*[4-90])th> arg[ument][s]
+			[][the] arg[ument][s]
+			[][the] %*classinfo%( |-)arg[ument][( |-)<\d+>]
+			[][the] arg[ument]( |-)%*classinfo%[( |-)<\d+>]
+	ExprAttachment:
+		ID: ExprAttachment
+		Return type: attachment
+		Changers:
+			none
+		Patterns:
+			[the] attachment[s] of %message%
+			%message%'[s] attachment[s]
+	ExprAttachmentHeight:
+		ID: ExprAttachmentHeight
+		Return type: Number
+		Changers:
+			none
+		Patterns:
+			[the] attachment height[s] of %attachment%
+			%attachment%'[s] attachment height[s]
+	ExprAttachmentUrl:
+		ID: ExprAttachmentUrl
+		Return type: attachment
+		Changers:
+			none
+		Patterns:
+			[the] attachment url[s] of %attachment%
+			%attachment%'[s] attachment url[s]
+	ExprAttachmentWidth:
+		ID: ExprAttachmentWidth
+		Return type: Number
+		Changers:
+			none
+		Patterns:
+			[the] attachment width[s] of %attachment%
+			%attachment%'[s] attachment width[s]
+	ExprAuthor:
+		ID: ExprAuthor
+		Return type: user
+		Changers:
+			none
+		Patterns:
+			[the] [discord] author[s] of %messages%
+			%messages%'[s] [discord] author[s]
+	ExprAvatar:
+		ID: ExprAvatar
+		Return type: avatar
+		Changers:
+			set
+		Patterns:
+			[the] [discord] [<default>] avatar[s] of %users/bots/strings/member%
+			%users/bots/strings/member%'[s] [discord] [<default>] avatar[s]
+	ExprBanned:
+		ID: ExprBanned
+		Return type: user
+		Changers:
+			none
+		Patterns:
+			[last] (grabbed|retrieved) bans
+	ExprBotState:
+		ID: ExprBotState
+		Return type: Boolean
+		Changers:
+			none
+		Patterns:
+			[the] bot state[s] of %users%
+			%users%'[s] bot state[s]
+	ExprBuilder:
+		ID: ExprBuilder
+		Return type: channelbuilder
+		Changers:
+			none
+		Patterns:
+			[(the|a)][new] channel[(-| )builder]
+	ExprBuilderBitrate:
+		ID: ExprBuilderBitrate
+		Return type: integer
+		Changers:
+			set
+			reset
+		Patterns:
+			[the] bitrate[s] of %channelbuilders%
+			%channelbuilders%'[s] bitrate[s]
+	ExprBuilderEmbed:
+		ID: ExprBuilderEmbed
+		Return type: Object
+		Changers:
+			unknown
+		Patterns:
+			[the] embed[s] of %messagebuilders%
+			%messagebuilders%'[s] embed[s]
+	ExprBuilderLimit:
+		ID: ExprBuilderLimit
+		Return type: integer
+		Changers:
+			set
+			delete
+		Patterns:
+			[the] user limit[s] of %channelbuilders%
+			%channelbuilders%'[s] user limit[s]
+	ExprBuilderName:
+		ID: ExprBuilderName
+		Return type: Text
+		Changers:
+			set
+		Patterns:
+			[the] name[s] of %channelbuilders%
+			%channelbuilders%'[s] name[s]
+	ExprBuilderNsfw:
+		ID: ExprBuilderNsfw
+		Return type: Boolean
+		Changers:
+			set
+			reset
+		Patterns:
+			[the] nsfw state[s] of %channelbuilders%
+			%channelbuilders%'[s] nsfw state[s]
+	ExprBuilderParent:
+		ID: ExprBuilderParent
+		Return type: category
+		Changers:
+			set
+			delete
+		Patterns:
+			[the] (category|parent)[s] of %channelbuilders%
+			%channelbuilders%'[s] (category|parent)[s]
+	ExprBuilderText:
+		ID: ExprBuilderText
+		Return type: Text
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] [<stripped>] text[s] of %messagebuilders%
+			%messagebuilders%'[s] [<stripped>] text[s]
+	ExprBuilderTopic:
+		ID: ExprBuilderTopic
+		Return type: Text
+		Changers:
+			set
+			delete
+		Patterns:
+			[the] topic[s] of %channelbuilders%
+			%channelbuilders%'[s] topic[s]
+	ExprCategories:
+		ID: ExprCategories
+		Return type: category
+		Changers:
+			unknown
+		Patterns:
+			[the] categories[s] of %guilds%
+			%guilds%'[s] categories[s]
+	ExprCategoryNamed:
+		ID: ExprCategoryNamed
+		Return type: category
+		Changers:
+			none
+		Patterns:
+			[the] category (with [the] name|named) %string% [in %guild%]
+	ExprCategoryWithId:
+		ID: ExprCategoryWithId
+		Return type: category
+		Changers:
+			none
+		Patterns:
+			category with id %string% [in %-guild%]
+	ExprChannel:
+		ID: ExprChannel
+		Return type: channel
+		Changers:
+			none
+		Patterns:
+			[the] (prev[ious]|old) [voice] channel
+			[the] new [voice] channel
+	ExprChannelBitrate:
+		ID: ExprChannelBitrate
+		Return type: integer
+		Changers:
+			none
+		Patterns:
+			[the] bitrate[s] of %voicechannels/channels%
+			%voicechannels/channels%'[s] bitrate[s]
+	ExprChannelLimit:
+		ID: ExprChannelLimit
+		Return type: integer
+		Changers:
+			unknown
+		Patterns:
+			[the] user limit[s] of %voicechannels/channels%
+			%voicechannels/channels%'[s] user limit[s]
+	ExprChannelNamed:
+		ID: ExprChannelNamed
+		Return type: channel
+		Changers:
+			none
+		Patterns:
+			[(1¦voice|2¦text)][(-| )]channel[<s>] (named|with name) %string% [in %-guild%]
+	ExprChannelNsfw:
+		ID: ExprChannelNsfw
+		Return type: Boolean
+		Changers:
+			none
+		Patterns:
+			[the] nsfw state[s] of %textchannels%
+			%textchannels%'[s] nsfw state[s]
+	ExprChannelOf:
+		ID: ExprChannelOf
+		Return type: channel
+		Changers:
+			none
+		Patterns:
+			[the] [discord] channel[s] of %invite%
+			%invite%'[s] [discord] channel[s]
+	ExprChannelParent:
+		ID: ExprChannelParent
+		Return type: category
+		Changers:
+			none
+		Patterns:
+			[the] (category|parent)[s] of %channels%
+			%channels%'[s] (category|parent)[s]
+	ExprChannelPosition:
+		ID: ExprChannelPosition
+		Return type: Number
+		Changers:
+			unknown
+		Patterns:
+			[the] discord position[s] of %channels/roles%
+			%channels/roles%'[s] discord position[s]
+	ExprChannelTopic:
+		ID: ExprChannelTopic
+		Return type: Text
+		Changers:
+			unknown
+		Patterns:
+			[the] topic[s] of %channels%
+			%channels%'[s] topic[s]
+	ExprChannelWithId:
+		ID: ExprChannelWithId
+		Return type: channel
+		Changers:
+			none
+		Patterns:
+			channel with id %string% [in %-guild%]
+	ExprChannels:
+		ID: ExprChannels
+		Return type: channel
+		Changers:
+			none
+		Patterns:
+			[the] channel[s] of %guild/category%
+			%guild/category%'[s] channel[s]
+	ExprColorFromRGB:
+		ID: ExprColorFromRGB
+		Return type: javacolor
+		Changers:
+			none
+		Patterns:
+			[java[ ]]colo[u]r from rgb %number%(, | and )%number%(, | and )%number%
+	ExprCommand:
+		ID: ExprCommand
+		Return type: discordcommand
+		Changers:
+			none
+		Patterns:
+			[the] used command
+	ExprCommands:
+		ID: ExprCommands
+		Return type: discordcommand
+		Changers:
+			none
+		Patterns:
+			[all] discord commands
+	ExprContent:
+		ID: ExprContent
+		Return type: Text
+		Changers:
+			unknown
+		Patterns:
+			[the] [<stripped|display(able)?>] content[s] of %messages%
+			%messages%'[s] [<stripped|display(able)?>] content[s]
+	ExprCreationDate:
+		ID: ExprCreationDate
+		Return type: Date
+		Changers:
+			none
+		Patterns:
+			[the] discord creation date[s] of %channel/guild/message/role/category/emote/attachment%
+			%channel/guild/message/role/category/emote/attachment%'[s] discord creation date[s]
+	ExprDeafened:
+		ID: ExprDeafened
+		Return type: Boolean
+		Changers:
+			unknown
+		Patterns:
+			[the] [<guild>] deafen[ed] state[s] of %members%
+			%members%'[s] [<guild>] deafen[ed] state[s]
+	ExprDescription:
+		ID: ExprDescription
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] description[s] of %discordcommands%
+			%discordcommands%'[s] description[s]
+	ExprDimension:
+		ID: ExprDimension
+		Return type: Number
+		Changers:
+			none
+		Patterns:
+			[the] <width|height>[s] of %thumbnails/imageinfos%
+			%thumbnails/imageinfos%'[s] <width|height>[s]
+	ExprDiscriminator:
+		ID: ExprDiscriminator
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] discriminator[s] of %users%
+			%users%'[s] discriminator[s]
+	ExprDuration:
+		ID: ExprDuration
+		Return type: Timespan
+		Changers:
+			none
+		Patterns:
+			[the] duration[s] of %tracks%
+			%tracks%'[s] duration[s]
+	ExprEmbed:
+		ID: ExprEmbed
+		Return type: embedbuilder
+		Changers:
+			add
+		Patterns:
+			[(the|an|[a] new)] embed
+	ExprEmbedAuthor:
+		ID: ExprEmbedAuthor
+		Return type: authorinfo
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] (author info|author)[s] of %embedbuilders%
+			%embedbuilders%'[s] (author info|author)[s]
+	ExprEmbedColor:
+		ID: ExprEmbedColor
+		Return type: javacolor
+		Changers:
+			unknown
+		Patterns:
+			[the] colo[u]r[s] of %embedbuilders%
+			%embedbuilders%'[s] colo[u]r[s]
+	ExprEmbedDescription:
+		ID: ExprEmbedDescription
+		Return type: Text
+		Changers:
+			unknown
+		Patterns:
+			[the] description[s] of %embedbuilders%
+			%embedbuilders%'[s] description[s]
+	ExprEmbedFields:
+		ID: ExprEmbedFields
+		Return type: field
+		Changers:
+			unknown
+		Patterns:
+			[the] field[s] of %embedbuilders%
+			%embedbuilders%'[s] field[s]
+	ExprEmbedFooter:
+		ID: ExprEmbedFooter
+		Return type: footer
+		Changers:
+			unknown
+		Patterns:
+			[the] footer[s] of %embedbuilders%
+			%embedbuilders%'[s] footer[s]
+	ExprEmbedImage:
+		ID: ExprEmbedImage
+		Return type: imageinfo
+		Changers:
+			unknown
+		Patterns:
+			[the] image[s] of %embedbuilders%
+			%embedbuilders%'[s] image[s]
+	ExprEmbedThumbnail:
+		ID: ExprEmbedThumbnail
+		Return type: thumbnail
+		Changers:
+			unknown
+		Patterns:
+			[the] (thumbnail|icon)[s] of %embedbuilders%
+			%embedbuilders%'[s] (thumbnail|icon)[s]
+	ExprEmbedTitle:
+		ID: ExprEmbedTitle
+		Return type: title
+		Changers:
+			unknown
+		Patterns:
+			[the] title[s] of %embedbuilders%
+			%embedbuilders%'[s] title[s]
+	ExprEmbeds:
+		ID: ExprEmbeds
+		Return type: embedbuilder
+		Changers:
+			add
+		Patterns:
+			[the] embed[s] of %messages%
+			%messages%'[s] embed[s]
+	ExprEmoji:
+		ID: ExprEmoji
+		Return type: emote
+		Changers:
+			none
+		Patterns:
+			(emoji|emote|reaction)[s] %strings% [(from|in) %-guild%]
+	ExprEmotes:
+		ID: ExprEmotes
+		Return type: emote
+		Changers:
+			none
+		Patterns:
+			[the] [<global>] emote[s] of %guild%
+			%guild%'[s] [<global>] emote[s]
+	ExprGame:
+		ID: ExprGame
+		Return type: Text
+		Changers:
+			set
+			reset
+		Patterns:
+			[the] game[s] of %members/users/bots/strings%
+			%members/users/bots/strings%'[s] game[s]
+	ExprGametype:
+		ID: ExprGametype
+		Return type: gametype
+		Changers:
+			none
+		Patterns:
+			[the] game type[s] of %bots/users/strings%
+			%bots/users/strings%'[s] game type[s]
+	ExprGatewayIntents:
+		ID: ExprGatewayIntents
+		Return type: gatewayintent
+		Changers:
+			none
+		Patterns:
+			[the] [gateway] intent[s] of %bot/string%
+			%bot/string%'[s] [gateway] intent[s]
+	ExprGrabbedMessages:
+		ID: ExprGrabbedMessages
+		Return type: message
+		Changers:
+			none
+		Patterns:
+			[the] grabbed messages
+	ExprGrabbedPins:
+		ID: ExprGrabbedPins
+		Return type: Object
+		Changers:
+			none
+		Patterns:
+			[last] (grabbed|retrieved) (pins|pinned messages)
+	ExprGuildNamed:
+		ID: ExprGuildNamed
+		Return type: guild
+		Changers:
+			none
+		Patterns:
+			guild[s] named %string%
+	ExprGuildOf:
+		ID: ExprGuildOf
+		Return type: guild
+		Changers:
+			none
+		Patterns:
+			[the] guild[s] of %channel/voicechannel/message/emote/category/role/member/invite%
+			%channel/voicechannel/message/emote/category/role/member/invite%'[s] guild[s]
+	ExprGuildWithId:
+		ID: ExprGuildWithId
+		Return type: guild
+		Changers:
+			none
+		Patterns:
+			(server|guild) with id %string%
+	ExprGuilds:
+		ID: ExprGuilds
+		Return type: guild
+		Changers:
+			none
+		Patterns:
+			[the] guild[s] of %bot/string%
+			%bot/string%'[s] guild[s]
+	ExprIcon:
+		ID: ExprIcon
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] icon[s] of %guilds%
+			%guilds%'[s] icon[s]
+	ExprId:
+		ID: ExprId
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] discord id[s] of %channel/guild/bot/user/message/role/avatar/category/member/emote/attachment%
+			%channel/guild/bot/user/message/role/avatar/category/member/emote/attachment%'[s] discord id[s]
+	ExprIdentifier:
+		ID: ExprIdentifier
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] identifier[s] of %tracks%
+			%tracks%'[s] identifier[s]
+	ExprImageUrl:
+		ID: ExprImageUrl
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] [<proxy>] url[s] of %thumbnails/imageinfos/footers/authorinfos%
+			%thumbnails/imageinfos/footers/authorinfos%'[s] [<proxy>] url[s]
+	ExprInlineEmbed:
+		ID: ExprInlineEmbed
+		Return type: embedbuilder
+		Changers:
+			add
+		Patterns:
+			%embedbuilder% ((with|and) [the] title %-string%|titled %-string%)
+			%embedbuilder% (with|and) [the] description %string%
+	ExprInvite:
+		ID: ExprInvite
+		Return type: invite
+		Changers:
+			none
+		Patterns:
+			[(the|an|[a] new)] invite
+	ExprInviteMaxAge:
+		ID: ExprInviteMaxAge
+		Return type: Number
+		Changers:
+			unknown
+		Patterns:
+			[the] max age[s] of %invite%
+			%invite%'[s] max age[s]
+	ExprInviteMaxUsage:
+		ID: ExprInviteMaxUsage
+		Return type: Number
+		Changers:
+			unknown
+		Patterns:
+			[the] max (use[s]|usage)[s] of %invite%
+			%invite%'[s] max (use[s]|usage)[s]
+	ExprInviteTimeCreated:
+		ID: ExprInviteTimeCreated
+		Return type: Date
+		Changers:
+			none
+		Patterns:
+			[the] [invite] creation date[s] of %invite%
+			%invite%'[s] [invite] creation date[s]
+	ExprInviteUrl:
+		ID: ExprInviteUrl
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] invite url[s] of %invite%
+			%invite%'[s] invite url[s]
+	ExprJoinDate:
+		ID: ExprJoinDate
+		Return type: Date
+		Changers:
+			none
+		Patterns:
+			[the] [<discord>] join date[s] of %members/users%
+			%members/users%'[s] [<discord>] join date[s]
+	ExprJumpUrl:
+		ID: ExprJumpUrl
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] jump url[s] of %message%
+			%message%'[s] jump url[s]
+	ExprLastChannelBuilder:
+		ID: ExprLastChannelBuilder
+		Return type: channelbuilder
+		Changers:
+			none
+		Patterns:
+			[the] last[ly] [(made|created)] channel[[ ]builder]
+	ExprLastCreatedInvite:
+		ID: ExprLastCreatedInvite
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] last created invite [for %-channel%]
+	ExprLastEmbed:
+		ID: ExprLastEmbed
+		Return type: embedbuilder
+		Changers:
+			add
+		Patterns:
+			[the] last[ly] [(made|created)] embed[[ ]builder]
+	ExprLastError:
+		ID: ExprLastError
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] last vixio error
+	ExprLastLoadedTrack:
+		ID: ExprLastLoadedTrack
+		Return type: track
+		Changers:
+			none
+		Patterns:
+			[the] last loaded [audio] track [of %bot/string%] [in %guild%]
+	ExprLastRetrievedMessage:
+		ID: ExprLastRetrievedMessage
+		Return type: message
+		Changers:
+			none
+		Patterns:
+			last retrieved [discord] message
+	ExprMember:
+		ID: ExprMember
+		Return type: member
+		Changers:
+			none
+		Patterns:
+			%user% in %guild%
+	ExprMembers:
+		ID: ExprMembers
+		Return type: member
+		Changers:
+			none
+		Patterns:
+			[the] discord member[s] of %guild/category/channel%
+			%guild/category/channel%'[s] discord member[s]
+	ExprMention:
+		ID: ExprMention
+		Return type: Boolean
+		Changers:
+			unknown
+		Patterns:
+			[the] mentionable state[s] of %roles%
+			%roles%'[s] mentionable state[s]
+	ExprMentionTag:
+		ID: ExprMentionTag
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] mention tag[s] of %users/channel/members/emotes/roles/textchannel%
+			%users/channel/members/emotes/roles/textchannel%'[s] mention tag[s]
+	ExprMentionedChannels:
+		ID: ExprMentionedChannels
+		Return type: textchannel
+		Changers:
+			none
+		Patterns:
+			[the] mentioned channel[s] of %messages%
+			%messages%'[s] mentioned channel[s]
+	ExprMentionedRoles:
+		ID: ExprMentionedRoles
+		Return type: role
+		Changers:
+			none
+		Patterns:
+			[the] mentioned role[s] of %messages%
+			%messages%'[s] mentioned role[s]
+	ExprMentionedUsers:
+		ID: ExprMentionedUsers
+		Return type: user
+		Changers:
+			none
+		Patterns:
+			[the] mentioned user[s] of %messages%
+			%messages%'[s] mentioned user[s]
+	ExprMessageBuilder:
+		ID: ExprMessageBuilder
+		Return type: messagebuilder
+		Changers:
+			none
+		Patterns:
+			a [new] message builder
+	ExprMessageBuilderTts:
+		ID: ExprMessageBuilderTts
+		Return type: Boolean
+		Changers:
+			unknown
+		Patterns:
+			[the] tts state[s] of %messagebuilders%
+			%messagebuilders%'[s] tts state[s]
+	ExprMutualGuilds:
+		ID: ExprMutualGuilds
+		Return type: guild
+		Changers:
+			none
+		Patterns:
+			[the] mutual guilds (of|with) %user% [and %bot/string%]
+			%user%[[']s] and %bot/string%[[']s] mutual guilds
+	ExprName:
+		ID: ExprName
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] discord name[s] of %channel/guild/bot/user/role/track/category/emote/field/attachment%
+			%channel/guild/bot/user/role/track/category/emote/field/attachment%'[s] discord name[s]
+	ExprNewEmbedAuthor:
+		ID: ExprNewEmbedAuthor
+		Return type: authorinfo
+		Changers:
+			none
+		Patterns:
+			[an] author named %string% with [([the] url %-string%|no url)[( and [the]|, )]] [(icon %-string%|no icon)]]
+	ExprNewEmbedField:
+		ID: ExprNewEmbedField
+		Return type: field
+		Changers:
+			none
+		Patterns:
+			[(a|the)] (split|inline) field[s] [named %-string%] [with [the] value %-string%]
+			[(a|the)] field[s] [named %-string%] [with [the] value %-string%]
+	ExprNewEmbedFooter:
+		ID: ExprNewEmbedFooter
+		Return type: footer
+		Changers:
+			none
+		Patterns:
+			[a] footer with [the] text %string%[( and [the]|, )(icon %-string%|no icon)]
+	ExprNewEmbedTitle:
+		ID: ExprNewEmbedTitle
+		Return type: title
+		Changers:
+			none
+		Patterns:
+			[a] title [with] [the] text %string%[( and [the]|, )((url|link) %-string%|no (url|link))]
+	ExprNick:
+		ID: ExprNick
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] prev[ious] nick[name]
+			[the] new nick[name]
+	ExprNickname:
+		ID: ExprNickname
+		Return type: Text
+		Changers:
+			unknown
+		Patterns:
+			[the] discord nickname[s] of %members%
+			%members%'[s] discord nickname[s]
+	ExprOnlineStatus:
+		ID: ExprOnlineStatus
+		Return type: onlinestatus
+		Changers:
+			set
+			reset
+		Patterns:
+			[the] [online][(-| )]status[s] of %members/users/bots/strings%
+			%members/users/bots/strings%'[s] [online][(-| )]status[s]
+	ExprOwner:
+		ID: ExprOwner
+		Return type: member
+		Changers:
+			unknown
+		Patterns:
+			[the] discord owner[s] of %guilds%
+			%guilds%'[s] discord owner[s]
+	ExprPaused:
+		ID: ExprPaused
+		Return type: Boolean
+		Changers:
+			set
+		Patterns:
+			%bot/string% paused state [in %guild%]
+	ExprPosition:
+		ID: ExprPosition
+		Return type: Timespan
+		Changers:
+			set
+			reset
+		Patterns:
+			[the] position[s] of %tracks%
+			%tracks%'[s] position[s]
+	ExprPrefix:
+		ID: ExprPrefix
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] used prefix
+	ExprPrefixes:
+		ID: ExprPrefixes
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] prefixes[s] of %discordcommands%
+			%discordcommands%'[s] prefixes[s]
+	ExprPublicRole:
+		ID: ExprPublicRole
+		Return type: role
+		Changers:
+			none
+		Patterns:
+			[the] public role[s] of %guild%
+			%guild%'[s] public role[s]
+	ExprQueue:
+		ID: ExprQueue
+		Return type: track
+		Changers:
+			none
+		Patterns:
+			[the] queue of %bot/string% [in %guild%]
+	ExprReactions:
+		ID: ExprReactions
+		Return type: emote
+		Changers:
+			unknown
+		Patterns:
+			[the] reactions[s] of %messages%
+			%messages%'[s] reactions[s]
+	ExprRecipient:
+		ID: ExprRecipient
+		Return type: channeltype
+		Changers:
+			none
+		Patterns:
+			[the] command recipient
+	ExprRegionOfGuild:
+		ID: ExprRegionOfGuild
+		Return type: serverregion
+		Changers:
+			unknown
+		Patterns:
+			[the] region[s] of %guilds%
+			%guilds%'[s] region[s]
+	ExprRetrievedInvites:
+		ID: ExprRetrievedInvites
+		Return type: invite
+		Changers:
+			none
+		Patterns:
+			[the] last (grabbed|retrieved) invites
+	ExprRoleColor:
+		ID: ExprRoleColor
+		Return type: javacolor
+		Changers:
+			unknown
+		Patterns:
+			[the] colo[u]r[s] of %roles%
+			%roles%'[s] colo[u]r[s]
+	ExprRoleNamed:
+		ID: ExprRoleNamed
+		Return type: role
+		Changers:
+			none
+		Patterns:
+			[the] role[<s>] (with [the] name|named) %string% [in %guild%]
+	ExprRoleWithId:
+		ID: ExprRoleWithId
+		Return type: role
+		Changers:
+			none
+		Patterns:
+			role with id %string% [in %-guild%]
+	ExprRoles:
+		ID: ExprRoles
+		Return type: role
+		Changers:
+			none
+		Patterns:
+			[the] role[s]
+	ExprRoles:
+		ID: ExprRoles
+		Return type: role
+		Changers:
+			none
+		Patterns:
+			[the] role[s] of %guild%
+			%guild%'[s] role[s]
+	ExprRolesOfMember:
+		ID: ExprRolesOfMember
+		Return type: role
+		Changers:
+			unknown
+		Patterns:
+			[the] role[s] of %members%
+			%members%'[s] role[s]
+	ExprSearchResults:
+		ID: ExprSearchResults
+		Return type: track
+		Changers:
+			delete
+		Patterns:
+			[the] [last] search results
+	ExprSlowMode:
+		ID: ExprSlowMode
+		Return type: Number
+		Changers:
+			unknown
+		Patterns:
+			[the] slowmode[s] of %channel/textchannel%
+			%channel/textchannel%'[s] slowmode[s]
+	ExprTextChannels:
+		ID: ExprTextChannels
+		Return type: textchannel
+		Changers:
+			none
+		Patterns:
+			[the] text(-| )channel[s] of %guild/category%
+			%guild/category%'[s] text(-| )channel[s]
+	ExprTimestamp:
+		ID: ExprTimestamp
+		Return type: Date
+		Changers:
+			unknown
+		Patterns:
+			[the] (timestamp|date)[s] of %embedbuilders/messages%
+			%embedbuilders/messages%'[s] (timestamp|date)[s]
+	ExprTitleUrl:
+		ID: ExprTitleUrl
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] (url|link)[s] of %titles%
+			%titles%'[s] (url|link)[s]
+	ExprTrackAuthor:
+		ID: ExprTrackAuthor
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] author[s] of %tracks%
+			%tracks%'[s] author[s]
+	ExprTrackOf:
+		ID: ExprTrackOf
+		Return type: track
+		Changers:
+			none
+		Patterns:
+			[the] track[s] %bot/string% is playing [in %guild%]
+	ExprUptime:
+		ID: ExprUptime
+		Return type: Date
+		Changers:
+			none
+		Patterns:
+			[the] uptime[s] of %strings/bots%
+			%strings/bots%'[s] uptime[s]
+	ExprUrl:
+		ID: ExprUrl
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] ur(i|l)[s] of %tracks%
+			%tracks%'[s] ur(i|l)[s]
+	ExprUsage:
+		ID: ExprUsage
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] usage[s] of %discordcommands%
+			%discordcommands%'[s] usage[s]
+	ExprUserWithId:
+		ID: ExprUserWithId
+		Return type: user
+		Changers:
+			none
+		Patterns:
+			user with id %string%
+	ExprUserWithName:
+		ID: ExprUserWithName
+		Return type: user
+		Changers:
+			none
+		Patterns:
+			user[(1¦s)] (with [the] name|named) %string% [in %-guild%]
+	ExprVerificationLevel:
+		ID: ExprVerificationLevel
+		Return type: verificationlevel
+		Changers:
+			unknown
+		Patterns:
+			[the] discord verification level[s] of %guilds%
+			%guilds%'[s] discord verification level[s]
+	ExprVoiceChannel:
+		ID: ExprVoiceChannel
+		Return type: voicechannel
+		Changers:
+			none
+		Patterns:
+			[the] [current] voice[(-| )]channel of %members%
+			%members%'[s] [current] voice[(-| )]channel
+	ExprVoiceChannelWithId:
+		ID: ExprVoiceChannelWithId
+		Return type: voicechannel
+		Changers:
+			none
+		Patterns:
+			voice(-| )channel with id %string% [in %-guild%]
+	ExprVoiceChannels:
+		ID: ExprVoiceChannels
+		Return type: voicechannel
+		Changers:
+			none
+		Patterns:
+			[the] voice[(-| )]channels of %guild/category%
+			%guild/category%'[s] voice[(-| )]channels
+	ExprVolume:
+		ID: ExprVolume
+		Return type: track
+		Changers:
+			set
+			reset
+		Patterns:
+			[the] volume of %bot/string% [in %guild%]
+	LitNewLine:
+		ID: LitNewLine
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			([a] new line|nl)
+	LitZeroWidthSpace:
+		ID: LitZeroWidthSpace
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[a] zero width space

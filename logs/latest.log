@@ -1,0 +1,444 @@
+[15:52:54] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[15:52:55] [Worker-Main-2/INFO]: Loaded 7 recipes
+[15:52:56] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[15:52:56] [Server thread/INFO]: Loading properties
+[15:52:56] [Server thread/INFO]: This server is running Paper version git-Paper-547 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
+[15:52:56] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[15:52:56] [Server thread/INFO]: Using 4 threads for Netty based IO
+[15:52:56] [Server thread/INFO]: Debug logging is disabled
+[15:52:56] [Server thread/INFO]: Default game type: SURVIVAL
+[15:52:56] [Server thread/INFO]: Generating keypair
+[15:52:57] [Server thread/INFO]: Starting Minecraft server on *:25565
+[15:52:57] [Server thread/INFO]: Using epoll channel type
+[15:52:58] [Server thread/WARN]: Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[15:53:05] [Server thread/WARN]: Legacy plugin skUtilities v0.9.2 does not specify an api-version.
+[15:53:05] [Server thread/WARN]: Legacy plugin Vixio v2.0.7 does not specify an api-version.
+[15:53:05] [Server thread/WARN]: Legacy plugin TuSKe v1.8.2 does not specify an api-version.
+[15:53:05] [Server thread/INFO]: [FastAsyncWorldEdit] Loading FastAsyncWorldEdit v1.16-621;6476345
+[15:53:07] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@1b28397a]
+[15:53:07] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v3.2.1
+[15:53:07] [Server thread/INFO]: [ViaVersion] ViaVersion 3.2.1 is now loaded, injecting!
+[15:53:07] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading 1.12 -> 1.13 mappings...
+[15:53:07] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading 1.13 -> 1.13.2 mappings...
+[15:53:07] [Via-Mappingloader-2/INFO]: [ViaVersion] Loading 1.13.2 -> 1.14 mappings...
+[15:53:07] [Via-Mappingloader-3/INFO]: [ViaVersion] Loading 1.14 -> 1.15 mappings...
+[15:53:08] [Via-Mappingloader-4/INFO]: [ViaVersion] Loading 1.15 -> 1.16 mappings...
+[15:53:08] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[15:53:08] [Via-Mappingloader-2/INFO]: [ViaVersion] Loading 1.16 -> 1.16.2 mappings...
+[15:53:08] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v3.2.0
+[15:53:08] [Server thread/INFO]: [WorldGuard] Loading WorldGuard v7.0.4+f7ff984
+[15:53:08] [Server thread/INFO]: [ViaRewind] Loading ViaRewind v1.5.3
+[15:53:08] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.3.0
+[15:53:08] [Server thread/INFO]: [Skript] Loading Skript v2.5.3
+[15:53:08] [Server thread/INFO]: [skUtilities] Loading skUtilities v0.9.2
+[15:53:08] [Server thread/INFO]: [SkQuery] Loading SkQuery v4.1.4
+[15:53:08] [Server thread/INFO]: [PlotSquared] Loading PlotSquared v5.13.11
+[15:53:08] [Server thread/INFO]: [Skellett] Loading Skellett v1.9.11
+[15:53:08] [Server thread/INFO]: [Vixio] Loading Vixio v2.0.7
+[15:53:08] [Server thread/INFO]: [TuSKe] Loading TuSKe v1.8.2
+[15:53:08] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[15:53:08] [Server thread/INFO]: [FastAsyncWorldEdit] Enabling FastAsyncWorldEdit v1.16-621;6476345
+[15:53:08] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[15:53:09] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.FAWE_Spigot_v1_16_R3 as the Bukkit adapter
+[15:53:09] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] ************************************************************
+[15:53:09] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] * WARNING - YOU ARE RUNNING AN OUTDATED VERSION OF JAVA.
+[15:53:09] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] * FASTASYNCWORLDEDIT WILL STOP BEING COMPATIBLE WITH THIS VERSION OF
+[15:53:09] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] * JAVA WHEN MINECRAFT 1.17 IS RELEASED.
+[15:53:09] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] *
+[15:53:09] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] * Please update the version of Java to 11. When Minecraft 1.17
+[15:53:09] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] * is released, support for versions of Java prior to 11 will
+[15:53:09] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] * be dropped.
+[15:53:09] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] *
+[15:53:09] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] * Current Java version: 1.8.0_282
+[15:53:09] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] ************************************************************
+[15:53:09] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v3.2.0
+[15:53:09] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[15:53:09] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[15:53:10] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading 1.13 -> 1.12 mappings...
+[15:53:10] [Via-Mappingloader-2/INFO]: [ViaVersion] Loading 1.13.2 -> 1.13 mappings...
+[15:53:10] [Via-Mappingloader-2/INFO]: [ViaVersion] Loading 1.14 -> 1.13.2 mappings...
+[15:53:10] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading 1.15 -> 1.14 mappings...
+[15:53:10] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading 1.16 -> 1.15 mappings...
+[15:53:10] [Via-Mappingloader-2/INFO]: [ViaVersion] Loading 1.16.2 -> 1.16 mappings...
+[15:53:10] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v1.5.3
+[15:53:10] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.3.0
+[15:53:10] [Server thread/INFO]:         __    
+[15:53:10] [Server thread/INFO]:   |    |__)   LuckPerms v5.3.0
+[15:53:10] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[15:53:10] [Server thread/INFO]: 
+[15:53:10] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[15:53:11] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[15:53:12] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[15:53:12] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[15:53:12] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 2150ms)
+[15:53:12] [Server thread/INFO]: [PlotSquared] Enabling PlotSquared v5.13.11
+[15:53:12] [Server thread/INFO]: Version is PlotSquared-5.13.11
+[15:53:13] [Server thread/INFO]: [P2] PlotSquared hooked into WorldEdit.
+[15:53:14] [Server thread/INFO]: PlotSquared scripting engine started
+[15:53:14] [Server thread/INFO]: [P2] PlotSquared is now enabled
+[15:53:14] [Server thread/INFO]: [P2] Couldn't verify purchase :(
+[15:53:14] [Server thread/INFO]: [P2] (UUID) Using LuckPerms as a complementary UUID service
+[15:53:14] [Server thread/INFO]: [P2] (UUID) Using Paper as a complementary UUID service
+[15:53:14] [Server thread/INFO]: [P2] (UUID) 0 UUIDs will be cached.
+[15:53:14] [Server thread/INFO]: [P2] Using platform world manager: bukkit
+[15:53:14] [Server thread/INFO]: Preparing level "world"
+[15:53:14] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[15:53:14] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[15:53:15] [Server thread/INFO]: Loaded 0 spawn chunks for world world
+[15:53:15] [Server thread/INFO]: Preparing spawn area: 0%
+[15:53:15] [Server thread/INFO]: Preparing spawn area: 0%
+[15:53:15] [Server thread/INFO]: Preparing spawn area: 0%
+[15:53:16] [Server thread/INFO]: Time elapsed: 1300 ms
+[15:53:16] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[15:53:16] [Server thread/INFO]: Loaded 0 spawn chunks for world world_nether
+[15:53:16] [Server thread/INFO]: Preparing spawn area: 0%
+[15:53:16] [Server thread/INFO]: Preparing spawn area: 42%
+[15:53:16] [Server thread/INFO]: Time elapsed: 775 ms
+[15:53:16] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[15:53:17] [Server thread/INFO]: Loaded 0 spawn chunks for world world_the_end
+[15:53:17] [Server thread/INFO]: Preparing spawn area: 0%
+[15:53:17] [Server thread/INFO]: Time elapsed: 224 ms
+[15:53:17] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v3.2.1
+[15:53:17] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v7.0.4+f7ff984
+[15:53:17] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
+[15:53:17] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
+[15:53:17] [Server thread/INFO]: [WorldGuard] (world) Lava fire is PERMITTED.
+[15:53:17] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
+[15:53:17] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
+[15:53:17] [Server thread/INFO]: [WorldGuard] (world_nether) TNT ignition is PERMITTED.
+[15:53:17] [Server thread/INFO]: [WorldGuard] (world_nether) Lighters are PERMITTED.
+[15:53:17] [Server thread/INFO]: [WorldGuard] (world_nether) Lava fire is PERMITTED.
+[15:53:17] [Server thread/INFO]: [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
+[15:53:17] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_nether'
+[15:53:17] [Server thread/INFO]: [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
+[15:53:17] [Server thread/INFO]: [WorldGuard] (world_the_end) Lighters are PERMITTED.
+[15:53:17] [Server thread/INFO]: [WorldGuard] (world_the_end) Lava fire is PERMITTED.
+[15:53:17] [Server thread/INFO]: [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
+[15:53:17] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_the_end'
+[15:53:17] [Server thread/INFO]: [WorldGuard] Loading region data...
+[15:53:17] [Server thread/INFO]: [Skript] Enabling Skript v2.5.3
+[15:53:18] [Server thread/INFO]: [Skript] You're currently running a custom Skript version. No updates will be automatically installed.
+[15:53:24] [pool-18-thread-1/INFO]: [P2] (UUID) PlotSquared will fetch UUIDs in groups of 200
+[15:53:24] [pool-18-thread-1/INFO]: [P2] (UUID) PlotSquared has cached all UUIDs
+[15:53:25] [Server thread/INFO]: [Skript] Loaded 128260 aliases in 6332ms
+[15:53:25] [Server thread/INFO]: [Skript]  ~ created by & © Peter Güttinger aka Njol ~
+[15:53:25] [Server thread/INFO]: [skUtilities] Enabling skUtilities v0.9.2*
+[15:53:25] [Server thread/INFO]: [skUtilities] v0.9.2: loaded modules (Conversions, Files, Yaml, Urls, Utilities) in 108ms
+[15:53:25] [Server thread/INFO]: [SkQuery] Enabling SkQuery v4.1.4
+[15:53:25] [Server thread/INFO]: [skQuery] Locating classes from SkQuery...
+[15:53:25] [Server thread/INFO]: [skQuery] Beginning to process a total of 138 from SkQuery
+[15:53:25] [Server thread/INFO]: [skQuery] Out of 138 classes, 136 classes were loaded from SkQuery
+[15:53:25] [Server thread/INFO]: [Skellett] Enabling Skellett v1.9.11
+[15:53:27] [Server thread/INFO]: [Skellett] Registered 47 Effects, 16 Conditions, 128 Expressions and 25 Events
+[15:53:27] [Server thread/INFO]: [Skellett] Has been enabled!
+[15:53:27] [Server thread/INFO]: [Vixio] Enabling Vixio v2.0.7*
+[15:53:28] [Server thread/INFO]: [TuSKe] Enabling TuSKe v1.8.2*
+[15:53:28] [Server thread/INFO]: [TuSKe] Enabling Metrics... Done!
+[15:53:28] [Server thread/INFO]: [TuSKe] Check for updates enabled. It will check in some seconds.
+[15:53:28] [Server thread/INFO]: [TuSKe] Documentation enabled. Some files containing all syntax of all addons will be generated.
+[15:53:28] [Server thread/INFO]: [TuSKe]  
+[15:53:28] [Server thread/INFO]: [TuSKe]  A special thanks for donators:
+[15:53:28] [Server thread/INFO]: [TuSKe]  @X0Freak - 50$
+[15:53:28] [Server thread/INFO]: [TuSKe]  @RepublicanSensei - 10$
+[15:53:28] [Server thread/INFO]: [TuSKe]  
+[15:53:28] [Server thread/ERROR]: #!#! 
+[15:53:28] [Server thread/ERROR]: #!#! [Skript] Severe Error:
+[15:53:28] [Server thread/ERROR]: #!#! TuSKe's class com.github.tukenuke.tuske.effects.EffMakeDrop generated an exception while loading
+[15:53:28] [Server thread/ERROR]: #!#! 
+[15:53:28] [Server thread/ERROR]: #!#! Something went horribly wrong with Skript.
+[15:53:28] [Server thread/ERROR]: #!#! This issue is NOT your fault! You probably can't fix it yourself, either.
+[15:53:28] [Server thread/ERROR]: #!#! It looks like you are using some plugin(s) that alter how Skript works (addons).
+[15:53:28] [Server thread/ERROR]: #!#! Following plugins are probably related to this error in some way:
+[15:53:28] [Server thread/ERROR]: #!#! TuSKe (github.com/Tuke-Nuke/TuSKe) 
+[15:53:28] [Server thread/ERROR]: #!#! You should try disabling those plugins one by one, trying to find which one causes it.
+[15:53:28] [Server thread/ERROR]: #!#! If the error doesn't disappear even after disabling all listed plugins, it is probably Skript issue.
+[15:53:28] [Server thread/ERROR]: #!#! In that case, you will be given instruction on how should you report it.
+[15:53:28] [Server thread/ERROR]: #!#! On the other hand, if the error disappears when disabling some plugin, report it to author of that plugin.
+[15:53:28] [Server thread/ERROR]: #!#! Only if the author tells you to do so, report it to Skript's issue tracker.
+[15:53:28] [Server thread/ERROR]: #!#! 
+[15:53:28] [Server thread/ERROR]: #!#! Stack trace:
+[15:53:28] [Server thread/ERROR]: #!#! java.lang.NullPointerException
+[15:53:28] [Server thread/ERROR]: #!#!     at com.github.tukenuke.tuske.effects.EffMakeDrop.<clinit>(EffMakeDrop.java:25)
+[15:53:28] [Server thread/ERROR]: #!#!     at java.lang.Class.forName0(Native Method)
+[15:53:28] [Server thread/ERROR]: #!#!     at java.lang.Class.forName(Class.java:348)
+[15:53:28] [Server thread/ERROR]: #!#!     at ch.njol.skript.SkriptAddon.loadClasses(SkriptAddon.java:107)
+[15:53:28] [Server thread/ERROR]: #!#!     at com.github.tukenuke.tuske.TuSKe.onEnable(TuSKe.java:100)
+[15:53:28] [Server thread/ERROR]: #!#!     at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263)
+[15:53:28] [Server thread/ERROR]: #!#!     at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:380)
+[15:53:28] [Server thread/ERROR]: #!#!     at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:483)
+[15:53:28] [Server thread/ERROR]: #!#!     at org.bukkit.craftbukkit.v1_16_R3.CraftServer.enablePlugin(CraftServer.java:501)
+[15:53:28] [Server thread/ERROR]: #!#!     at org.bukkit.craftbukkit.v1_16_R3.CraftServer.enablePlugins(CraftServer.java:415)
+[15:53:28] [Server thread/ERROR]: #!#!     at net.minecraft.server.v1_16_R3.MinecraftServer.loadWorld(MinecraftServer.java:468)
+[15:53:28] [Server thread/ERROR]: #!#!     at net.minecraft.server.v1_16_R3.DedicatedServer.init(DedicatedServer.java:241)
+[15:53:28] [Server thread/ERROR]: #!#!     at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:943)
+[15:53:28] [Server thread/ERROR]: #!#!     at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:177)
+[15:53:28] [Server thread/ERROR]: #!#!     at java.lang.Thread.run(Thread.java:748)
+[15:53:28] [Server thread/ERROR]: #!#! 
+[15:53:28] [Server thread/ERROR]: #!#! Version Information:
+[15:53:28] [Server thread/ERROR]: #!#!   Skript: 2.5.3 (custom version)
+[15:53:28] [Server thread/ERROR]: #!#!     Flavor: selfbuilt-unknown
+[15:53:28] [Server thread/ERROR]: #!#!     Date: unknown
+[15:53:28] [Server thread/ERROR]: #!#!   Bukkit: 1.16.5-R0.1-SNAPSHOT
+[15:53:28] [Server thread/ERROR]: #!#!   Minecraft: 1.16.5
+[15:53:28] [Server thread/ERROR]: #!#!   Java: 1.8.0_282 (OpenJDK 64-Bit Server VM 25.282-b08)
+[15:53:28] [Server thread/ERROR]: #!#!   OS: Linux amd64 5.4.0-66-generic
+[15:53:28] [Server thread/ERROR]: #!#! 
+[15:53:28] [Server thread/ERROR]: #!#! Server platform: Paper
+[15:53:28] [Server thread/ERROR]: #!#! 
+[15:53:28] [Server thread/ERROR]: #!#! Current node: null
+[15:53:28] [Server thread/ERROR]: #!#! Current item: null
+[15:53:28] [Server thread/ERROR]: #!#! 
+[15:53:28] [Server thread/ERROR]: #!#! Thread: Server thread
+[15:53:28] [Server thread/ERROR]: #!#! 
+[15:53:28] [Server thread/ERROR]: #!#! Language: english
+[15:53:28] [Server thread/ERROR]: #!#! Link parse mode: DISABLED
+[15:53:28] [Server thread/ERROR]: #!#! 
+[15:53:28] [Server thread/ERROR]: #!#! End of Error.
+[15:53:28] [Server thread/ERROR]: #!#! 
+[15:53:28] [Server thread/INFO]: [TuSKe] Loaded 8 events, 12 conditions, 20 effects, 62 expressions and 0 types. Have fun!
+[15:53:28] [Server thread/INFO]: Running delayed init tasks
+[15:53:28] [Server thread/WARN]: [FastAsyncWorldEdit] Loaded class com.sk89q.worldguard.protection.association.RegionAssociable from WorldGuard v7.0.4+f7ff984 which is not a depend, softdepend or loadbefore of this plugin.
+[15:53:28] [Server thread/WARN]: [FastAsyncWorldEdit] Loaded class com.plotsquared.core.util.SchematicHandler from PlotSquared v5.13.11 which is not a depend, softdepend or loadbefore of this plugin.
+[15:53:28] [Server thread/INFO]: [com.boydti.fawe.bukkit.FaweBukkit] Plugin 'PlotSquared' found. Using it now.
+[15:53:28] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.16.4(754)
+[15:53:28] [Server thread/INFO]: [Skript] Loading variables...
+[15:53:29] [Server thread/INFO]: [Skript] Loaded 48 variables in 0.0 seconds
+[15:53:29] [Server thread/ERROR]: [Skript] Can't understand this condition/effect: create channelbuilder in guild with id "672032305241391131" (main.sk, line 38: create channelbuilder in guild with id "672032305241391131"')
+[15:53:29] [Server thread/ERROR]: [Skript] Can't compare 'the category of channelbuilder' with a types.category (main.sk, line 39: the category of channelbuilder is category with id "684771603057344532"')
+[15:53:29] [Server thread/WARN]: [Skript] Possible name conflict of variables {website} and {%arg-1%} (there might be more conflicts). (main.sk, line 122: message {website}')
+[15:53:29] [Server thread/WARN]: [Skript] Possible name conflict of variables {wiki} and {%arg-1%} (there might be more conflicts). (main.sk, line 135: message {wiki}')
+[15:53:29] [Server thread/WARN]: [Skript] Possible name conflict of variables {dynmap} and {%arg-1%} (there might be more conflicts). (main.sk, line 149: send formatted "&3Die Dynmap ist erreichbar unter: &f<link:%{dynmap}%>%{dynmap}%"')
+[15:53:29] [Server thread/WARN]: [Skript] Possible name conflict of variables {serverip} and {%arg-1%} (there might be more conflicts). (main.sk, line 230: send formatted "&4&lErsteinmal, Herzlich Willkommen auf &l<tooltip:Unserem Server trittst du am besten durch die Direkte-Verbindung mit &l%{serverip}%&r her. Solltest du öfter spielen kannst du auch einen Eintrag für uns in deiner Serverliste erstellen, nutze hierfür auch ausschließlich die IP &l%{serverip}%.&r &cNutze keine Portnummern!>%{serverip}%<reset>&4&l!"')
+[15:53:30] [User Authenticator #1/INFO]: UUID of player AnderCrafterYT is 374c4bc4-ab54-43eb-8795-5e2389b25d4f
+[15:53:34] [Server thread/WARN]: [Skript] Possible name conflict of variables {format} and {%arg-1%} (there might be more conflicts). (main.sk, line 395: replace "th/"  in {_format} with "%{_hour}%"')
+[15:53:35] [Server thread/INFO]: [Skript] Loaded 1 script with a total of 4 triggers and 26 commands in 6.2 seconds
+[15:53:35] [Server thread/INFO]: [Skript] Finished loading.
+[15:53:35] [Server thread/INFO]: [P2] Detected world load for 'test'
+[15:53:35] [Server thread/INFO]: [P2]  - default flags:  None
+[15:53:35] [Server thread/INFO]: [P2]  - road flags:  None
+[15:53:35] [Server thread/INFO]: [P2]  - generator: null>PlotSquared
+[15:53:35] [Server thread/INFO]: [P2]  - plotworld: test
+[15:53:35] [Server thread/INFO]: [P2]  - plotAreaManager: com.plotsquared.core.generator.HybridPlotManager@6397ede6
+[15:53:35] [Server thread/INFO]: Preparing start region for dimension minecraft:test
+[15:53:35] [Server thread/INFO]: Loaded 0 spawn chunks for world test
+[15:53:35] [Server thread/INFO]: Preparing spawn area: 0%
+[15:53:35] [Server thread/INFO]: Preparing spawn area: 0%
+[15:53:36] [Server thread/INFO]: Preparing spawn area: 0%
+[15:53:36] [Server thread/INFO]: Preparing spawn area: 0%
+[15:53:36] [Server thread/INFO]: Time elapsed: 1695 ms
+[15:53:36] [Server thread/INFO]: [WorldGuard] (test) TNT ignition is PERMITTED.
+[15:53:36] [Server thread/INFO]: [WorldGuard] (test) Lighters are PERMITTED.
+[15:53:36] [Server thread/INFO]: [WorldGuard] (test) Lava fire is PERMITTED.
+[15:53:36] [Server thread/INFO]: [WorldGuard] (test) Fire spread is UNRESTRICTED.
+[15:53:36] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'test'
+[15:53:37] [Server thread/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor!
+[15:53:37] [Server thread/INFO]: Done (40.433s)! For help, type "help"
+[15:53:37] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] ************************************************************
+[15:53:37] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * WARNING - YOU ARE RUNNING AN OUTDATED VERSION OF JAVA.
+[15:53:37] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * PAPER WILL STOP BEING COMPATIBLE WITH THIS VERSION OF
+[15:53:37] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * JAVA WHEN MINECRAFT 1.17 IS RELEASED.
+[15:53:37] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] *
+[15:53:37] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * Please update the version of Java you use to run Paper
+[15:53:37] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * to at least Java 11. When Paper for Minecraft 1.17 is
+[15:53:37] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * released support for versions of Java before 11 will
+[15:53:37] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * be dropped.
+[15:53:37] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] *
+[15:53:37] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * Current Java version: 1.8.0_282
+[15:53:37] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] *
+[15:53:37] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * Check this forum post for more information: 
+[15:53:37] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] *   https://papermc.io/java11
+[15:53:37] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] ************************************************************
+[15:53:37] [Server thread/INFO]: Timings Reset
+[15:53:38] [Craft Scheduler Thread - 6/INFO]: [TuSKe] Checking for latest update...
+[15:53:38] [Craft Scheduler Thread - 6/INFO]: [TuSKe] No new update was found!
+[15:53:39] [Craft Scheduler Thread - 7/INFO]: [net.dv8tion.jda.api.JDA] Login Successful!
+[15:53:40] [JDA MainWS-ReadThread/INFO]: [net.dv8tion.jda.internal.requests.WebSocketClient] Connected to WebSocket
+[15:53:41] [JDA MainWS-ReadThread/INFO]: [net.dv8tion.jda.api.JDA] Finished Loading!
+[15:53:42] [Craft Scheduler Thread - 7/INFO]: [TuSKe] Generating documentation of Skript & Addons.
+[15:53:42] [Craft Scheduler Thread - 7/INFO]: [TuSKe] Documentation was generated successfully.
+[15:53:44] [Server thread/INFO]: AnderCrafterYT joined the game
+[15:53:44] [Server thread/INFO]: AnderCrafterYT[/91.67.77.18:51154] logged in with entity id 251 at ([test]248.9267809644997, 101.97516426415224, 279.47942163485664)
+[15:53:51] [Server thread/INFO]: AnderCrafterYT issued server command: /p tp 0;0
+[15:54:03] [Server thread/INFO]: AnderCrafterYT issued server command: /p tp 0;0
+[15:54:09] [Server thread/INFO]: AnderCrafterYT issued server command: /p info
+[15:54:19] [Server thread/INFO]: AnderCrafterYT issued server command: /p claim
+[15:54:21] [Server thread/INFO]: AnderCrafterYT issued server command: /deop AnderCrafterYT
+[15:54:21] [Server thread/INFO]: [AnderCrafterYT: Made AnderCrafterYT no longer a server operator]
+[15:54:22] [Server thread/INFO]: AnderCrafterYT lost connection: Disconnected
+[15:54:22] [Server thread/INFO]: AnderCrafterYT left the game
+[15:54:23] [User Authenticator #1/INFO]: UUID of player AnderCrafterYT is 374c4bc4-ab54-43eb-8795-5e2389b25d4f
+[15:54:23] [Server thread/INFO]: AnderCrafterYT joined the game
+[15:54:23] [Server thread/INFO]: AnderCrafterYT[/91.67.77.18:51216] logged in with entity id 547 at ([test]-8.5, 63.0, -16.5)
+[15:54:28] [Server thread/INFO]: AnderCrafterYT issued server command: /p info
+[15:54:31] [Server thread/INFO]: AnderCrafterYT issued server command: /p setowner
+[15:54:38] [Server thread/INFO]: AnderCrafterYT issued server command: /p info
+[15:54:42] [Server thread/INFO]: AnderCrafterYT issued server command: /p info
+[15:54:46] [Server thread/INFO]: AnderCrafterYT issued server command: /p setowner none
+[15:54:48] [Server thread/INFO]: AnderCrafterYT issued server command: /p info
+[15:54:51] [Server thread/INFO]: AnderCrafterYT issued server command: /p setowner none
+[15:54:54] [Server thread/INFO]: AnderCrafterYT issued server command: /p setowner Golmix
+[15:56:30] [Server thread/INFO]: AnderCrafterYT lost connection: Disconnected
+[15:56:30] [Server thread/INFO]: AnderCrafterYT left the game
+[15:58:14] [Server thread/WARN]: [Skellett] Loaded class org.json.JSONObject from SkQuery v4.1.4 which is not a depend, softdepend or loadbefore of this plugin.
+[17:26:56] [User Authenticator #2/INFO]: UUID of player AnderCrafterYT is 374c4bc4-ab54-43eb-8795-5e2389b25d4f
+[17:26:56] [Server thread/INFO]: AnderCrafterYT joined the game
+[17:26:56] [Server thread/INFO]: AnderCrafterYT[/91.67.77.18:60940] logged in with entity id 589 at ([test]-4.698115407974024, 64.0, -19.526086393638288)
+[17:27:07] [User Authenticator #2/INFO]: UUID of player Golmix is d6e60608-5f72-4142-8873-c62ca75e96f8
+[17:27:07] [Server thread/INFO]: Golmix joined the game
+[17:27:07] [Server thread/INFO]: Golmix[/91.67.77.18:61009] logged in with entity id 611 at ([world]37.5, 71.0, -210.5)
+[17:27:23] [Server thread/INFO]: Made AnderCrafterYT a server operator
+[17:27:30] [Server thread/INFO]: AnderCrafterYT issued server command: /tp Golmix AnderCrafterYT
+[17:27:30] [Server thread/INFO]: [AnderCrafterYT: Teleported Golmix to AnderCrafterYT]
+[17:27:35] [Server thread/INFO]: AnderCrafterYT issued server command: /tp Golmix AnderCrafterYT
+[17:27:35] [Server thread/INFO]: [AnderCrafterYT: Teleported Golmix to AnderCrafterYT]
+[17:27:40] [Server thread/INFO]: AnderCrafterYT issued server command: /p clam
+[17:27:43] [Server thread/INFO]: AnderCrafterYT issued server command: /p claim
+[17:27:50] [Server thread/INFO]: Golmix issued server command: /p info
+[17:27:56] [Server thread/INFO]: AnderCrafterYT issued server command: /lp editor
+[17:28:22] [Server thread/INFO]: AnderCrafterYT issued server command: /lp applyedits RiCZdTHzRq
+[17:28:22] [ForkJoinPool-1-worker-22/INFO]: [LP] LOG > (AnderCrafterYT) [G] (default)
+[17:28:22] [ForkJoinPool-1-worker-22/INFO]: [LP] LOG > webeditor add plots.permpack.basic true
+[17:28:22] [ForkJoinPool-1-worker-22/INFO]: [LP] LOG > (AnderCrafterYT) [U] (andercrafteryt)
+[17:28:22] [ForkJoinPool-1-worker-22/INFO]: [LP] LOG > webeditor remove plots.permpack.basic true
+[17:28:25] [Server thread/INFO]: Golmix issued server command: /p info
+[17:28:29] [Server thread/INFO]: Golmix issued server command: /p info
+[17:28:33] [Server thread/INFO]: Golmix issued server command: /p setowner
+[17:28:37] [Server thread/INFO]: Golmix issued server command: /p setowner none
+[17:28:40] [Server thread/INFO]: Golmix issued server command: /p info
+[17:28:42] [Server thread/INFO]: Golmix issued server command: /p setowner none
+[17:29:03] [Server thread/INFO]: AnderCrafterYT issued server command: /lp applyedits y2m3UQWuUT
+[17:29:04] [ForkJoinPool-1-worker-29/INFO]: [LP] LOG > (AnderCrafterYT) [G] (default)
+[17:29:04] [ForkJoinPool-1-worker-29/INFO]: [LP] LOG > webeditor add plots.set.owner true
+[17:29:04] [ForkJoinPool-1-worker-29/INFO]: [LP] LOG > (AnderCrafterYT) [U] (andercrafteryt)
+[17:29:04] [ForkJoinPool-1-worker-29/INFO]: [LP] LOG > webeditor remove plots.set.owner true
+[17:29:06] [Server thread/INFO]: Golmix issued server command: /p setowner none
+[17:29:12] [Server thread/INFO]: Golmix issued server command: /p setowner Golmix
+[17:29:18] [Server thread/INFO]: Golmix issued server command: /p info
+[17:29:22] [Server thread/INFO]: AnderCrafterYT issued server command: /deop AnderCrafterYT
+[17:29:22] [Server thread/INFO]: [AnderCrafterYT: Made AnderCrafterYT no longer a server operator]
+[17:29:23] [Server thread/INFO]: AnderCrafterYT lost connection: Disconnected
+[17:29:23] [Server thread/INFO]: AnderCrafterYT left the game
+[17:29:26] [User Authenticator #3/INFO]: UUID of player AnderCrafterYT is 374c4bc4-ab54-43eb-8795-5e2389b25d4f
+[17:29:26] [Server thread/INFO]: AnderCrafterYT joined the game
+[17:29:26] [Server thread/INFO]: AnderCrafterYT[/91.67.77.18:61074] logged in with entity id 784 at ([test]-55.06771172903018, 66.74436572127308, -11.812572630171267)
+[17:29:29] [Server thread/INFO]: AnderCrafterYT issued server command: /p info
+[17:29:34] [Server thread/INFO]: AnderCrafterYT issued server command: /p setowner none
+[17:29:36] [Server thread/INFO]: AnderCrafterYT issued server command: /p info
+[17:29:41] [Server thread/INFO]: Golmix issued server command: /p claim
+[17:29:44] [Server thread/INFO]: Golmix issued server command: /p info
+[17:29:58] [Server thread/INFO]: Golmix lost connection: Disconnected
+[17:29:58] [Server thread/INFO]: Golmix left the game
+[17:30:04] [Server thread/INFO]: AnderCrafterYT issued server command: /p tp 0;0
+[17:30:08] [Server thread/INFO]: AnderCrafterYT issued server command: /p tp 0;0
+[17:30:11] [Server thread/INFO]: AnderCrafterYT issued server command: /p tp 0;0
+[17:30:18] [Server thread/INFO]: Made AnderCrafterYT a server operator
+[17:30:20] [Server thread/INFO]: AnderCrafterYT issued server command: /p tp 0;0
+[17:30:20] [Server thread/WARN]: AnderCrafterYT moved too quickly! 33.05549214451886,-17.960016559372505,-8.966761200152822
+[17:30:25] [Server thread/INFO]: AnderCrafterYT issued server command: /p info
+[17:30:28] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:30:28] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:45:15] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
+[17:45:20] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5134ms or 102 ticks behind
+[17:45:20] [Server thread/WARN]: AnderCrafterYT moved too quickly! 3.166553148982322,17.994332011030636,-3.7027406457396452
+[17:45:20] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:45:20] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:45:26] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:45:26] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:45:37] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:45:37] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:45:42] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:45:42] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:46:30] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
+[17:46:35] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:46:35] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:46:41] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:46:41] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:46:57] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:46:57] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:47:29] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
+[17:47:34] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:47:34] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:48:11] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
+[17:48:16] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:48:16] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:48:23] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:48:23] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:49:12] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
+[17:49:17] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:49:17] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:49:23] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:49:23] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:49:30] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:49:30] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:51:54] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
+[17:51:59] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5022ms or 100 ticks behind
+[17:52:00] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:52:00] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:52:07] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:52:07] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:52:14] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:52:14] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:52:24] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:52:24] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:52:32] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:52:32] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:53:53] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
+[17:53:58] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:53:58] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:54:09] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:54:09] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:54:15] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:54:15] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:54:25] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:54:25] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:54:32] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:54:32] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:54:38] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:54:38] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:54:52] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:54:52] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:55:30] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
+[17:55:35] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:55:35] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:55:41] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:55:41] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:55:47] [Server thread/INFO]: AnderCrafterYT issued server command: /weather clear
+[17:55:47] [Server thread/INFO]: [AnderCrafterYT: Set the weather to clear]
+[17:55:48] [Server thread/INFO]: AnderCrafterYT issued server command: /time set day
+[17:55:48] [Server thread/INFO]: [AnderCrafterYT: Set the time to 1000]
+[17:55:52] [Server thread/INFO]: AnderCrafterYT issued server command: /time set day
+[17:55:52] [Server thread/INFO]: [AnderCrafterYT: Set the time to 1000]
+[17:55:54] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:55:54] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:56:02] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:56:02] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:56:55] [Server thread/INFO]: AnderCrafterYT issued server command: /weather clear
+[17:56:55] [Server thread/INFO]: [AnderCrafterYT: Set the weather to clear]
+[17:56:57] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
+[17:57:02] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:57:02] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:57:21] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
+[17:57:26] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:57:26] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:57:32] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:57:32] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:57:35] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:57:35] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:58:07] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
+[17:58:13] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5124ms or 102 ticks behind
+[17:58:13] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:58:13] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:58:59] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
+[17:59:04] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5093ms or 101 ticks behind
+[17:59:04] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:59:04] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:59:13] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:59:13] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[17:59:20] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[17:59:20] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[18:00:03] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
+[18:00:08] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5311ms or 106 ticks behind
+[18:00:08] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[18:00:08] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
+[18:00:14] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
+[18:00:14] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip

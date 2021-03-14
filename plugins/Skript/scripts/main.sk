@@ -1,0 +1,450 @@
+#
+# A simple message of the day script.
+# The MOTD can be set with the /setmotd command,
+# and it will be sent to each player when they log in
+# and when they use the /motd command.
+#
+# FORMATS:    DESCRIPTION:       EXAMPLES:
+#
+#   DAY:
+#     dd/     day (number)       1
+#     ddo/    day (ordered)      1st
+#     dm/     month (number)     1
+#     dmw/    month (word)       January
+#     dy/     year (2 digits)    20
+#     dyf/    year (4 digits)    2020
+#
+#   TIME:
+#     th/     hour (12 hour)     12
+#     thh/    hour (24 hour)     24
+#     tm/     minute             60
+#     tme/    meridiem           am
+#     tmee/   meridiem           AM
+# 
+#             EXAMPLES:
+#
+# ddo/ dmw/ dyf/ - thh/:tm/      12th February 2020 - 20:25
+# dd//dm//dyf/ - thh/:tm/        12/2/2020 - 20:25
+# ddo/ dmw/ dyf/                 12th February 2020
+# th/:tm/ tmee/                  8:25 PM
+
+on skript load: 
+    login to "NzExMjYxMzE0NjUxMjU4OTAx.XsAbvw.61UwTZW6oi-G3Nbn6H4uezANX3U" with the name "bot"
+
+command /dctest <text>:
+	trigger:
+		#send arg-1 to channel with id "710833963748556871" with bot
+		#create textchannel named "text" in guild with id "672032305241391132" with bot
+		create channelbuilder in guild with id "672032305241391131"
+		the category of channelbuilder is category with id "684771603057344532"
+
+
+command /bcmessage [<text="">] [<text="">]:
+	permission: skript.admin
+	aliases: /bcmessages
+	description: Broadcast-Nachrichten
+	trigger:
+		#send "%{bcmessages::*}%"
+		if arg-1 == "":
+			send formatted "Gib <tooltip:Klicke um den Command einzugeben><suggest command:/bcmessage add >&l/bcmessage add <Nachricht><reset> zum hinzufügen ein"
+			send formatted "Gib <tooltip:Klicke um den Command einzugeben><suggest command:/bcmessage list>&l/bcmessage list<reset> zum Auflisten der Nachrichten"
+			send formatted "Gib <tooltip:Klicke um den Command einzugeben><suggest command:/bcmessage remove >&l/bcmessage remove <Nummer><reset> zum löschen ein"
+			#send formatted "Gib /bcmessage interval <Minuten> ein um die Wartedauer festzulegen"
+		if arg-1 == "add":
+			if arg-2 != "":
+				add arg-2 to {bcmessages::*}
+		if arg-1 == "list":
+			loop {bcmessages::*}:
+				send formatted "&b%loop-index%.&r %loop-value%"
+		if arg-1 == "remove":
+			if arg-2 != "":
+				delete {bcmessages::%arg-2%}
+		#if arg-1 == "interval":
+		#	if arg-2 != "":
+		#		set {bcmessage.interval} to arg-2
+		#if arg-1 == "flush":
+		#	delete {bcmessages::*}
+		set {bcmessage.length} to 0
+		loop {bcmessages::*}:
+			add 1 to {bcmessage.length}
+		send formatted "&aInsgesamt sind %{bcmessage.length}% Nachrichten eingespeichert"
+
+
+every 5 minutes:
+	set {_bcmessage.random} to random integer between 1 and {bcmessage.length}
+	send formatted "%{bcmessages::%{_bcmessage.random}%}%" to all players
+
+command /setmotd <text>:
+	permission: skript.motdadmin
+	description: MOTD setzen
+	trigger:
+		send formatted "&aMOTD gesetzt auf '%argument%<reset>'"
+		set {motd} to argument
+command /nomotd:
+	permission: skript.motdadmin
+	description: Keine MOTD
+	trigger:
+		message "&aMOTD geleert"
+		set {motd} to ""
+
+command /motd:
+	description: MOTD anzeigen
+	trigger:
+		if {motd} != "":
+			send formatted "&4%{motd}%"
+		if {motd} = "":
+			send formatted "&eAktuell ist keine MOTD festgelegt"
+
+command /discord:
+	description: Link zum Discord abrufen
+	trigger:
+		send formatted "&3Unser Discord:"
+		message {discord}
+
+command /setdiscord <text>:
+	permission: skript.admin
+	description: Link zum Discord einstellen
+	trigger:
+		set {discord} to argument
+		send formatted "&3Discord Einladungslink gesetzt auf %{discord}%"
+command /setvariable <text> <text>:
+	permission: skript.admin
+	description: Variablen setzen
+	trigger:
+		set {%arg-1%} to arg-2
+		send formatted "&3Variable %arg-1% gesetzt auf %arg-2%"
+
+command /website:
+	description: Link zur Website abrufen
+	aliases: /web
+	trigger:
+		send formatted "&3Unsere Website:"
+		message {website}
+
+command /setwebsite <text>:
+	permission: skript.admin
+	description: Link zur Website einstellen
+	trigger:
+		set {website} to argument
+		send formatted "&3Website auf %{website}% gesetzt"
+
+command /wiki:
+	description: Link zum Wiki abrufen
+	trigger:
+		send formatted "&3Unser Wiki:"
+		message {wiki}
+
+command /setwiki <text>:
+	permission: skript.admin
+	description: Link zum Wiki einstellen
+	trigger:
+		set {wiki} to argument
+		send formatted "&3Wiki zu %{wiki}% gesetzt"
+
+
+command /karte:
+	description: Link zur Dynmap abrufen
+	aliases: /map
+	trigger:
+		send formatted "&3Die Dynmap ist erreichbar unter: &f<link:%{dynmap}%>%{dynmap}%"
+		set {_x.coord} to player's x coordinate
+		set {_y.coord} to 64
+		set {_z.coord} to player's z coordinate
+		set {_world} to player's world
+		set {_dynmap} to {dynmap}
+		set {_dynmapplayer} to "%{_dynmap}%?playername=%player%&zoom=6"
+		set {_dynmap} to "%{_dynmap}%?worldname=%{_world}%&x=%{_x.coord}%&y=%{_y.coord}%&z=%{_z.coord}%&zoom=6"
+		send formatted "&3Link bezogen auf &f<link:%{_dynmap}%>deine Aktuelle Position"
+		send formatted "&3 oder &f<link:%{_dynmapplayer}%>dich verfolgend"
+
+command /setdynmap <text>:
+	permission: skript.admin
+	description: Grund-Link zur Dynmap einstellen
+	trigger:
+		set {dynmap} to argument
+		send formatted "&3Dynmap-Grundlink zu %{dynmap}% gesetzt"
+
+command /realtime:
+	description: Zeit anzeigen
+	aliases: /zeit
+	trigger:
+		set {_datumformatiert} to formatTime("%now%", "dd/. dmw/ dyf/")
+		set {_zeitformatiert} to formatTime("%now%", "thh/:tm/")
+		send formatted "&7Es ist aktuell der &9&l%{_datumformatiert}%&r&7 um &9&l%{_zeitformatiert}%"
+
+command /spawn:
+	description: Zum Spawn teleportieren
+	trigger:
+		send "&eTeleport zum Spawn in 3 Sekunden"
+		execute player command "/p tp world;-17,-18"
+
+
+command /sudo [<player>] [<text>]:
+	executable by: console
+	trigger:
+		execute arg-1 command "/%arg-2%"
+		send "&bSudoed %arg-2% to %arg-1%" to console
+
+command /executecmd <text>:
+	executable by: players
+	trigger:
+		execute player command "/%arg-1%"
+
+command /suggestcmd [<text>]:
+	description: Command vorschlagen
+	trigger:
+		send formatted "&7<tooltip:Klicke um den Command einzugeben><suggest command:/%arg-1%>&l/%arg-1%<reset>"
+
+
+command /chunktooltip:
+	description: Chunk-Boarders anzeigen
+	trigger:
+		set {_x.chunk} to rounded down player's x coordinate / 16
+		set {_y.chunk} to rounded down player's y coordinate / 16
+		set {_y.coord} to rounded player's y coordinate - 10
+		set {_z.chunk} to rounded down player's z coordinate / 16
+		set {_counter} to 1
+		set {_counter2} to 1
+		set {_x.chunk} to {_x.chunk} - 5
+		set {_z.chunk} to {_z.chunk} - 5
+
+		while {_counter} <= 10:
+			send "test %{_counter}%"
+			set {_counter} to {_counter} + 1
+			while {_counter2} <= 10:
+				send "test2 %{_counter2}%"
+				set {_counter2} to {_counter2} + 1
+				set {_x.chunkcorner} to {_x.chunk} * 16
+				set {_x.chunkcorner2} to {_x.chunkcorner} + 16
+				set {_y.chunkcorner} to {_y.chunk} * 16
+				set {_z.chunkcorner} to {_z.chunk} * 16
+				set {_z.chunkcorner2} to {_z.chunkcorner} + 16
+				send "%{_x.chunk}% %{_y.chunk}% %{_z.chunk}%"
+				send "%{_x.chunkcorner}% %{_y.chunkcorner}% %{_z.chunkcorner}%"
+				play barrier at location at ({_x.chunkcorner}, {_y.coord}, {_z.chunkcorner}) to the player
+				play barrier at location at ({_x.chunkcorner2}, {_y.coord}, {_z.chunkcorner}) to the player
+				play barrier at location at ({_x.chunkcorner}, {_y.coord}, {_z.chunkcorner2}) to the player
+				play barrier at location at ({_x.chunkcorner2}, {_y.coord}, {_z.chunkcorner2}) to the player
+				set {_z.chunk} to {_z.chunk} + 1
+			set {_x.chunk} to {_x.chunk} + 1
+			set {_z.chunk} to rounded down player's z coordinate / 16
+			set {_z.chunk} to {_z.chunk} - 5
+			set {_counter2} to 0
+
+		set {_counter} to 0
+
+command /hilfe:
+	description: Hilfe!
+	aliases: /help
+	trigger:
+		send formatted "&8-----------------------------------------------------"
+		send formatted "&4&lErsteinmal, Herzlich Willkommen auf &l<tooltip:Unserem Server trittst du am besten durch die Direkte-Verbindung mit &l%{serverip}%&r her. Solltest du öfter spielen kannst du auch einen Eintrag für uns in deiner Serverliste erstellen, nutze hierfür auch ausschließlich die IP &l%{serverip}%.&r &cNutze keine Portnummern!>%{serverip}%<reset>&4&l!"
+		send formatted "&3Für dich und uns ist es an besten wenn du zuerst im &l<tooltip:Klicke hier um das Wiki zu öffnen><url:%{wiki}%>Wiki<reset>&r&3 und auf der &l<tooltip:Klicke hier um unsere Website zu öffnen><url:%{website}%>Website<reset>&r&3 schaust, statt im Chat zu fragen"
+		send formatted ""
+		send formatted "&f&lWichtige Wiki-Artikel:"
+		send formatted "&7<tooltip:Klicke um die Wiki-Seite zu öffnen><url:https://minfinity.ga/wiki/dein-plot>&lDein Plot:<reset>&7 informiert zu Commands rund um Grundstücke und deren Funktionsweise"
+		send formatted "&f&lEinige Wichtige Befehle für den Einstieg:"
+		send formatted "&7Teleportiert dich zum Spawn: <tooltip:Klicke um den Command einzugeben><suggest command:/spawn>&l/spawn<reset>"
+		send formatted "&7Teleportiert dich zum Testwelt-Spawn: <tooltip:Klicke um den Command einzugeben><suggest command:/testwelt>&l/testwelt<reset>"
+		send formatted "&7Funktioniert in beiden Welten, um Eigentümer des Plots zu werden: <tooltip:Klicke um den Command einzugeben><suggest command:/p claim>&l/plot claim<reset>"
+		send formatted "&8-----------------------------------------------------"
+
+command /gui [<text="">] [<text="">]:
+	aliases: /menü, /pgui, /plotgui
+	description: GUI anzeigen
+	trigger:
+		if arg-1 != "":
+			if arg-1 == "punclaim":
+				if arg-2 == "confirm":
+					send formatted "Unclaim!"
+					make player run command "p setowner none" as op
+				else:
+					execute player command "confirmationdialog gui punclaim confirm"
+			if arg-1 == "pmusic":
+				wait 2 ticks
+				open chest with 2 row named "&cPlot Musik" to player
+				wait 3 ticks
+				format slot 0 of player with music disc 11 to close then run [make player execute command "/p flag set music 11"]
+				format slot 1 of player with music disc 13 to close then run [make player execute command "/p flag set music 13"]
+				format slot 2 of player with music disc blocks to close then run [make player execute command "/p flag set music blocks"]
+				format slot 3 of player with music disc cat to close then run [make player execute command "/p flag set music cat"]
+				format slot 4 of player with music disc chirp to close then run [make player execute command "/p flag set music chirp"]
+				format slot 5 of player with music disc far to close then run [make player execute command "/p flag set music far"]
+				format slot 6 of player with music disc mall to close then run [make player execute command "/p flag set music mall"]
+				format slot 7 of player with music disc mellohi to close then run [make player execute command "/p flag set music mellohi"]
+				format slot 8 of player with music disc stal to close then run [make player execute command "/p flag set music stal"]
+				format slot 9 of player with music disc strad to close then run [make player execute command "/p flag set music strad"]
+				format slot 10 of player with music disc wait to close then run [make player execute command "/p flag set music wait"]
+				format slot 11 of player with music disc ward to close then run [make player execute command "/p flag set music ward"]
+				format slot 16 of player with barrier named "Keine Musik" to close then run [make player execute command "/plot flag remove music"]
+				format slot 17 of player with yellow wool named "Zurück" to close then run "sudo %player% gui"
+			if arg-1 == "pflag":
+				wait 2 ticks
+				open chest with 4 row named "&cPlot Flags" to player
+				wait 3 ticks
+				format slot 0 of player with diamond sword named "PVP" with lore "Spieler gegen Spieler erlauben" to be unstealable
+				format slot 1 of player with tnt named "Explosionen" with lore "Explosionen erlauben" to be unstealable
+				format slot 2 of player with creeper spawn egg named "PVE" with lore "Spieler gegen Einheit(en) erlauben" to be unstealable
+				format slot 3 of player with ender pearl named "Teleport zum Plot" with lore "Erlaubt das nicht-Mitglieder sich zu diesem Plot teleportieren können" to be unstealable
+				format slot 4 of player with hopper named "Item-Drop" with lore "Erlaubt, dass Spieler, welche nicht mitbauen, Items droppen können" to be unstealable
+				format slot 5 of player with iron door named "Benutzen" with lore "Erlaubt das Nicht-Mitglieder Knöpfe drücken, Türen offnen etc. können" to be unstealable
+				format slot 9 of player with red wool named "Deaktivieren" with lore "Setzt den Flag 'pvp'" and "auf 'false'" to run [make player execute command "/p flag set pvp false"]
+				format slot 10 of player with red wool named "Deaktivieren" with lore "Setzt den Flag 'explosion'" and "auf 'false'" to run [make player execute command "/p flag set explosion false"]
+				format slot 11 of player with red wool named "Deaktivieren" with lore "Setzt den Flag 'pve'" and "auf 'false'" to run [make player execute command "/p flag set pve false"]
+				format slot 12 of player with red wool named "Deaktivieren" with lore "Setzt den Flag 'untrusted-visit'" and "auf 'false'" to run [make player execute command "/p flag set untrusted-visit false"]
+				format slot 13 of player with red wool named "Deaktivieren" with lore "Setzt den Flag 'item-drop'" and "auf 'false'" to run [make player execute command "/p flag set item-drop false"]
+				format slot 13 of player with red wool named "Deaktivieren" with lore "Setzt den Flag 'item-drop'" and "auf 'false'" to run [make player execute command "/p flag set item-drop false"]
+				format slot 18 of player with yellow wool named "Zurücksetzen" with lore "Entfernt diese Einstellung" and "Die Einstellung wird auf den Standard zurückgesetzt" and "Wenn sich die Standards ändern, ändert sich auch dein Plot" to run [make player execute command "/p flag remove pvp"]
+				format slot 19 of player with yellow wool named "Zurücksetzen" with lore "Entfernt diese Einstellung" and "Die Einstellung wird auf den Standard zurückgesetzt" and "Wenn sich die Standards ändern, ändert sich auch dein Plot" to run [make player execute command "/p flag remove explosion"]
+				format slot 20 of player with yellow wool named "Zurücksetzen" with lore "Entfernt diese Einstellung" and "Die Einstellung wird auf den Standard zurückgesetzt" and "Wenn sich die Standards ändern, ändert sich auch dein Plot" to run [make player execute command "/p flag remove pve"]
+				format slot 21 of player with yellow wool named "Zurücksetzen" with lore "Entfernt diese Einstellung" and "Die Einstellung wird auf den Standard zurückgesetzt" and "Wenn sich die Standards ändern, ändert sich auch dein Plot" to run [make player execute command "/p flag remove untrusted-visit"]
+				format slot 22 of player with yellow wool named "Zurücksetzen" with lore "Entfernt diese Einstellung" and "Die Einstellung wird auf den Standard zurückgesetzt" and "Wenn sich die Standards ändern, ändert sich auch dein Plot" to run [make player execute command "/p flag remove item-drop"]
+				format slot 27 of player with green wool named "Aktivieren" with lore "Setzt den Flag 'pvp'" and "auf 'true'" to run [make player execute command "/p flag set pvp true"]
+				format slot 28 of player with green wool named "Aktivieren" with lore "Setzt den Flag 'explosion'" and "auf 'true'" to run [make player execute command "/p flag set explosion true"]
+				format slot 29 of player with green wool named "Aktivieren" with lore "Setzt den Flag 'pve'" and "auf 'true'" to run [make player execute command "/p flag set pve true"]
+				format slot 30 of player with green wool named "Aktivieren" with lore "Setzt den Flag 'untrusted-visit'" and "auf 'true'" to run [make player execute command "/p flag set untrusted-visit true"]
+				format slot 31 of player with green wool named "Aktivieren" with lore "Setzt den Flag 'item-drop'" and "auf 'true'" to run [make player execute command "/p flag set item-drop true"]
+				format slot 35 of player with barrier named "Zurück" to close then run "sudo %player% gui"
+		else:
+			wait 5 ticks
+			open chest with 5 row named "&cGUI" to player
+			wait 3 ticks
+			format slot 0 of player with diamond sword named "Überlebensmodus" with lore "/gm0" to run [make player execute command "/gm0"]
+			format slot 1 of player with gray stained glass pane named " " to be unstealable
+			format slot 2 of player with gray stained glass pane named " " to be unstealable
+			format slot 3 of player with gray stained glass pane named " " to be unstealable
+			format slot 4 of player with gray stained glass pane named " " to be unstealable
+			format slot 5 of player with gray stained glass pane named " " to be unstealable
+			format slot 6 of player with gray stained glass pane named " " to be unstealable
+			format slot 7 of player with gray stained glass pane named " " to be unstealable
+			format slot 8 of player with gray stained glass pane named " " to be unstealable
+			format slot 9 of player with wooden axe named "Kreativmodus" with lore "/gm1" to run [make player execute command "/gm1"]
+			format slot 10 of player with gray stained glass pane named " " to be unstealable
+			format slot 11 of player with gray stained glass pane named " " to be unstealable
+			format slot 12 of player with gray stained glass pane named " " to be unstealable
+			format slot 13 of player with gray stained glass pane named " " to be unstealable
+			format slot 14 of player with gray stained glass pane named " " to be unstealable
+			format slot 15 of player with gray stained glass pane named " " to be unstealable
+			format slot 16 of player with gray stained glass pane named " " to be unstealable
+			format slot 17 of player with gray stained glass pane named " " to be unstealable
+			format slot 18 of player with totem of undying named "Abenteuermodus" with lore "/gm2" to run [make player execute command "/gm2"]
+			format slot 19 of player with gray stained glass pane named " " to be unstealable
+			format slot 20 of player with gray stained glass pane named " " to be unstealable
+			format slot 21 of player with gray stained glass pane named " " to be unstealable
+			format slot 22 of player with gray stained glass pane named " " to be unstealable
+			format slot 23 of player with gray stained glass pane named " " to be unstealable
+			format slot 24 of player with gray stained glass pane named " " to be unstealable
+			format slot 25 of player with gray stained glass pane named " " to be unstealable
+			format slot 26 of player with gray stained glass pane named " " to be unstealable
+			format slot 27 of player with potion of invisibility named "Zuschauermodus" with lore "/gm3" to run [make player execute command "/gm3"]
+			format slot 28 of player with gray stained glass pane named " " to be unstealable
+			format slot 29 of player with gray stained glass pane named " " to be unstealable
+			format slot 30 of player with gray stained glass pane named " " to be unstealable
+			format slot 31 of player with gray stained glass pane named " " to be unstealable
+			format slot 32 of player with gray stained glass pane named " " to be unstealable
+			format slot 33 of player with gray stained glass pane named " " to be unstealable
+			format slot 34 of player with gray stained glass pane named " " to be unstealable
+			format slot 14 of player with cartography table named "Deine Plots zeigen" with lore "Zeigt dir alle deine Plots im Chat an" and "Gemergte Plots werden als ganzes angezeigt!" to close then run [make player execute command "/p list mine"]
+			format slot 17 of player with jukebox named "Musik" with lore "Spiel Minecraft Musik auf deinem Plot ab!" and "PROTIPP: /gui pmusic" and "&cACHTUNG: Nervig" to close then run "sudo %player% gui pmusic"
+			format slot 26 of player with anvil named "Flags" with lore "Stelle deinen Plot ein!" and "PROTIPP: Du kannst auch /gui pflag eingeben" to close then run "sudo %player% gui pflag"
+			format slot 35 of player with tnt named "Plot freigeben" with lore "Dein Plot kann dadurch von jedem geclaimt werden!" to close then run "sudo %player% gui punclaim"
+			format slot 36 of player with ender pearl named "Heimporter" with lore "Teleportiere dich zu deinem ersten Plot" to close then run "sudo %player% p home"
+			format slot 37 of player with eye of ender named "Teleportpunkt dieses Plots setzen" to close then run [make player execute command "/p sh"]
+			format slot 39 of player with redstone repeater named "Testwelt" with lore "Teleportiert dich zum Testwelt-Spawn" to close then run [make player execute command "/testwelt"]
+			format slot 40 of player with redstone block named "Spawn" with lore "Teleportiert dich zum Spawn" to close then run [make player execute command "/spawn"]
+			format slot 41 of player with sunflower named "Minigames" with lore "Teleport zum Minigames-Bereich" and "Coming soon!" to close then run [make player execute command "/minigames"]
+			format slot 43 of player with compass named "Hilfe!" with lore "Hier erhältst du Hife zum Konzept und den Commands" and "Außerdem kannst du unsere Regeln abrufen" to close then run "sudo %player% hilfe"
+			format slot 44 of player with player's head named "Freunde" with lore "Verwalte deine Freunde, welche gerade online sind!" and "Füg Freunde mit /friends add <freund> hinzu" to close then run "sudo %player% friends"
+
+command /sethome:
+	description: Home setzen
+	permission: skript.home
+	executable by: players
+	trigger:
+		set {homes.%player%.location} to location of player
+		message "Dein Zuhause ist jetzt bei <grey>%location of player%<reset>"
+
+command /home:
+	description: Zum Home Teleportieren
+	permission: skript.home
+	executable by: players
+	trigger:
+		if {homes.%player%.location} is not set:
+			message "Du hast noch garkein Home gesetzt!"
+			stop trigger
+		teleport player to {homes.%player%.location}
+
+		
+
+on join:
+	# uncomment the following line to make the MOTD appear after other messages
+	#wait a tick
+	if {motd} != "":
+		send formatted "&4%{motd}%"
+	set {_datumformatiert} to formatTime("%now%", "dd/. dmw/ dyf/")
+	set {_zeitformatiert} to formatTime("%now%", "thh/:tm/")
+	send formatted "&7Es ist aktuell der &9&l%{_datumformatiert}%&r&7 um &9&l%{_zeitformatiert}%"
+
+
+
+
+
+on load:
+	set {formatTime::Day::*} to "Erste", "Zweite", "Dritte", "Vierte", "Fünfte", "Sechste", "Achte", "Neunte", "Zehnte", "Elfte", "Zwölfte", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30" and "31" 
+	set {formatTime::Month::*}  to "Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November" and "Dezember"
+
+function formatTime(now: text, format: text) :: text:
+	set {_split::*} to {_now}      split at " "
+	set {_day::*}   to {_split::1} split at "."
+	set {_time::*}  to {_split::2} split at ":"
+	set {_day}      to {_day::1} parsed as a number
+	set {_month}    to {_day::2} parsed as a number
+	set {_year}     to {_day::3}
+	set {_hour}     to {_time::1} parsed as a number
+	set {_minute}   to {_time::2}
+	set {_meridiem} to {_split::3}
+	replace "th/"  in {_format} with "%{_hour}%"
+	if {_meridiem} = "PM":
+		add 12 to {_hour}
+	replace "thh/" in {_format} with "%{_hour}%"
+	replace "tm/"  in {_format} with {_minute}
+	replace "tme/"  in {_format} with {_meridiem} in lower case
+	replace "tmee/"  in {_format} with {_meridiem}
+	replace "dd/"  in {_format} with "%{_day}%"
+	replace "ddo/" in {_format} with {formatTime::Day::%{_day}%}
+	replace "dm/"  in {_format} with "%{_month}%"
+	replace "dmw/" in {_format} with {formatTime::Month::%{_month}%}
+	replace "dy/"  in {_format} with {_year}
+	replace "dyf/" in {_format} with "%({_year} parsed as a number) + 2000%"
+	return {_format}
+
+command /confirmationdialog [<text>]:
+	description: Bestätigungsdialog anzeigen
+	trigger:
+		wait 2 ticks
+		open chest with 1 row named "&cBestätigung der Ausführung" to player
+		wait 3 ticks
+		format slot 0 of player with green wool named "Ausführen" with lore "Dies führt das Kommando /%arg-1% aus. &cDies kann ungewollte Effekte haben!" to close then run "sudo %player% %arg-1%"
+		format slot 1 of player with gray stained glass pane named " " to be unstealable
+		format slot 2 of player with gray stained glass pane named " " to be unstealable
+		format slot 3 of player with gray stained glass pane named " " to be unstealable
+		format slot 4 of player with compass named "Information" with lore "Du hast einen Command ausgeführt oder Knopf betätigt," and "welcher eine gefährliche Aktion auslöst (z.B. gebautes löschen)" and "Wenn du zustimmst wird /%arg-1% ausgeführt!" to be unstealable
+		format slot 5 of player with gray stained glass pane named " " to be unstealable
+		format slot 6 of player with gray stained glass pane named " " to be unstealable
+		format slot 7 of player with gray stained glass pane named " " to be unstealable
+		format slot 8 of player with red wool named "Abbruch" with lore "Brich den Vorgang ab, wenn du dir unsicher bist!" to close
+
+command /formatTime [<text>]:
+	permission: formatTime.admin
+	permission message: &cYou do not have access to this command!
+	trigger:
+		if arg-1 is set:
+			set {_formatted} to formatTime("%now%", arg-1)
+			send formatted "&fFormat: &7%arg-1%"
+			send formatted "&fOutput: &7%{_formatted}%"
+			stop
+		send formatted "&c/formatTime <format>"
+
+
+
+

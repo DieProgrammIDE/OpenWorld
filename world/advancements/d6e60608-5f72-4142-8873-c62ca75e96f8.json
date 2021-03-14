@@ -1,0 +1,11 @@
+{
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:beach": "2021-03-14 17:27:36 +0000",
+      "minecraft:savanna": "2021-03-14 17:27:30 +0000",
+      "minecraft:plains": "2021-03-14 17:27:07 +0000"
+    },
+    "done": false
+  },
+  "DataVersion": 2586
+}

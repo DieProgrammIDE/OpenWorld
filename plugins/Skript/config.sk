@@ -30,7 +30,7 @@
 
 # ==== General Options ====
 
-language: english
+language: german
 # Which language to use. Currently english, german and korean are included in the download, but custom languages can be created as well.
 # Please note that not everything can be translated yet, i.e. parts of Skript will still be english if you use another language.
 # If you want to translate Skript to your language please read the readme.txt located in the /lang/ folder in the jar
@@ -50,7 +50,7 @@ update check interval: 12 hours
 # Please note that this option is currently the only means of making Skript check for an update more than once,
 # as '/skript update check' does only display the results of the last check if a check has been made before.
 
-release channel: none
+release channel: stable
 # If 'check for new version' is enabled, this determines how stable the updates must be.
 # 'stable' means that only stable releases of Skript will be considered updates.
 # 'beta' and 'alpha' mean that also development releases will be checked for.
@@ -84,13 +84,13 @@ player variable fix: true
 # This fix should work around that and whenever a invalid(old) player object is attempted to be get through a variable
 # It will check if the player is online and then get the valid(new) player object and update the variable object to that one.
 
-use player UUIDs in variable names: false
+use player UUIDs in variable names: true
 # Whether to use a player's UUID instead of their name in variables, e.g. {home.%player%} will look like
 # {home.e5240337-a4a2-39dd-8ed9-e5ce729a8522} instead of {home.njol}.
 # Please note that if this setting is changed old variables WILL NOT be renamed automatically.
 
 
-date format: default
+date format: dd.MM.yyyy, HH:mm
 # The date format to be used when dates should be displayed.
 # This can be 'default' to use Java's default date format for the system's language.
 # The format is that of Java's SimpleDateFormat as defined here: http://docs.oracle.com/javase/6/docs/api/java/text/SimpleDateFormat.html
@@ -167,7 +167,7 @@ enable timings: false
 # Note that this requires Paper (https://paper.readthedocs.io/en/paper-1.11/) to work; on Bukkit/Spigot this option has no effect.
 # When false, timings are not enabled for scripts even if you're running Paper.
 
-parse links in chat messages: disabled
+parse links in chat messages: strict
 # Controls how Skript will try to parse links in chat messages.
 # If 'disabled' or 'false', no links will be automatically parsed.
 # When 'strict', everything starting with http(s):// will be parsed as link.

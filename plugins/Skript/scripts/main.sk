@@ -28,16 +28,6 @@
 # ddo/ dmw/ dyf/                 12th February 2020
 # th/:tm/ tmee/                  8:25 PM
 
-on skript load: 
-    login to "NzExMjYxMzE0NjUxMjU4OTAx.XsAbvw.61UwTZW6oi-G3Nbn6H4uezANX3U" with the name "bot"
-
-command /dctest <text>:
-	trigger:
-		#send arg-1 to channel with id "710833963748556871" with bot
-		#create textchannel named "text" in guild with id "672032305241391132" with bot
-		create channelbuilder in guild with id "672032305241391131"
-		the category of channelbuilder is category with id "684771603057344532"
-
 
 command /bcmessage [<text="">] [<text="">]:
 	permission: skript.admin
@@ -199,39 +189,54 @@ command /suggestcmd [<text>]:
 command /chunktooltip:
 	description: Chunk-Boarders anzeigen
 	trigger:
-		set {_x.chunk} to rounded down player's x coordinate / 16
-		set {_y.chunk} to rounded down player's y coordinate / 16
-		set {_y.coord} to rounded player's y coordinate - 10
-		set {_z.chunk} to rounded down player's z coordinate / 16
-		set {_counter} to 1
-		set {_counter2} to 1
-		set {_x.chunk} to {_x.chunk} - 5
-		set {_z.chunk} to {_z.chunk} - 5
+		if {chunktooltip.%player%} == 1:
+			set {_chunktooltip.%player%} to 2
+			send formatted "%{prefix}% &7Dir werden nun die vollständigen Plotgrenzen angezeigt"
+		if {chunktooltip.%player%} == 2:
+			set {_chunktooltip.%player%} to 0
+			send formatted "%{prefix}% &7Die Plotgrenzen werden jetzt ausgeblendet"
+		if {chunktooltip.%player%} == 0:
+			set {_chunktooltip.%player%} to 1
+			send formatted "%{prefix}% &7Dir werden nun die Plotecken angezeigt"
+		if {chunktooltip.%player%} is not set:
+			set {_chunktooltip.%player%} to 1
+			send formatted "%{prefix}% &7Dir werden nun die Plotecken angezeigt"
+		set {chunktooltip.%player%} to {_chunktooltip.%player%}
+		#send "%{chunktooltip.%player%}%"
+		
 
-		while {_counter} <= 10:
-			send "test %{_counter}%"
-			set {_counter} to {_counter} + 1
-			while {_counter2} <= 10:
-				send "test2 %{_counter2}%"
-				set {_counter2} to {_counter2} + 1
-				set {_x.chunkcorner} to {_x.chunk} * 16
-				set {_x.chunkcorner2} to {_x.chunkcorner} + 16
-				set {_y.chunkcorner} to {_y.chunk} * 16
-				set {_z.chunkcorner} to {_z.chunk} * 16
-				set {_z.chunkcorner2} to {_z.chunkcorner} + 16
-				send "%{_x.chunk}% %{_y.chunk}% %{_z.chunk}%"
-				send "%{_x.chunkcorner}% %{_y.chunkcorner}% %{_z.chunkcorner}%"
-				play barrier at location at ({_x.chunkcorner}, {_y.coord}, {_z.chunkcorner}) to the player
-				play barrier at location at ({_x.chunkcorner2}, {_y.coord}, {_z.chunkcorner}) to the player
-				play barrier at location at ({_x.chunkcorner}, {_y.coord}, {_z.chunkcorner2}) to the player
-				play barrier at location at ({_x.chunkcorner2}, {_y.coord}, {_z.chunkcorner2}) to the player
-				set {_z.chunk} to {_z.chunk} + 1
-			set {_x.chunk} to {_x.chunk} + 1
-			set {_z.chunk} to rounded down player's z coordinate / 16
-			set {_z.chunk} to {_z.chunk} - 5
-			set {_counter2} to 0
+every 4 seconds in "test":
+	loop all players:
+		if {chunktooltip.%loop-player%} > 0:
+			set {_x.chunk} to rounded down loop-player's x coordinate / 16
+			set {_y.chunk} to rounded down loop-player's y coordinate / 16
+			#set {_y.coord} to rounded loop-player's y coordinate + 1
+			set {_y.coord} to 65
+			set {_z.chunk} to rounded down loop-player's z coordinate / 16
+			set {_x.chunk} to {_x.chunk} - 2
+			set {_z.chunk} to {_z.chunk} - 2
 
-		set {_counter} to 0
+			set {_counterx} to 0
+			set {_counterz} to 0
+			loop 4 times:
+				set {_counterx} to {_counterx} + 1
+				loop 4 times:
+					set {_counterz} to {_counterz} + 1
+					set {_counterx2} to -8
+					set {_counterz2} to -8
+					if {chunktooltip.%loop-player%} == 2:
+						loop 16 times:
+							set {_counterx2} to {_counterx2} + 1
+							play barrier at location at ((({_x.chunk}+{_counterx})*16)+{_counterx2}, {_y.coord}, ({_z.chunk}+{_counterz})*16) to the loop-player
+						loop 16 times:
+							set {_counterz2} to {_counterz2} + 1
+							play barrier at location at (({_x.chunk}+{_counterx})*16, {_y.coord}, (({_z.chunk}+{_counterz})*16)+{_counterz2}) to the loop-player
+					else:
+						play barrier at location at (({_x.chunk}+{_counterx})*16, {_y.coord}, ({_z.chunk}+{_counterz})*16) to the loop-player
+					#send "Test %{_counterx}% %{_counterz}%" to loop-player
+				set {_counterz} to 0
+			set {_counterx} to 0
+
 
 command /hilfe:
 	description: Hilfe!
@@ -374,11 +379,11 @@ command /home:
 			stop trigger
 		teleport player to {homes.%player%.location}
 
+on disconnect:
+	set {chunktooltip.%player%} to 0
 		
 
 on join:
-	# uncomment the following line to make the MOTD appear after other messages
-	#wait a tick
 	if {motd} != "":
 		send formatted "&4%{motd}%"
 	set {_datumformatiert} to formatTime("%now%", "dd/. dmw/ dyf/")
@@ -392,6 +397,7 @@ on join:
 on load:
 	set {formatTime::Day::*} to "Erste", "Zweite", "Dritte", "Vierte", "Fünfte", "Sechste", "Achte", "Neunte", "Zehnte", "Elfte", "Zwölfte", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30" and "31" 
 	set {formatTime::Month::*}  to "Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November" and "Dezember"
+	set {prefix} to "&3&lVenicity.de:&r"
 
 function formatTime(now: text, format: text) :: text:
 	set {_split::*} to {_now}      split at " "

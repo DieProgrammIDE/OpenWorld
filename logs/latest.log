@@ -1,320 +1,405 @@
-[14:19:38] [main/INFO]: Reloading ResourceManager: Default, bukkit
-[14:19:39] [Worker-Main-1/INFO]: Loaded 7 recipes
-[14:19:40] [Server thread/INFO]: Starting minecraft server version 1.16.5
-[14:19:40] [Server thread/INFO]: Loading properties
-[14:19:40] [Server thread/INFO]: This server is running Paper version git-Paper-547 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
-[14:19:40] [Server thread/INFO]: Debug logging is disabled
-[14:19:40] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[14:19:40] [Server thread/INFO]: Using 4 threads for Netty based IO
-[14:19:40] [Server thread/INFO]: Default game type: SURVIVAL
-[14:19:40] [Server thread/INFO]: Generating keypair
-[14:19:41] [Server thread/INFO]: Starting Minecraft server on *:25565
-[14:19:41] [Server thread/INFO]: Using epoll channel type
-[14:19:42] [Server thread/WARN]: Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
-[14:19:47] [Server thread/WARN]: Legacy plugin skUtilities v0.9.2 does not specify an api-version.
-[14:19:47] [Server thread/WARN]: Legacy plugin Vixio v2.0.7 does not specify an api-version.
-[14:19:47] [Server thread/WARN]: Legacy plugin TuSKe v1.8.2 does not specify an api-version.
-[14:19:47] [Server thread/INFO]: [FastAsyncWorldEdit] Loading FastAsyncWorldEdit v1.16-621;6476345
-[14:19:48] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@2ebd0656]
-[14:19:48] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v3.2.1
-[14:19:48] [Server thread/INFO]: [ViaVersion] ViaVersion 3.2.1 is now loaded, injecting!
-[14:19:48] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading 1.12 -> 1.13 mappings...
-[14:19:48] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading 1.13 -> 1.13.2 mappings...
-[14:19:48] [Via-Mappingloader-2/INFO]: [ViaVersion] Loading 1.13.2 -> 1.14 mappings...
-[14:19:49] [Via-Mappingloader-3/INFO]: [ViaVersion] Loading 1.14 -> 1.15 mappings...
-[14:19:49] [Via-Mappingloader-4/INFO]: [ViaVersion] Loading 1.15 -> 1.16 mappings...
-[14:19:49] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading 1.16 -> 1.16.2 mappings...
-[14:19:49] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
-[14:19:49] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v3.2.0
-[14:19:49] [Server thread/INFO]: [WorldGuard] Loading WorldGuard v7.0.4+f7ff984
-[14:19:49] [Server thread/INFO]: [ViaRewind] Loading ViaRewind v1.5.3
-[14:19:49] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.3.0
-[14:19:49] [Server thread/INFO]: [Skript] Loading Skript v2.5.3
-[14:19:49] [Server thread/INFO]: [skUtilities] Loading skUtilities v0.9.2
-[14:19:49] [Server thread/INFO]: [SkQuery] Loading SkQuery v4.1.4
-[14:19:49] [Server thread/INFO]: [PlotSquared] Loading PlotSquared v5.13.11
-[14:19:49] [Server thread/INFO]: [Skellett] Loading Skellett v1.9.11
-[14:19:49] [Server thread/INFO]: [Vixio] Loading Vixio v2.0.7
-[14:19:49] [Server thread/INFO]: [TuSKe] Loading TuSKe v1.8.2
-[14:19:49] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[14:19:49] [Server thread/INFO]: [FastAsyncWorldEdit] Enabling FastAsyncWorldEdit v1.16-621;6476345
-[14:19:49] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
-[14:19:49] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.FAWE_Spigot_v1_16_R3 as the Bukkit adapter
-[14:19:50] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] ************************************************************
-[14:19:50] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] * WARNING - YOU ARE RUNNING AN OUTDATED VERSION OF JAVA.
-[14:19:50] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] * FASTASYNCWORLDEDIT WILL STOP BEING COMPATIBLE WITH THIS VERSION OF
-[14:19:50] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] * JAVA WHEN MINECRAFT 1.17 IS RELEASED.
-[14:19:50] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] *
-[14:19:50] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] * Please update the version of Java to 11. When Minecraft 1.17
-[14:19:50] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] * is released, support for versions of Java prior to 11 will
-[14:19:50] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] * be dropped.
-[14:19:50] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] *
-[14:19:50] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] * Current Java version: 1.8.0_282
-[14:19:50] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] ************************************************************
-[14:19:50] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v3.2.0
-[14:19:50] [Server thread/INFO]: [ViaBackwards] Loading translations...
-[14:19:50] [Server thread/INFO]: [ViaBackwards] Registering protocols...
-[14:19:50] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading 1.13 -> 1.12 mappings...
-[14:19:50] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading 1.13.2 -> 1.13 mappings...
-[14:19:50] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading 1.14 -> 1.13.2 mappings...
-[14:19:50] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading 1.15 -> 1.14 mappings...
-[14:19:50] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading 1.16 -> 1.15 mappings...
-[14:19:51] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading 1.16.2 -> 1.16 mappings...
-[14:19:51] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v1.5.3
-[14:19:51] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.3.0
-[14:19:51] [Server thread/INFO]:         __    
-[14:19:51] [Server thread/INFO]:   |    |__)   LuckPerms v5.3.0
-[14:19:51] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
-[14:19:51] [Server thread/INFO]: 
-[14:19:51] [Server thread/INFO]: [LuckPerms] Loading configuration...
-[14:19:52] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
-[14:19:53] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
-[14:19:53] [Server thread/INFO]: [LuckPerms] Performing initial data load...
-[14:19:53] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 2593ms)
-[14:19:53] [Server thread/INFO]: [PlotSquared] Enabling PlotSquared v5.13.11
-[14:19:53] [Server thread/INFO]: Version is PlotSquared-5.13.11
-[14:19:54] [Server thread/INFO]: [P2] PlotSquared hooked into WorldEdit.
-[14:19:55] [Server thread/INFO]: PlotSquared scripting engine started
-[14:19:55] [Server thread/INFO]: [P2] PlotSquared is now enabled
-[14:19:55] [Server thread/INFO]: [P2] Couldn't verify purchase :(
-[14:19:55] [Server thread/INFO]: [P2] (UUID) Using LuckPerms as a complementary UUID service
-[14:19:55] [Server thread/INFO]: [P2] (UUID) Using Paper as a complementary UUID service
-[14:19:55] [Server thread/INFO]: [P2] (UUID) 0 UUIDs will be cached.
-[14:19:55] [Server thread/INFO]: [P2] Using platform world manager: bukkit
-[14:19:55] [Server thread/INFO]: Preparing level "world"
-[14:19:55] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
-[14:19:55] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[14:19:56] [Server thread/INFO]: Loaded 0 spawn chunks for world world
-[14:19:56] [Server thread/INFO]: Preparing spawn area: 0%
-[14:19:56] [Server thread/INFO]: Preparing spawn area: 0%
-[14:19:56] [Server thread/INFO]: Time elapsed: 818 ms
-[14:19:56] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[14:19:56] [Server thread/INFO]: Loaded 0 spawn chunks for world world_nether
-[14:19:56] [Server thread/INFO]: Time elapsed: 445 ms
-[14:19:56] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[14:19:57] [Server thread/INFO]: Loaded 0 spawn chunks for world world_the_end
-[14:19:57] [Server thread/INFO]: Time elapsed: 356 ms
-[14:19:57] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v3.2.1
-[14:19:57] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v7.0.4+f7ff984
-[14:19:57] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
-[14:19:57] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
-[14:19:57] [Server thread/INFO]: [WorldGuard] (world) Lava fire is PERMITTED.
-[14:19:57] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
-[14:19:57] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
-[14:19:57] [Server thread/INFO]: [WorldGuard] (world_nether) TNT ignition is PERMITTED.
-[14:19:57] [Server thread/INFO]: [WorldGuard] (world_nether) Lighters are PERMITTED.
-[14:19:57] [Server thread/INFO]: [WorldGuard] (world_nether) Lava fire is PERMITTED.
-[14:19:57] [Server thread/INFO]: [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
-[14:19:57] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_nether'
-[14:19:57] [Server thread/INFO]: [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
-[14:19:57] [Server thread/INFO]: [WorldGuard] (world_the_end) Lighters are PERMITTED.
-[14:19:57] [Server thread/INFO]: [WorldGuard] (world_the_end) Lava fire is PERMITTED.
-[14:19:57] [Server thread/INFO]: [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
-[14:19:57] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_the_end'
-[14:19:57] [Server thread/INFO]: [WorldGuard] Loading region data...
-[14:19:58] [Server thread/INFO]: [Skript] Enabling Skript v2.5.3
-[14:19:58] [Server thread/WARN]: [Skript] The following messages have not been translated to german: visual effects.snow_shovel.name, visual effects.sweep_attack.name, inventory actions.place_one, biomes.the_void, attribute types.generic_luck, biomes.snowy_tundra, biomes.deep_warm_ocean, cat types.siamese, entities.zombie priest.name, enchantments.names.fortune, enchantments.names.piercing, biomes.eroded badlands, damage causes.hot_floor, inventory types.stonecutter, visual effects.flash.pattern, enchantments.names.sweeping, difficulties.hard, entities.spotty.name, visual effects.soul.pattern, sound categories.blocks, entities.zombie armorer.name, entities.raider.pattern, entities.fletcher.name, visual effects.magic_crit.pattern, visual effects.coloured_dust.pattern, entities.black rabbit.name, entities.zombie cleric.name, visual effects.guardian_target.name, enchantments.names.smite, visual effects.falling_nectar.pattern, click types.window_border_right, visual effects.landing_lava.name, entities.white llama.pattern, damage causes.dryout, entities.blue parrot.name, visual effects.villager_hearts.pattern, chat styles.show_text, entities.tropical fish.pattern, biomes.modified_gravelly_mountains, attribute types.generic_attack_speed, tree types.acacia.name, resource pack states.accepted, entities.shulker bullet.pattern, entities.oak boat.pattern, spawn reasons.ocelot_baby, inventory types.chest, potions.bad_omen, heal reasons.eating, entities.killer rabbit.pattern, entities.zombie fletcher.name, sound categories.voice, click types.shift_left, entities.birch boat.name, entities.cartographer.pattern, visual effects.angry_villager.pattern, inventory actions.drop_all_slot, visual effects.arrow_particles.name, visual effects.cloud.name, visual effects.entity_poof.name, visual effects.item_crack.name, entities.shulker.pattern, entities.water mob.pattern, visual effects.fireworks_spark.name, visual effects.firework_explode.name, visual effects.lava_drip.name, visual effects.crimson_spore.name, biomes.deep_lukewarm_ocean, visual effects.white_ash.pattern, entities.gray trader llama.name, entities.elder guardian.name, entities.salt and pepper rabbit.pattern, inventory types.cartography, heal reasons.wither_spawn, cat types.all_black, visual effects.villager_hearts.name, entities.tipped arrow.pattern, inventory types.furnace, entities.red parrot.name, inventory types.beacon, visual effects.water_wake.pattern, potions.levitation, entities.pillager.pattern, visual effects.hurt_explosion.name, entities.zombie fisherman.name, types.fireworktype, biomes.nether_wastes, visual effects.coloured_dust.name, visual effects.angry_villager.name, chat styles.open_url, entities.spellcaster.name, potions.glowing, entities.dasher.name, types.blockdata, entities.angry bee.name, biomes.ice_spikes, entities.animal.name, resource pack states.successfully_loaded, attribute types.generic_follow_range, entities.cleric.pattern, visual effects.dolphin.pattern, inventory types.dropper, resource pack states.failed_download, entities.turtle.name, entities.zombie leatherworker.pattern, entities.spectral arrow.name, entities.large fireball.name, biomes.snowy_mountains, entities.kob.pattern, tree types.acacia.pattern, entities.zombie librarian.name, difficulties.peaceful, visual effects.witch_magic.pattern, potions.luck, cat types.persian, entities.red mooshroom.name, entities.birch boat.pattern, visual effects.hurt_explosion.pattern, spawn reasons.explosion, commands.multiple players start with, visual effects.sneeze.name, genes.aggressive, entities.water mob.name, entities.golem.pattern, visual effects.sweep_attack.pattern, entities.blockfish.pattern, entities.armorer.pattern, types.soundcategory, entities.black rabbit.pattern, inventory types.workbench, inventory types.player, entities.brown trader llama.pattern, inventory actions.pickup_all, entities.salt and pepper rabbit.name, entities.snow fox.pattern, click types.creative, entities.salmon.name, entities.brown mooshroom.name, inventory actions.nothing, visual effects.area_expression, teleport causes.command, entities.spectral arrow.pattern, entities.jungle boat.name, entities.zombie toolsmith.pattern, visual effects.slime.pattern, entities.angry bee.pattern, entities.raider.name, visual effects.snow_shovel.pattern, inventory actions.move_to_other_inventory, chat styles.change_page, updater.updater disabled, visual effects.witch_spell.pattern, visual effects.falling_nectar.name, enchantments.names.efficiency, visual effects.shield_block.pattern, enchantments.names.quick_charge, visual effects.flash.name, entities.brinely.name, visual effects.splash.name, entities.flopper.name, entities.husk.pattern, entities.black and white rabbit.pattern, entities.flopper.pattern, entities.zoglin.pattern, genes.worried, biomes.giant_tree_taiga_hills, entities.monster.pattern, entities.armorer.name, visual effects.explosion_large.name, types.vector, visual effects.dragon_breath.name, enchantments.names.depth_strider, spawn reasons.slime_split, entities.spellcaster.pattern, biomes.bamboo_jungle, spawn reasons.build_irongolem, entities.zombie weaponsmith.name, cat types.white, visual effects.squid_ink.name, entities.strider.name, genes.normal, tree types.dark_oak.pattern, entities.zombie shepherd.pattern, biomes.swamp, visual effects.shield_break.pattern, entities.clayfish.name, types.cattype, attribute types.generic_knockback_resistance, visual effects.lava_drip.pattern, visual effects.arrow_particles.pattern, spawn reasons.bed, entities.wandering trader.pattern, tree types.mega_redwood.name, tree types.cocoa_tree.name, entities.leash hitch.pattern, entities.weaponsmith.name, entities.llama spit.name, entities.fish hook.name, entities.toolsmith.pattern, biomes.wooded_hills, entities.happy bee.pattern, enchantments.names.multishot, spawn reasons.patrol, chat styles.run_command, entities.cyan parrot.name, entities.shulker bullet.name, entities.white rabbit.name, click types.shift_right, entities.tipped arrow.name, inventory types.anvil, entities.panda.pattern, visual effects.witch_magic.name, visual effects.snowball_break.pattern, entities.damageable.name, visual effects.water_drop.pattern, visual effects.spit.pattern, biomes.giant_spruce_taiga, biomes.mushroom_fields, visual effects.zombie_transform.pattern, tree types.birch.name, entities.no nectar bee.name, biomes.deep_cold_ocean, entities.gray llama.pattern, cat types.red, visual effects.iron_golem_rose.pattern, skript command.help.gen-docs, visual effects.footstep.pattern, visual effects.landing_lava.pattern, entities.nectar bee.name, potions.hero_of_the_village, biomes.end_barrens, entities.bee.pattern, genes.lazy, entities.gray trader llama.pattern, biomes.gravelly_mountains, types.gene, enchantments.names.riptide, inventory types.smithing, entities.zombie cartographer.name, visual effects.snowball_break.name, inventory types.merchant, inventory actions.swap_with_cursor, biomes.nether, spawn reasons.trap, biomes.deep_frozen_ocean, inventory actions.hotbar_swap, inventory types.grindstone, aliases.useless variation, heal reasons.ender_crystal, biomes.lukewarm_ocean, entities.glitter.name, aliases.invalid minecraft id, entities.zombie villager.name, entities.evoker.name, visual effects.explosion_huge.pattern, entities.mob.name, visual effects.mob_appearance.pattern, skript command.help.test, entities.shulker.name, entities.trident.name, spawn reasons.raid, entities.llama.name, visual effects.campfire_cosy_smoke.name, visual effects.thorns_hurt.name, attribute types.horse_jump_strength, enchantments.names.projectile_protection, entities.brown llama.pattern, entities.drowned.pattern, visual effects.squid_rotate.pattern, spawn reasons.village_invasion, entities.dragon fireball.name, entities.brown trader llama.name, inventory actions.collect_to_cursor, biomes.dark_forest_hills, aliases.invalid tags, visual effects.instant_spell.pattern, visual effects.armor_stand_hit.name, inventory actions.drop_one_cursor, visual effects.particle_smoke.pattern, visual effects.falling_obsidian_tear.pattern, entities.mob.pattern, visual effects.current_down.name, visual effects.totem_resurrect.name, visual effects.rabbit_jump.pattern, difficulties.easy, biomes.shattered_savanna, biomes.the_end, entities.betty.pattern, entities.fox.name, cat types.jellie, visual effects.happy_villager.name, visual effects.large_smoke.pattern, enchantments.names.protection, types.healreason, entities.armor stand.name, heal reasons.custom, visual effects.water_bubble.pattern, entities.endermite.pattern, entities.red fox.pattern, spawn reasons.jockey, damage causes.fly_into_wall, visual effects.sneeze.pattern, visual effects.love_hearts.name, entities.normal guardian.pattern, entities.illusioner.pattern, entities.piglin.name, biomes.basalt_deltas, entities.cyan parrot.pattern, biomes.tall_birch_forest, entities.brown rabbit.name, visual effects.spell.name, visual effects.flame.pattern, visual effects.rabbit_jump.name, visual effects.ash.pattern, visual effects.shield_block.name, resource pack states.declined, visual effects.bubble_pop.pattern, biomes.swamp_hills, visual effects.large_smoke.name, spawn reasons.build_snowman, types.gamerule, entities.sunstreak.name, visual effects.end_rod.name, attribute types.generic_flying_speed, tree types.tall_birch.pattern, entities.gray parrot.name, sound categories.records, cat types.british_shorthair, entities.zombie butcher.pattern, spawn reasons.default, entities.husk.name, attribute types.zombie_spawn_reinforcements, entities.any boat.name, cat types.ragdoll, enchantments.names.bane_of_arthropods, entities.zombie nitwit.name, click types.right, entities.zombie armorer.pattern, visual effects.iron_golem_sheath.pattern, visual effects.explosion_large.pattern, visual effects.instant_spell.name, inventory types.blast_furnace, difficulties.normal, visual effects.water_wake.name, visual effects.firework_explode.pattern, spawn reasons.spawner_egg, inventory actions.drop_all_cursor, visual effects.footstep.name, biomes.wooded_badlands_plateau, entities.gray parrot.pattern, visual effects.note.pattern, visual effects.composter.pattern, inventory types.creative, click types.control_drop, visual effects.item_crack.pattern, visual effects.landing_obsidian_tear.pattern, enchantments.names.looting, entities.white rabbit.pattern, enchantments.names.respiration, entities.dolphin.name, visual effects.villager_entity_happy.pattern, enchantments.names.luck_of_the_sea, spawn reasons.dispense_egg, visual effects.water_drip.pattern, entities.snooper.name, teleport causes.chorus_fruit, enchantments.names.feather_falling, entities.chested horse.pattern, heal reasons.satiated, teleport causes.spectate, entities.bee.name, biomes.modified_jungle_edge, entities.fisherman.name, spawn reasons.ender_pearl, enchantments.names.blast_protection, visual effects.campfire_signal_smoke.pattern, biomes.snowy_taiga_mountains, visual effects.lava_pop.pattern, click types.swap_offhand, spawn reasons.nether_portal, visual effects.falling_honey.pattern, entities.red fox.name, spawn reasons.silverfish_block, visual effects.particle_smoke.name, visual effects.slime.name, entities.green parrot.name, visual effects.block_break.pattern, heal reasons.wither, types.difficulty, biomes.badlands_plateau, entities.vindicator.pattern, visual effects.portal.name, sound categories.players, types.metadataholder, entities.polar bear.name, visual effects.thorns_hurt.pattern, visual effects.crit.name, chat styles.obfuscated, visual effects.damage_indicator.pattern, entities.kob.name, visual effects.falling_dust.name, visual effects.dripping_honey.pattern, entities.stray.pattern, entities.zombie cleric.pattern, damage causes.cramming, click types.middle, entities.leatherworker.pattern, entities.rabbit.name, entities.snow fox.name, entities.acacia boat.pattern, types.spawnreason, entities.black and white rabbit.name, entities.dasher.pattern, biomes.modified_jungle, attribute types.generic_armor_toughness, entities.jungle boat.pattern, entities.vex.pattern, biomes.modified_wooded_badlands_plateau, visual effects.warped_spore.pattern, skript command.info.version, entities.mason.pattern, biomes.giant_spruce_taiga_hills, types.teleportcause, attribute types.generic_movement_speed, biomes.warm_ocean, inventory types.ender_chest, visual effects.bubble_column_up.pattern, sound categories.hostile, entities.zombie fletcher.pattern, damage causes.dragon_breath, potions.dolphins_grace, entities.parrot.pattern, entities.zombie librarian.pattern, visual effects.shield_break.name, entities.trader llama.name, spawn reasons.drowned, visual effects.portal.pattern, visual effects.void_fog.pattern, visual effects.witch_spell.name, chat styles.insertion, entities.brown rabbit.pattern, enchantments.names.flame, entities.zoglin.name, click types.window_border_left, spawn reasons.custom, entities.ravager.pattern, entities.brinely.pattern, entities.betty.name, visual effects.totem.name, enchantments.names.channeling, entities.fisherman.pattern, visual effects.magic_crit.name, sound categories.neutral, spawn reasons.shoulder_entity, entities.llama.pattern, cat types.tabby, entities.glitter.pattern, entities.strider.pattern, entities.creamy llama.name, entities.vex.name, entities.clayfish.pattern, entities.area effect cloud.name, teleport causes.end_gateway, entities.evoker fangs.pattern, visual effects.lava_pop.name, inventory types.smoker, entities.command minecart.name, entities.panda.name, inventory types.shulker_box, biomes.small_end_islands, visual effects.barrier.pattern, inventory actions.clone_stack, entities.chested horse.name, spawn reasons.infection, visual effects.block_dust.pattern, visual effects.flying_glyph.name, tree types.tall_birch.name, visual effects.dripping_honey.name, entities.piglin.pattern, visual effects.reverse_portal.pattern, entities.normal.pattern, cat types.calico, teleport causes.unknown, visual effects.zombie_transform.name, entities.tropical fish.name, genes.playful, inventory actions.unknown, spawn reasons.sheared, teleport causes.plugin, entities.blockfish.name, damage causes.entity_sweep_attack, entities.zombie leatherworker.name, entities.stray.name, teleport causes.end_portal, attribute types.generic_max_health, entities.guardian.name, entities.animal.pattern, entities.snooper.pattern, visual effects.suspended.name, biomes.snowy_taiga, entities.creamy trader llama.pattern, visual effects.end_rod.pattern, entities.zombie mason.pattern, entities.wandering trader.name, visual effects.potion_swirl_transparent.name, entities.spruce boat.pattern, entities.any boat.pattern, inventory actions.pickup_one, potions.slow_falling, biomes.mountains, biomes.modified_badlands_plateau, types.fireworkeffect, entities.zombie blacksmith.pattern, attribute types.generic_attack_knockback, entities.leash hitch.name, biomes.mushroom_field_shore, entities.large fireball.pattern, visual effects.bubble_column_up.name, visual effects.soul_fire_flame.name, attribute types.generic_attack_damage, visual effects.water_bubble.name, entities.puffer fish.name, tree types.cocoa_tree.pattern, entities.gold rabbit.name, visual effects.heart.name, entities.creamy trader llama.name, visual effects.happy_villager.pattern, inventory actions.place_all, biomes.wooded_mountains, types.resourcepackstate, biomes.dark_forest, entities.brown mooshroom.pattern, entities.toolsmith.name, chat styles.suggest_command, visual effects.crimson_spore.pattern, visual effects.reverse_portal.name, sound categories.ambient, types.material, visual effects.campfire_cosy_smoke.pattern, visual effects.villager_entity_happy.name, entities.illager.pattern, visual effects.falling_water.pattern, entities.acacia boat.name, entities.oak boat.name, entities.creamy llama.pattern, entities.command minecart.pattern, visual effects.nautilus.name, types.persistentdataholder, entities.cleric.name, visual effects.iron_golem_sheath.name, biomes.badlands, inventory types.enchanting, visual effects.spit.name, entities.rabbit.pattern, visual effects.damage_indicator.name, types.inventoryaction, inventory types.hopper, entities.damageable.pattern, spawn reasons.lightning, entities.stripey.pattern, spawn reasons.build_wither, sound categories.weather, inventory types.barrel, entities.illusioner.name, inventory types.loom, visual effects.falling_obsidian_tear.name, visual effects.landing_obsidian_tear.name, click types.double_click, visual effects.small_smoke.name, types.gamerulevalue, visual effects.nautilus.pattern, biomes.bamboo_jungle_hills, biomes.giant_tree_taiga, aliases.outside section, visual effects.landing_honey.name, types.potioneffect, inventory actions.pickup_half, entities.red mooshroom.pattern, entities.nitwit.name, entities.area effect cloud.pattern, entities.zombie blacksmith.name, visual effects.heart.pattern, firework types.ball, teleport causes.ender_pearl, visual effects.flame.name, visual effects.dripping_obsidian_tear.pattern, aliases.empty name, tree types.birch.pattern, firework types.creeper, visual effects.current_down.pattern, visual effects.white_ash.name, enchantments.names.unbreaking, entities.zombie weaponsmith.pattern, spawn reasons.chunk_gen, spawn reasons.village_defense, biomes.snowy_beach, visual effects.villager_entity_angry.name, entities.mason.name, entities.any horse.pattern, inventory types.lectern, entities.phantom.pattern, visual effects.potion_swirl_transparent.pattern, biomes.tall_birch_hills, entities.endermite.name, visual effects.love_hearts.pattern, spawn reasons.breeding, visual effects.dolphin.name, teleport causes.nether_portal, entities.angry nectar bee.name, firework types.star, entities.drowned.name, spawn reasons.mount, entities.golem.name, commands.no player starts with, entities.white trader llama.name, biomes.end_highlands, visual effects.warped_spore.name, inventory actions.drop_one_slot, sound categories.music, entities.zombie farmer.pattern, entities.piglin brute.name, biomes.soul_sand_valley, visual effects.villager_entity_angry.pattern, entities.llama spit.pattern, entities.stripey.name, enchantments.names.soul_speed, entities.zombie mason.name, visual effects.block_dust.name, visual effects.hurt_drown.pattern, enchantments.names.infinity, genes.weak, inventory types.crafting, entities.fox.pattern, spawn reasons.spawner, visual effects.flying_glyph.pattern, visual effects.explosion.pattern, biomes.desert_lakes, entities.zombie butcher.name, entities.dark oak boat.name, tree types.mega_redwood.pattern, click types.number_key, enchantments.names.frost_walker, visual effects.guardian_target.pattern, visual effects.void_fog.name, entities.weaponsmith.pattern, visual effects.falling_lava.pattern, entities.zombie toolsmith.name, entities.zombie priest.pattern, enchantments.names.loyalty, entities.parrot.name, types.inventorytype, entities.normal guardian.name, entities.dolphin.pattern, entities.shepherd.pattern, biomes.mountain_edge, visual effects.totem_resurrect.pattern, visual effects.bubble_pop.name, enchantments.names.mending, visual effects.small_smoke.pattern, genes.brown, sound categories.master, enchantments.names.sharpness, entities.turtle.pattern, visual effects.splash.pattern, visual effects.water_drop.name, entities.evoker fangs.name, types.enchantmentoffer, spawn reasons.egg, types.cachedservericon, biomes.snowy_taiga_hills, visual effects.explosion.name, entities.any horse.name, visual effects.entity_poof.pattern, entities.zombie nitwit.pattern, visual effects.falling_lava.name, entities.illager.name, entities.shepherd.name, firework types.ball_large, visual effects.potion_swirl.pattern, entities.no nectar bee.pattern, biomes.end_midlands, potions.conduit_power, entities.hoglin.pattern, entities.sunstreak.pattern, biomes.cold_ocean, click types.unknown, entities.ravager.name, click types.drop, heal reasons.regen, firework types.burst, visual effects.barrier.name, entities.killer rabbit.name, entities.elder guardian.pattern, visual effects.crit.pattern, inventory actions.hotbar_move_and_readd, entities.guardian.pattern, entities.trader llama.pattern, visual effects.totem.pattern, spawn reasons.beehive, entities.cod.pattern, entities.white llama.name, inventory actions.pickup_some, entities.dragon fireball.pattern, potions.unluck, entities.piglin brute.pattern, entities.red parrot.pattern, spawn reasons.natural, types.attributetype, biomes.warped_forest, heal reasons.magic, visual effects.spell.pattern, entities.hoglin.name, enchantments.names.aqua_affinity, types.clicktype, enchantments.names.punch, visual effects.suspended.pattern, entities.gray llama.name, biomes.stone_shore, cat types.black, visual effects.explosion_huge.name, visual effects.ash.name, entities.cartographer.name, enchantments.names.vanishing_curse, entities.spruce boat.name, entities.puffer fish.pattern, entities.happy bee.name, visual effects.note.name, visual effects.squid_ink.pattern, entities.phantom.name, entities.spotty.pattern, skript command.info.server, visual effects.falling_dust.pattern, visual effects.falling_honey.name, enchantments.names.power, entities.salmon.pattern, entities.zombie villager.pattern, entities.zombie fisherman.pattern, inventory types.dispenser, visual effects.hurt_drown.name, visual effects.falling_water.name, entities.polar bear.pattern, aliases.not enough brackets, entities.dark oak boat.pattern, entities.vindicator.name, entities.blue parrot.pattern, visual effects.landing_honey.pattern, visual effects.fireworks_spark.pattern, entities.green parrot.pattern, aliases.too many brackets, skript command.info.addons, entities.brown llama.name, visual effects.dragon_breath.pattern, spawn reasons.cured, attribute types.generic_armor, entities.trident.pattern, inventory actions.place_some, visual effects.cloud.pattern, enchantments.names.fire_protection, entities.normal.name, visual effects.soul_fire_flame.pattern, biomes.shattered_savanna_plateau, aliases.invalid variation section, visual effects.block_break.name, entities.pillager.name, entities.angry nectar bee.pattern, entities.white trader llama.pattern, entities.zombie cartographer.pattern, visual effects.potion_swirl.name, biomes.crimson_forest, visual effects.composter.name, entities.fletcher.pattern, click types.left, updater.custom version, visual effects.soul.name, entities.nitwit.pattern, spawn reasons.reinforcements, enchantments.names.impaling, entities.monster.name, entities.leatherworker.name, visual effects.squid_rotate.name, visual effects.armor_stand_hit.pattern, entities.gold rabbit.pattern, entities.fish hook.pattern, entities.nectar bee.pattern, tree types.dark_oak.name, biomes.eroded_badlands, enchantments.names.binding_curse, entities.cod.name, entities.evoker.pattern, inventory types.brewing, entities.zombie farmer.name, visual effects.iron_golem_rose.name, visual effects.campfire_signal_smoke.name, heal reasons.magic_regen, visual effects.mob_appearance.name, entities.zombie shepherd.name, visual effects.water_drip.name, visual effects.dripping_obsidian_tear.name, entities.armor stand.pattern
-[14:19:58] [Server thread/INFO]: [Skript] You're currently running a custom Skript version. No updates will be automatically installed.
-[14:20:04] [Server thread/INFO]: [Skript] Loaded 128260 aliases in 6133ms
-[14:20:05] [pool-18-thread-1/INFO]: [P2] (UUID) PlotSquared will fetch UUIDs in groups of 200
-[14:20:05] [pool-18-thread-1/INFO]: [P2] (UUID) PlotSquared has cached all UUIDs
-[14:20:05] [Server thread/INFO]: [Skript]  ~ erstellt von & © Peter Güttinger alias Njol ~
-[14:20:05] [Server thread/INFO]: [skUtilities] Enabling skUtilities v0.9.2*
-[14:20:05] [Server thread/INFO]: [skUtilities] v0.9.2: loaded modules (Conversions, Files, Yaml, Urls, Utilities) in 88ms
-[14:20:05] [Server thread/INFO]: [SkQuery] Enabling SkQuery v4.1.4
-[14:20:05] [Server thread/INFO]: [skQuery] Locating classes from SkQuery...
-[14:20:05] [Server thread/INFO]: [skQuery] Beginning to process a total of 138 from SkQuery
-[14:20:05] [Server thread/INFO]: [skQuery] Out of 138 classes, 136 classes were loaded from SkQuery
-[14:20:05] [Server thread/INFO]: [Skellett] Enabling Skellett v1.9.11
-[14:20:06] [Server thread/INFO]: [Skellett] Registered 47 Effects, 16 Conditions, 128 Expressions and 25 Events
-[14:20:06] [Server thread/INFO]: [Skellett] Has been enabled!
-[14:20:06] [Server thread/INFO]: [Vixio] Enabling Vixio v2.0.7*
-[14:20:07] [Server thread/INFO]: [TuSKe] Enabling TuSKe v1.8.2*
-[14:20:07] [Server thread/INFO]: [TuSKe] Enabling Metrics... Done!
-[14:20:07] [Server thread/INFO]: [TuSKe] Check for updates enabled. It will check in some seconds.
-[14:20:07] [Server thread/INFO]: [TuSKe] Documentation enabled. Some files containing all syntax of all addons will be generated.
-[14:20:07] [Server thread/INFO]: [TuSKe]  
-[14:20:07] [Server thread/INFO]: [TuSKe]  A special thanks for donators:
-[14:20:07] [Server thread/INFO]: [TuSKe]  @X0Freak - 50$
-[14:20:07] [Server thread/INFO]: [TuSKe]  @RepublicanSensei - 10$
-[14:20:07] [Server thread/INFO]: [TuSKe]  
-[14:20:07] [Server thread/ERROR]: #!#! 
-[14:20:07] [Server thread/ERROR]: #!#! [Skript] Severe Error:
-[14:20:07] [Server thread/ERROR]: #!#! TuSKe's class com.github.tukenuke.tuske.effects.EffMakeDrop generated an exception while loading
-[14:20:07] [Server thread/ERROR]: #!#! 
-[14:20:07] [Server thread/ERROR]: #!#! Something went horribly wrong with Skript.
-[14:20:07] [Server thread/ERROR]: #!#! This issue is NOT your fault! You probably can't fix it yourself, either.
-[14:20:07] [Server thread/ERROR]: #!#! It looks like you are using some plugin(s) that alter how Skript works (addons).
-[14:20:07] [Server thread/ERROR]: #!#! Following plugins are probably related to this error in some way:
-[14:20:07] [Server thread/ERROR]: #!#! TuSKe (github.com/Tuke-Nuke/TuSKe) 
-[14:20:07] [Server thread/ERROR]: #!#! You should try disabling those plugins one by one, trying to find which one causes it.
-[14:20:07] [Server thread/ERROR]: #!#! If the error doesn't disappear even after disabling all listed plugins, it is probably Skript issue.
-[14:20:07] [Server thread/ERROR]: #!#! In that case, you will be given instruction on how should you report it.
-[14:20:07] [Server thread/ERROR]: #!#! On the other hand, if the error disappears when disabling some plugin, report it to author of that plugin.
-[14:20:07] [Server thread/ERROR]: #!#! Only if the author tells you to do so, report it to Skript's issue tracker.
-[14:20:07] [Server thread/ERROR]: #!#! 
-[14:20:07] [Server thread/ERROR]: #!#! Stack trace:
-[14:20:07] [Server thread/ERROR]: #!#! java.lang.NullPointerException
-[14:20:07] [Server thread/ERROR]: #!#!     at com.github.tukenuke.tuske.effects.EffMakeDrop.<clinit>(EffMakeDrop.java:25)
-[14:20:07] [Server thread/ERROR]: #!#!     at java.lang.Class.forName0(Native Method)
-[14:20:07] [Server thread/ERROR]: #!#!     at java.lang.Class.forName(Class.java:348)
-[14:20:07] [Server thread/ERROR]: #!#!     at ch.njol.skript.SkriptAddon.loadClasses(SkriptAddon.java:107)
-[14:20:07] [Server thread/ERROR]: #!#!     at com.github.tukenuke.tuske.TuSKe.onEnable(TuSKe.java:100)
-[14:20:07] [Server thread/ERROR]: #!#!     at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263)
-[14:20:07] [Server thread/ERROR]: #!#!     at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:380)
-[14:20:07] [Server thread/ERROR]: #!#!     at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:483)
-[14:20:07] [Server thread/ERROR]: #!#!     at org.bukkit.craftbukkit.v1_16_R3.CraftServer.enablePlugin(CraftServer.java:501)
-[14:20:07] [Server thread/ERROR]: #!#!     at org.bukkit.craftbukkit.v1_16_R3.CraftServer.enablePlugins(CraftServer.java:415)
-[14:20:07] [Server thread/ERROR]: #!#!     at net.minecraft.server.v1_16_R3.MinecraftServer.loadWorld(MinecraftServer.java:468)
-[14:20:07] [Server thread/ERROR]: #!#!     at net.minecraft.server.v1_16_R3.DedicatedServer.init(DedicatedServer.java:241)
-[14:20:07] [Server thread/ERROR]: #!#!     at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:943)
-[14:20:07] [Server thread/ERROR]: #!#!     at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:177)
-[14:20:07] [Server thread/ERROR]: #!#!     at java.lang.Thread.run(Thread.java:748)
-[14:20:07] [Server thread/ERROR]: #!#! 
-[14:20:07] [Server thread/ERROR]: #!#! Version Information:
-[14:20:07] [Server thread/ERROR]: #!#!   Skript: 2.5.3 (custom version)
-[14:20:07] [Server thread/ERROR]: #!#!     Flavor: selfbuilt-unknown
-[14:20:07] [Server thread/ERROR]: #!#!     Date: unknown
-[14:20:07] [Server thread/ERROR]: #!#!   Bukkit: 1.16.5-R0.1-SNAPSHOT
-[14:20:07] [Server thread/ERROR]: #!#!   Minecraft: 1.16.5
-[14:20:07] [Server thread/ERROR]: #!#!   Java: 1.8.0_282 (OpenJDK 64-Bit Server VM 25.282-b08)
-[14:20:07] [Server thread/ERROR]: #!#!   OS: Linux amd64 5.4.0-66-generic
-[14:20:07] [Server thread/ERROR]: #!#! 
-[14:20:07] [Server thread/ERROR]: #!#! Server platform: Paper
-[14:20:07] [Server thread/ERROR]: #!#! 
-[14:20:07] [Server thread/ERROR]: #!#! Current node: null
-[14:20:07] [Server thread/ERROR]: #!#! Current item: null
-[14:20:07] [Server thread/ERROR]: #!#! 
-[14:20:07] [Server thread/ERROR]: #!#! Thread: Server thread
-[14:20:07] [Server thread/ERROR]: #!#! 
-[14:20:07] [Server thread/ERROR]: #!#! Language: german
-[14:20:07] [Server thread/ERROR]: #!#! Link parse mode: STRICT
-[14:20:07] [Server thread/ERROR]: #!#! 
-[14:20:07] [Server thread/ERROR]: #!#! End of Error.
-[14:20:07] [Server thread/ERROR]: #!#! 
-[14:20:07] [Server thread/WARN]: [Skript] Undefined gender 'an' at types.inventorytype
-[14:20:07] [Server thread/WARN]: [Skript] Undefined gender 'a' at types.clicktype
-[14:20:07] [Server thread/WARN]: [Skript] Undefined gender 'an' at types.inventoryaction
-[14:20:07] [Server thread/INFO]: [TuSKe] Loaded 8 events, 12 conditions, 20 effects, 62 expressions and 0 types. Have fun!
-[14:20:07] [Server thread/INFO]: Running delayed init tasks
-[14:20:07] [Server thread/WARN]: [FastAsyncWorldEdit] Loaded class com.sk89q.worldguard.protection.association.RegionAssociable from WorldGuard v7.0.4+f7ff984 which is not a depend, softdepend or loadbefore of this plugin.
-[14:20:07] [Server thread/WARN]: [FastAsyncWorldEdit] Loaded class com.plotsquared.core.util.RegionManager from PlotSquared v5.13.11 which is not a depend, softdepend or loadbefore of this plugin.
-[14:20:07] [Server thread/INFO]: [com.boydti.fawe.bukkit.FaweBukkit] Plugin 'PlotSquared' found. Using it now.
-[14:20:07] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.16.4(754)
-[14:20:07] [Server thread/INFO]: [Skript] Loading variables...
-[14:20:07] [Server thread/INFO]: [Skript] Loaded 52 variables in 0.0 seconds
-[14:20:08] [Server thread/WARN]: [Skript] Possible name conflict of variables {website} and {%arg-1%} (there might be more conflicts). (main.sk, line 112: message {website}')
-[14:20:08] [Server thread/WARN]: [Skript] Possible name conflict of variables {wiki} and {%arg-1%} (there might be more conflicts). (main.sk, line 125: message {wiki}')
-[14:20:08] [Server thread/WARN]: [Skript] Possible name conflict of variables {dynmap} and {%arg-1%} (there might be more conflicts). (main.sk, line 139: send formatted "&3Die Dynmap ist erreichbar unter: &f<link:%{dynmap}%>%{dynmap}%"')
-[14:20:08] [Server thread/WARN]: [Skript] Possible name conflict of variables {prefix} and {%arg-1%} (there might be more conflicts). (main.sk, line 194: send formatted "%{prefix}% &7Dir werden nun die vollständigen Plotgrenzen angezeigt"')
-[14:20:08] [Server thread/ERROR]: [Skript] can't understand this event: 'every 4 seconds in "test"' (main.sk, line 208: every 4 seconds in "test":')
-[14:20:08] [Server thread/WARN]: [Skript] Possible name conflict of variables {serverip} and {%arg-1%} (there might be more conflicts). (main.sk, line 264: send formatted "&4&lErsteinmal, Herzlich Willkommen auf &l<tooltip:Unserem Server trittst du am besten durch die Direkte-Verbindung mit &l%{serverip}%&r her. Solltest du öfter spielen kannst du auch einen Eintrag für uns in deiner Serverliste erstellen, nutze hierfür auch ausschließlich die IP &l%{serverip}%.&r &cNutze keine Portnummern!>%{serverip}%<reset>&4&l!"')
-[14:20:12] [Server thread/WARN]: [Skript] Possible name conflict of variables {format} and {%arg-1%} (there might be more conflicts). (main.sk, line 430: replace "th/"  in {_format} with "%{_hour}%"')
-[14:20:12] [Server thread/INFO]: [Skript] 1 Skript mit insgesamt 4 Triggern und 25 Befehlen wurden in 5.1 Sekunden geladen
-[14:20:12] [Server thread/INFO]: [Skript] Laden abgeschlossen.
-[14:20:12] [Server thread/INFO]: [P2] Detected world load for 'test'
-[14:20:12] [Server thread/INFO]: [P2]  - default flags:  None
-[14:20:12] [Server thread/INFO]: [P2]  - road flags:  None
-[14:20:12] [Server thread/INFO]: [P2]  - generator: null>PlotSquared
-[14:20:12] [Server thread/INFO]: [P2]  - plotworld: test
-[14:20:12] [Server thread/INFO]: [P2]  - plotAreaManager: com.plotsquared.core.generator.HybridPlotManager@794c036
-[14:20:12] [Server thread/INFO]: Preparing start region for dimension minecraft:test
-[14:20:12] [Server thread/INFO]: Loaded 0 spawn chunks for world test
-[14:20:13] [Server thread/INFO]: Preparing spawn area: 0%
-[14:20:13] [Server thread/INFO]: Preparing spawn area: 0%
-[14:20:14] [Server thread/INFO]: Preparing spawn area: 27%
-[14:20:14] [Server thread/INFO]: Time elapsed: 1438 ms
-[14:20:14] [Server thread/INFO]: [WorldGuard] (test) TNT ignition is PERMITTED.
-[14:20:14] [Server thread/INFO]: [WorldGuard] (test) Lighters are PERMITTED.
-[14:20:14] [Server thread/INFO]: [WorldGuard] (test) Lava fire is PERMITTED.
-[14:20:14] [Server thread/INFO]: [WorldGuard] (test) Fire spread is UNRESTRICTED.
-[14:20:14] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'test'
-[14:20:14] [Server thread/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor!
-[14:20:14] [Server thread/INFO]: Done (33.556s)! For help, type "help"
-[14:20:14] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] ************************************************************
-[14:20:14] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * WARNING - YOU ARE RUNNING AN OUTDATED VERSION OF JAVA.
-[14:20:14] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * PAPER WILL STOP BEING COMPATIBLE WITH THIS VERSION OF
-[14:20:14] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * JAVA WHEN MINECRAFT 1.17 IS RELEASED.
-[14:20:14] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] *
-[14:20:14] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * Please update the version of Java you use to run Paper
-[14:20:14] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * to at least Java 11. When Paper for Minecraft 1.17 is
-[14:20:14] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * released support for versions of Java before 11 will
-[14:20:14] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * be dropped.
-[14:20:14] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] *
-[14:20:14] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * Current Java version: 1.8.0_282
-[14:20:14] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] *
-[14:20:14] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * Check this forum post for more information: 
-[14:20:14] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] *   https://papermc.io/java11
-[14:20:14] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] ************************************************************
-[14:20:14] [Server thread/INFO]: Timings Reset
-[14:20:14] [Craft Scheduler Thread - 1/INFO]: [TuSKe] Checking for latest update...
-[14:20:15] [Craft Scheduler Thread - 1/INFO]: [TuSKe] No new update was found!
-[14:20:17] [Craft Scheduler Thread - 1/INFO]: [TuSKe] Generating documentation of Skript & Addons.
-[14:20:18] [Craft Scheduler Thread - 1/INFO]: [TuSKe] Documentation was generated successfully.
-[14:20:19] [User Authenticator #1/INFO]: UUID of player AnderCrafterYT is 374c4bc4-ab54-43eb-8795-5e2389b25d4f
-[14:20:19] [Server thread/INFO]: AnderCrafterYT joined the game
-[14:20:20] [Server thread/INFO]: AnderCrafterYT[/91.67.77.18:53088] logged in with entity id 347 at ([test]-65.37105396453319, 107.56673494340491, 10.823548094281481)
-[14:20:26] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
-[14:20:26] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
-[14:20:38] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[14:20:48] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
-[14:20:48] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
-[14:23:30] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[14:23:35] [Server thread/WARN]: AnderCrafterYT moved too quickly! 0.0,-17.97192001058623,0.0
-[14:24:50] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[14:24:55] [Server thread/WARN]: [Skellett] Loaded class org.json.JSONObject from SkQuery v4.1.4 which is not a depend, softdepend or loadbefore of this plugin.
-[14:24:56] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[14:25:59] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[14:26:37] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[14:28:11] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[14:28:49] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[14:29:12] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[14:29:37] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[14:31:22] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[14:31:27] [Server thread/WARN]: AnderCrafterYT moved too quickly! -8.60010023497934,5.486858325308972,-7.539997719419226
-[14:33:35] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[14:35:19] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[14:38:14] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[14:38:44] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[14:39:33] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[14:40:42] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[14:41:26] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[14:41:57] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
-[14:41:57] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
-[14:41:58] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
-[14:41:58] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
-[14:47:56] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[14:49:52] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[15:10:35] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[15:11:27] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[15:13:12] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[15:14:15] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[15:14:19] [Server thread/WARN]: AnderCrafterYT moved too quickly! 0.0,-10.018645238201032,0.0
-[15:15:14] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[15:15:18] [Server thread/WARN]: AnderCrafterYT moved too quickly! 0.0,-18.53753503674588,0.0
-[15:17:06] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[15:19:16] [Server thread/INFO]: AnderCrafterYT issued server command: /time set day
-[15:19:16] [Server thread/INFO]: [AnderCrafterYT: Set the time to 1000]
-[15:19:58] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[15:20:48] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[15:21:41] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[15:22:59] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[15:23:50] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[15:24:05] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[15:24:39] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[15:26:06] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[15:28:19] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[15:28:44] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[15:28:57] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[15:29:27] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[15:30:27] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[15:31:36] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
-[15:31:48] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
-[15:31:48] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
-[15:31:51] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
-[15:31:51] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
-[15:31:55] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
-[15:31:55] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
-[15:31:59] [Server thread/INFO]: AnderCrafterYT issued server command: /chunktooltip
-[15:31:59] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /chunktooltip
-[15:33:35] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
+[10:17:41] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[10:17:41] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[10:17:42] [Worker-Main-1/INFO]: Loaded 7 recipes
+[10:17:43] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[10:17:43] [Server thread/INFO]: Loading properties
+[10:17:43] [Server thread/INFO]: This server is running Paper version git-Paper-547 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
+[10:17:43] [Server thread/INFO]: Debug logging is disabled
+[10:17:43] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[10:17:43] [Server thread/INFO]: Using 4 threads for Netty based IO
+[10:17:43] [Server thread/INFO]: Default game type: SURVIVAL
+[10:17:43] [Server thread/INFO]: Generating keypair
+[10:17:43] [Server thread/INFO]: Starting Minecraft server on *:25565
+[10:17:44] [Server thread/INFO]: Using epoll channel type
+[10:17:45] [Server thread/WARN]: Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[10:17:50] [Server thread/WARN]: Legacy plugin skUtilities v0.9.2 does not specify an api-version.
+[10:17:50] [Server thread/WARN]: Legacy plugin Vixio v2.0.7 does not specify an api-version.
+[10:17:50] [Server thread/WARN]: Legacy plugin TuSKe v1.8.2 does not specify an api-version.
+[10:17:50] [Server thread/INFO]: [FastAsyncWorldEdit] Loading FastAsyncWorldEdit v1.16-621;6476345
+[10:17:51] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@1495cc4]
+[10:17:51] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v3.2.1
+[10:17:51] [Server thread/INFO]: [ViaVersion] ViaVersion 3.2.1 is now loaded, injecting!
+[10:17:51] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading 1.12 -> 1.13 mappings...
+[10:17:51] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading 1.13 -> 1.13.2 mappings...
+[10:17:51] [Via-Mappingloader-2/INFO]: [ViaVersion] Loading 1.13.2 -> 1.14 mappings...
+[10:17:51] [Via-Mappingloader-3/INFO]: [ViaVersion] Loading 1.14 -> 1.15 mappings...
+[10:17:51] [Via-Mappingloader-4/INFO]: [ViaVersion] Loading 1.15 -> 1.16 mappings...
+[10:17:51] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[10:17:51] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading 1.16 -> 1.16.2 mappings...
+[10:17:51] [Server thread/INFO]: [ore-control] Loading ore-control v2020.11.3-2
+[10:17:51] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v3.2.0
+[10:17:51] [Server thread/INFO]: [WorldGuard] Loading WorldGuard v7.0.4+f7ff984
+[10:17:51] [Server thread/INFO]: [ViaRewind] Loading ViaRewind v1.5.3
+[10:17:51] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.3.0
+[10:17:52] [Server thread/INFO]: [Skript] Loading Skript v2.5.3
+[10:17:52] [Server thread/INFO]: [skUtilities] Loading skUtilities v0.9.2
+[10:17:52] [Server thread/INFO]: [SkQuery] Loading SkQuery v4.1.4
+[10:17:52] [Server thread/INFO]: [PlotSquared] Loading PlotSquared v5.13.11
+[10:17:52] [Server thread/INFO]: [Multiverse-Core] Loading Multiverse-Core v4.2.3-SNAPSHOT-b835
+[10:17:52] [Server thread/INFO]: [Skellett] Loading Skellett v1.9.11
+[10:17:52] [Server thread/INFO]: [Vixio] Loading Vixio v2.0.7
+[10:17:52] [Server thread/INFO]: [TuSKe] Loading TuSKe v1.8.2
+[10:17:52] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[10:17:52] [Server thread/INFO]: [FastAsyncWorldEdit] Enabling FastAsyncWorldEdit v1.16-621;6476345
+[10:17:52] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[10:17:52] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.FAWE_Spigot_v1_16_R3 as the Bukkit adapter
+[10:17:53] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] ************************************************************
+[10:17:53] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] * WARNING - YOU ARE RUNNING AN OUTDATED VERSION OF JAVA.
+[10:17:53] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] * FASTASYNCWORLDEDIT WILL STOP BEING COMPATIBLE WITH THIS VERSION OF
+[10:17:53] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] * JAVA WHEN MINECRAFT 1.17 IS RELEASED.
+[10:17:53] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] *
+[10:17:53] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] * Please update the version of Java to 11. When Minecraft 1.17
+[10:17:53] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] * is released, support for versions of Java prior to 11 will
+[10:17:53] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] * be dropped.
+[10:17:53] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] *
+[10:17:53] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] * Current Java version: 1.8.0_282
+[10:17:53] [Server thread/WARN]: [com.boydti.fawe.bukkit.util.JavaVersionCheck] ************************************************************
+[10:17:53] [Server thread/INFO]: [ore-control] Enabling ore-control v2020.11.3-2
+[10:17:53] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v3.2.0
+[10:17:53] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[10:17:53] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[10:17:53] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading 1.13 -> 1.12 mappings...
+[10:17:53] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading 1.13.2 -> 1.13 mappings...
+[10:17:53] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading 1.14 -> 1.13.2 mappings...
+[10:17:53] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading 1.15 -> 1.14 mappings...
+[10:17:53] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading 1.16 -> 1.15 mappings...
+[10:17:53] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading 1.16.2 -> 1.16 mappings...
+[10:17:53] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v1.5.3
+[10:17:53] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.3.0
+[10:17:54] [Server thread/INFO]:         __    
+[10:17:54] [Server thread/INFO]:   |    |__)   LuckPerms v5.3.0
+[10:17:54] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[10:17:54] [Server thread/INFO]: 
+[10:17:54] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[10:17:54] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[10:17:55] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[10:17:55] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[10:17:55] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1661ms)
+[10:17:55] [Server thread/INFO]: [PlotSquared] Enabling PlotSquared v5.13.11
+[10:17:55] [Server thread/INFO]: Version is PlotSquared-5.13.11
+[10:17:55] [Server thread/INFO]: [P2] PlotSquared hooked into WorldEdit.
+[10:17:56] [Server thread/INFO]: PlotSquared scripting engine started
+[10:17:56] [Server thread/INFO]: [P2] PlotSquared is now enabled
+[10:17:56] [Server thread/INFO]: [P2] Couldn't verify purchase :(
+[10:17:56] [Server thread/INFO]: [P2] (UUID) Using LuckPerms as a complementary UUID service
+[10:17:56] [Server thread/INFO]: [P2] (UUID) Using Paper as a complementary UUID service
+[10:17:56] [Server thread/INFO]: [P2] (UUID) 0 UUIDs will be cached.
+[10:17:56] [Server thread/INFO]: [P2] Using platform world manager: bukkit-multiverse
+[10:17:56] [Server thread/INFO]: Preparing level "world"
+[10:17:56] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[10:17:56] [Server thread/INFO]: [P2] Detected world load for 'world'
+[10:17:56] [Server thread/INFO]: [P2]  - default flags:  None
+[10:17:56] [Server thread/INFO]: [P2]  - road flags:  None
+[10:17:56] [Server thread/INFO]: [P2]  - generator: null>PlotSquared
+[10:17:56] [Server thread/INFO]: [P2]  - plotworld: world
+[10:17:56] [Server thread/INFO]: [P2]  - plotAreaManager: com.plotsquared.core.generator.HybridPlotManager@30894d88
+[10:17:56] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[10:17:57] [Server thread/INFO]: Loaded 0 spawn chunks for world world
+[10:17:57] [Server thread/INFO]: Preparing spawn area: 0%
+[10:17:57] [Server thread/INFO]: Preparing spawn area: 0%
+[10:17:58] [Server thread/INFO]: Preparing spawn area: 0%
+[10:17:58] [Server thread/INFO]: Time elapsed: 1161 ms
+[10:17:58] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[10:17:58] [Server thread/INFO]: Loaded 0 spawn chunks for world world_nether
+[10:17:58] [Server thread/INFO]: Preparing spawn area: 0%
+[10:17:58] [Server thread/INFO]: Preparing spawn area: 46%
+[10:17:59] [Server thread/INFO]: Time elapsed: 905 ms
+[10:17:59] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[10:17:59] [Server thread/INFO]: Loaded 0 spawn chunks for world world_the_end
+[10:17:59] [Server thread/INFO]: Preparing spawn area: 0%
+[10:17:59] [Server thread/INFO]: Time elapsed: 264 ms
+[10:17:59] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v3.2.1
+[10:17:59] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v7.0.4+f7ff984
+[10:17:59] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
+[10:17:59] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
+[10:17:59] [Server thread/INFO]: [WorldGuard] (world) Lava fire is PERMITTED.
+[10:17:59] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
+[10:17:59] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
+[10:17:59] [Server thread/INFO]: [WorldGuard] (world_nether) TNT ignition is PERMITTED.
+[10:17:59] [Server thread/INFO]: [WorldGuard] (world_nether) Lighters are PERMITTED.
+[10:17:59] [Server thread/INFO]: [WorldGuard] (world_nether) Lava fire is PERMITTED.
+[10:17:59] [Server thread/INFO]: [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
+[10:17:59] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_nether'
+[10:17:59] [Server thread/INFO]: [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
+[10:17:59] [Server thread/INFO]: [WorldGuard] (world_the_end) Lighters are PERMITTED.
+[10:17:59] [Server thread/INFO]: [WorldGuard] (world_the_end) Lava fire is PERMITTED.
+[10:17:59] [Server thread/INFO]: [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
+[10:17:59] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_the_end'
+[10:17:59] [Server thread/INFO]: [WorldGuard] Loading region data...
+[10:17:59] [Server thread/INFO]: [Skript] Enabling Skript v2.5.3
+[10:18:00] [Server thread/WARN]: [Skript] The following messages have not been translated to german: visual effects.snow_shovel.name, visual effects.sweep_attack.name, inventory actions.place_one, biomes.the_void, attribute types.generic_luck, biomes.snowy_tundra, biomes.deep_warm_ocean, cat types.siamese, entities.zombie priest.name, enchantments.names.fortune, enchantments.names.piercing, biomes.eroded badlands, damage causes.hot_floor, inventory types.stonecutter, visual effects.flash.pattern, enchantments.names.sweeping, difficulties.hard, entities.spotty.name, visual effects.soul.pattern, sound categories.blocks, entities.zombie armorer.name, entities.raider.pattern, entities.fletcher.name, visual effects.magic_crit.pattern, visual effects.coloured_dust.pattern, entities.black rabbit.name, entities.zombie cleric.name, visual effects.guardian_target.name, enchantments.names.smite, visual effects.falling_nectar.pattern, click types.window_border_right, visual effects.landing_lava.name, entities.white llama.pattern, damage causes.dryout, entities.blue parrot.name, visual effects.villager_hearts.pattern, chat styles.show_text, entities.tropical fish.pattern, biomes.modified_gravelly_mountains, attribute types.generic_attack_speed, tree types.acacia.name, resource pack states.accepted, entities.shulker bullet.pattern, entities.oak boat.pattern, spawn reasons.ocelot_baby, inventory types.chest, potions.bad_omen, heal reasons.eating, entities.killer rabbit.pattern, entities.zombie fletcher.name, sound categories.voice, click types.shift_left, entities.birch boat.name, entities.cartographer.pattern, visual effects.angry_villager.pattern, inventory actions.drop_all_slot, visual effects.arrow_particles.name, visual effects.cloud.name, visual effects.entity_poof.name, visual effects.item_crack.name, entities.shulker.pattern, entities.water mob.pattern, visual effects.fireworks_spark.name, visual effects.firework_explode.name, visual effects.lava_drip.name, visual effects.crimson_spore.name, biomes.deep_lukewarm_ocean, visual effects.white_ash.pattern, entities.gray trader llama.name, entities.elder guardian.name, entities.salt and pepper rabbit.pattern, inventory types.cartography, heal reasons.wither_spawn, cat types.all_black, visual effects.villager_hearts.name, entities.tipped arrow.pattern, inventory types.furnace, entities.red parrot.name, inventory types.beacon, visual effects.water_wake.pattern, potions.levitation, entities.pillager.pattern, visual effects.hurt_explosion.name, entities.zombie fisherman.name, types.fireworktype, biomes.nether_wastes, visual effects.coloured_dust.name, visual effects.angry_villager.name, chat styles.open_url, entities.spellcaster.name, potions.glowing, entities.dasher.name, types.blockdata, entities.angry bee.name, biomes.ice_spikes, entities.animal.name, resource pack states.successfully_loaded, attribute types.generic_follow_range, entities.cleric.pattern, visual effects.dolphin.pattern, inventory types.dropper, resource pack states.failed_download, entities.turtle.name, entities.zombie leatherworker.pattern, entities.spectral arrow.name, entities.large fireball.name, biomes.snowy_mountains, entities.kob.pattern, tree types.acacia.pattern, entities.zombie librarian.name, difficulties.peaceful, visual effects.witch_magic.pattern, potions.luck, cat types.persian, entities.red mooshroom.name, entities.birch boat.pattern, visual effects.hurt_explosion.pattern, spawn reasons.explosion, commands.multiple players start with, visual effects.sneeze.name, genes.aggressive, entities.water mob.name, entities.golem.pattern, visual effects.sweep_attack.pattern, entities.blockfish.pattern, entities.armorer.pattern, types.soundcategory, entities.black rabbit.pattern, inventory types.workbench, inventory types.player, entities.brown trader llama.pattern, inventory actions.pickup_all, entities.salt and pepper rabbit.name, entities.snow fox.pattern, click types.creative, entities.salmon.name, entities.brown mooshroom.name, inventory actions.nothing, visual effects.area_expression, teleport causes.command, entities.spectral arrow.pattern, entities.jungle boat.name, entities.zombie toolsmith.pattern, visual effects.slime.pattern, entities.angry bee.pattern, entities.raider.name, visual effects.snow_shovel.pattern, inventory actions.move_to_other_inventory, chat styles.change_page, updater.updater disabled, visual effects.witch_spell.pattern, visual effects.falling_nectar.name, enchantments.names.efficiency, visual effects.shield_block.pattern, enchantments.names.quick_charge, visual effects.flash.name, entities.brinely.name, visual effects.splash.name, entities.flopper.name, entities.husk.pattern, entities.black and white rabbit.pattern, entities.flopper.pattern, entities.zoglin.pattern, genes.worried, biomes.giant_tree_taiga_hills, entities.monster.pattern, entities.armorer.name, visual effects.explosion_large.name, types.vector, visual effects.dragon_breath.name, enchantments.names.depth_strider, spawn reasons.slime_split, entities.spellcaster.pattern, biomes.bamboo_jungle, spawn reasons.build_irongolem, entities.zombie weaponsmith.name, cat types.white, visual effects.squid_ink.name, entities.strider.name, genes.normal, tree types.dark_oak.pattern, entities.zombie shepherd.pattern, biomes.swamp, visual effects.shield_break.pattern, entities.clayfish.name, types.cattype, attribute types.generic_knockback_resistance, visual effects.lava_drip.pattern, visual effects.arrow_particles.pattern, spawn reasons.bed, entities.wandering trader.pattern, tree types.mega_redwood.name, tree types.cocoa_tree.name, entities.leash hitch.pattern, entities.weaponsmith.name, entities.llama spit.name, entities.fish hook.name, entities.toolsmith.pattern, biomes.wooded_hills, entities.happy bee.pattern, enchantments.names.multishot, spawn reasons.patrol, chat styles.run_command, entities.cyan parrot.name, entities.shulker bullet.name, entities.white rabbit.name, click types.shift_right, entities.tipped arrow.name, inventory types.anvil, entities.panda.pattern, visual effects.witch_magic.name, visual effects.snowball_break.pattern, entities.damageable.name, visual effects.water_drop.pattern, visual effects.spit.pattern, biomes.giant_spruce_taiga, biomes.mushroom_fields, visual effects.zombie_transform.pattern, tree types.birch.name, entities.no nectar bee.name, biomes.deep_cold_ocean, entities.gray llama.pattern, cat types.red, visual effects.iron_golem_rose.pattern, skript command.help.gen-docs, visual effects.footstep.pattern, visual effects.landing_lava.pattern, entities.nectar bee.name, potions.hero_of_the_village, biomes.end_barrens, entities.bee.pattern, genes.lazy, entities.gray trader llama.pattern, biomes.gravelly_mountains, types.gene, enchantments.names.riptide, inventory types.smithing, entities.zombie cartographer.name, visual effects.snowball_break.name, inventory types.merchant, inventory actions.swap_with_cursor, biomes.nether, spawn reasons.trap, biomes.deep_frozen_ocean, inventory actions.hotbar_swap, inventory types.grindstone, aliases.useless variation, heal reasons.ender_crystal, biomes.lukewarm_ocean, entities.glitter.name, aliases.invalid minecraft id, entities.zombie villager.name, entities.evoker.name, visual effects.explosion_huge.pattern, entities.mob.name, visual effects.mob_appearance.pattern, skript command.help.test, entities.shulker.name, entities.trident.name, spawn reasons.raid, entities.llama.name, visual effects.campfire_cosy_smoke.name, visual effects.thorns_hurt.name, attribute types.horse_jump_strength, enchantments.names.projectile_protection, entities.brown llama.pattern, entities.drowned.pattern, visual effects.squid_rotate.pattern, spawn reasons.village_invasion, entities.dragon fireball.name, entities.brown trader llama.name, inventory actions.collect_to_cursor, biomes.dark_forest_hills, aliases.invalid tags, visual effects.instant_spell.pattern, visual effects.armor_stand_hit.name, inventory actions.drop_one_cursor, visual effects.particle_smoke.pattern, visual effects.falling_obsidian_tear.pattern, entities.mob.pattern, visual effects.current_down.name, visual effects.totem_resurrect.name, visual effects.rabbit_jump.pattern, difficulties.easy, biomes.shattered_savanna, biomes.the_end, entities.betty.pattern, entities.fox.name, cat types.jellie, visual effects.happy_villager.name, visual effects.large_smoke.pattern, enchantments.names.protection, types.healreason, entities.armor stand.name, heal reasons.custom, visual effects.water_bubble.pattern, entities.endermite.pattern, entities.red fox.pattern, spawn reasons.jockey, damage causes.fly_into_wall, visual effects.sneeze.pattern, visual effects.love_hearts.name, entities.normal guardian.pattern, entities.illusioner.pattern, entities.piglin.name, biomes.basalt_deltas, entities.cyan parrot.pattern, biomes.tall_birch_forest, entities.brown rabbit.name, visual effects.spell.name, visual effects.flame.pattern, visual effects.rabbit_jump.name, visual effects.ash.pattern, visual effects.shield_block.name, resource pack states.declined, visual effects.bubble_pop.pattern, biomes.swamp_hills, visual effects.large_smoke.name, spawn reasons.build_snowman, types.gamerule, entities.sunstreak.name, visual effects.end_rod.name, attribute types.generic_flying_speed, tree types.tall_birch.pattern, entities.gray parrot.name, sound categories.records, cat types.british_shorthair, entities.zombie butcher.pattern, spawn reasons.default, entities.husk.name, attribute types.zombie_spawn_reinforcements, entities.any boat.name, cat types.ragdoll, enchantments.names.bane_of_arthropods, entities.zombie nitwit.name, click types.right, entities.zombie armorer.pattern, visual effects.iron_golem_sheath.pattern, visual effects.explosion_large.pattern, visual effects.instant_spell.name, inventory types.blast_furnace, difficulties.normal, visual effects.water_wake.name, visual effects.firework_explode.pattern, spawn reasons.spawner_egg, inventory actions.drop_all_cursor, visual effects.footstep.name, biomes.wooded_badlands_plateau, entities.gray parrot.pattern, visual effects.note.pattern, visual effects.composter.pattern, inventory types.creative, click types.control_drop, visual effects.item_crack.pattern, visual effects.landing_obsidian_tear.pattern, enchantments.names.looting, entities.white rabbit.pattern, enchantments.names.respiration, entities.dolphin.name, visual effects.villager_entity_happy.pattern, enchantments.names.luck_of_the_sea, spawn reasons.dispense_egg, visual effects.water_drip.pattern, entities.snooper.name, teleport causes.chorus_fruit, enchantments.names.feather_falling, entities.chested horse.pattern, heal reasons.satiated, teleport causes.spectate, entities.bee.name, biomes.modified_jungle_edge, entities.fisherman.name, spawn reasons.ender_pearl, enchantments.names.blast_protection, visual effects.campfire_signal_smoke.pattern, biomes.snowy_taiga_mountains, visual effects.lava_pop.pattern, click types.swap_offhand, spawn reasons.nether_portal, visual effects.falling_honey.pattern, entities.red fox.name, spawn reasons.silverfish_block, visual effects.particle_smoke.name, visual effects.slime.name, entities.green parrot.name, visual effects.block_break.pattern, heal reasons.wither, types.difficulty, biomes.badlands_plateau, entities.vindicator.pattern, visual effects.portal.name, sound categories.players, types.metadataholder, entities.polar bear.name, visual effects.thorns_hurt.pattern, visual effects.crit.name, chat styles.obfuscated, visual effects.damage_indicator.pattern, entities.kob.name, visual effects.falling_dust.name, visual effects.dripping_honey.pattern, entities.stray.pattern, entities.zombie cleric.pattern, damage causes.cramming, click types.middle, entities.leatherworker.pattern, entities.rabbit.name, entities.snow fox.name, entities.acacia boat.pattern, types.spawnreason, entities.black and white rabbit.name, entities.dasher.pattern, biomes.modified_jungle, attribute types.generic_armor_toughness, entities.jungle boat.pattern, entities.vex.pattern, biomes.modified_wooded_badlands_plateau, visual effects.warped_spore.pattern, skript command.info.version, entities.mason.pattern, biomes.giant_spruce_taiga_hills, types.teleportcause, attribute types.generic_movement_speed, biomes.warm_ocean, inventory types.ender_chest, visual effects.bubble_column_up.pattern, sound categories.hostile, entities.zombie fletcher.pattern, damage causes.dragon_breath, potions.dolphins_grace, entities.parrot.pattern, entities.zombie librarian.pattern, visual effects.shield_break.name, entities.trader llama.name, spawn reasons.drowned, visual effects.portal.pattern, visual effects.void_fog.pattern, visual effects.witch_spell.name, chat styles.insertion, entities.brown rabbit.pattern, enchantments.names.flame, entities.zoglin.name, click types.window_border_left, spawn reasons.custom, entities.ravager.pattern, entities.brinely.pattern, entities.betty.name, visual effects.totem.name, enchantments.names.channeling, entities.fisherman.pattern, visual effects.magic_crit.name, sound categories.neutral, spawn reasons.shoulder_entity, entities.llama.pattern, cat types.tabby, entities.glitter.pattern, entities.strider.pattern, entities.creamy llama.name, entities.vex.name, entities.clayfish.pattern, entities.area effect cloud.name, teleport causes.end_gateway, entities.evoker fangs.pattern, visual effects.lava_pop.name, inventory types.smoker, entities.command minecart.name, entities.panda.name, inventory types.shulker_box, biomes.small_end_islands, visual effects.barrier.pattern, inventory actions.clone_stack, entities.chested horse.name, spawn reasons.infection, visual effects.block_dust.pattern, visual effects.flying_glyph.name, tree types.tall_birch.name, visual effects.dripping_honey.name, entities.piglin.pattern, visual effects.reverse_portal.pattern, entities.normal.pattern, cat types.calico, teleport causes.unknown, visual effects.zombie_transform.name, entities.tropical fish.name, genes.playful, inventory actions.unknown, spawn reasons.sheared, teleport causes.plugin, entities.blockfish.name, damage causes.entity_sweep_attack, entities.zombie leatherworker.name, entities.stray.name, teleport causes.end_portal, attribute types.generic_max_health, entities.guardian.name, entities.animal.pattern, entities.snooper.pattern, visual effects.suspended.name, biomes.snowy_taiga, entities.creamy trader llama.pattern, visual effects.end_rod.pattern, entities.zombie mason.pattern, entities.wandering trader.name, visual effects.potion_swirl_transparent.name, entities.spruce boat.pattern, entities.any boat.pattern, inventory actions.pickup_one, potions.slow_falling, biomes.mountains, biomes.modified_badlands_plateau, types.fireworkeffect, entities.zombie blacksmith.pattern, attribute types.generic_attack_knockback, entities.leash hitch.name, biomes.mushroom_field_shore, entities.large fireball.pattern, visual effects.bubble_column_up.name, visual effects.soul_fire_flame.name, attribute types.generic_attack_damage, visual effects.water_bubble.name, entities.puffer fish.name, tree types.cocoa_tree.pattern, entities.gold rabbit.name, visual effects.heart.name, entities.creamy trader llama.name, visual effects.happy_villager.pattern, inventory actions.place_all, biomes.wooded_mountains, types.resourcepackstate, biomes.dark_forest, entities.brown mooshroom.pattern, entities.toolsmith.name, chat styles.suggest_command, visual effects.crimson_spore.pattern, visual effects.reverse_portal.name, sound categories.ambient, types.material, visual effects.campfire_cosy_smoke.pattern, visual effects.villager_entity_happy.name, entities.illager.pattern, visual effects.falling_water.pattern, entities.acacia boat.name, entities.oak boat.name, entities.creamy llama.pattern, entities.command minecart.pattern, visual effects.nautilus.name, types.persistentdataholder, entities.cleric.name, visual effects.iron_golem_sheath.name, biomes.badlands, inventory types.enchanting, visual effects.spit.name, entities.rabbit.pattern, visual effects.damage_indicator.name, types.inventoryaction, inventory types.hopper, entities.damageable.pattern, spawn reasons.lightning, entities.stripey.pattern, spawn reasons.build_wither, sound categories.weather, inventory types.barrel, entities.illusioner.name, inventory types.loom, visual effects.falling_obsidian_tear.name, visual effects.landing_obsidian_tear.name, click types.double_click, visual effects.small_smoke.name, types.gamerulevalue, visual effects.nautilus.pattern, biomes.bamboo_jungle_hills, biomes.giant_tree_taiga, aliases.outside section, visual effects.landing_honey.name, types.potioneffect, inventory actions.pickup_half, entities.red mooshroom.pattern, entities.nitwit.name, entities.area effect cloud.pattern, entities.zombie blacksmith.name, visual effects.heart.pattern, firework types.ball, teleport causes.ender_pearl, visual effects.flame.name, visual effects.dripping_obsidian_tear.pattern, aliases.empty name, tree types.birch.pattern, firework types.creeper, visual effects.current_down.pattern, visual effects.white_ash.name, enchantments.names.unbreaking, entities.zombie weaponsmith.pattern, spawn reasons.chunk_gen, spawn reasons.village_defense, biomes.snowy_beach, visual effects.villager_entity_angry.name, entities.mason.name, entities.any horse.pattern, inventory types.lectern, entities.phantom.pattern, visual effects.potion_swirl_transparent.pattern, biomes.tall_birch_hills, entities.endermite.name, visual effects.love_hearts.pattern, spawn reasons.breeding, visual effects.dolphin.name, teleport causes.nether_portal, entities.angry nectar bee.name, firework types.star, entities.drowned.name, spawn reasons.mount, entities.golem.name, commands.no player starts with, entities.white trader llama.name, biomes.end_highlands, visual effects.warped_spore.name, inventory actions.drop_one_slot, sound categories.music, entities.zombie farmer.pattern, entities.piglin brute.name, biomes.soul_sand_valley, visual effects.villager_entity_angry.pattern, entities.llama spit.pattern, entities.stripey.name, enchantments.names.soul_speed, entities.zombie mason.name, visual effects.block_dust.name, visual effects.hurt_drown.pattern, enchantments.names.infinity, genes.weak, inventory types.crafting, entities.fox.pattern, spawn reasons.spawner, visual effects.flying_glyph.pattern, visual effects.explosion.pattern, biomes.desert_lakes, entities.zombie butcher.name, entities.dark oak boat.name, tree types.mega_redwood.pattern, click types.number_key, enchantments.names.frost_walker, visual effects.guardian_target.pattern, visual effects.void_fog.name, entities.weaponsmith.pattern, visual effects.falling_lava.pattern, entities.zombie toolsmith.name, entities.zombie priest.pattern, enchantments.names.loyalty, entities.parrot.name, types.inventorytype, entities.normal guardian.name, entities.dolphin.pattern, entities.shepherd.pattern, biomes.mountain_edge, visual effects.totem_resurrect.pattern, visual effects.bubble_pop.name, enchantments.names.mending, visual effects.small_smoke.pattern, genes.brown, sound categories.master, enchantments.names.sharpness, entities.turtle.pattern, visual effects.splash.pattern, visual effects.water_drop.name, entities.evoker fangs.name, types.enchantmentoffer, spawn reasons.egg, types.cachedservericon, biomes.snowy_taiga_hills, visual effects.explosion.name, entities.any horse.name, visual effects.entity_poof.pattern, entities.zombie nitwit.pattern, visual effects.falling_lava.name, entities.illager.name, entities.shepherd.name, firework types.ball_large, visual effects.potion_swirl.pattern, entities.no nectar bee.pattern, biomes.end_midlands, potions.conduit_power, entities.hoglin.pattern, entities.sunstreak.pattern, biomes.cold_ocean, click types.unknown, entities.ravager.name, click types.drop, heal reasons.regen, firework types.burst, visual effects.barrier.name, entities.killer rabbit.name, entities.elder guardian.pattern, visual effects.crit.pattern, inventory actions.hotbar_move_and_readd, entities.guardian.pattern, entities.trader llama.pattern, visual effects.totem.pattern, spawn reasons.beehive, entities.cod.pattern, entities.white llama.name, inventory actions.pickup_some, entities.dragon fireball.pattern, potions.unluck, entities.piglin brute.pattern, entities.red parrot.pattern, spawn reasons.natural, types.attributetype, biomes.warped_forest, heal reasons.magic, visual effects.spell.pattern, entities.hoglin.name, enchantments.names.aqua_affinity, types.clicktype, enchantments.names.punch, visual effects.suspended.pattern, entities.gray llama.name, biomes.stone_shore, cat types.black, visual effects.explosion_huge.name, visual effects.ash.name, entities.cartographer.name, enchantments.names.vanishing_curse, entities.spruce boat.name, entities.puffer fish.pattern, entities.happy bee.name, visual effects.note.name, visual effects.squid_ink.pattern, entities.phantom.name, entities.spotty.pattern, skript command.info.server, visual effects.falling_dust.pattern, visual effects.falling_honey.name, enchantments.names.power, entities.salmon.pattern, entities.zombie villager.pattern, entities.zombie fisherman.pattern, inventory types.dispenser, visual effects.hurt_drown.name, visual effects.falling_water.name, entities.polar bear.pattern, aliases.not enough brackets, entities.dark oak boat.pattern, entities.vindicator.name, entities.blue parrot.pattern, visual effects.landing_honey.pattern, visual effects.fireworks_spark.pattern, entities.green parrot.pattern, aliases.too many brackets, skript command.info.addons, entities.brown llama.name, visual effects.dragon_breath.pattern, spawn reasons.cured, attribute types.generic_armor, entities.trident.pattern, inventory actions.place_some, visual effects.cloud.pattern, enchantments.names.fire_protection, entities.normal.name, visual effects.soul_fire_flame.pattern, biomes.shattered_savanna_plateau, aliases.invalid variation section, visual effects.block_break.name, entities.pillager.name, entities.angry nectar bee.pattern, entities.white trader llama.pattern, entities.zombie cartographer.pattern, visual effects.potion_swirl.name, biomes.crimson_forest, visual effects.composter.name, entities.fletcher.pattern, click types.left, updater.custom version, visual effects.soul.name, entities.nitwit.pattern, spawn reasons.reinforcements, enchantments.names.impaling, entities.monster.name, entities.leatherworker.name, visual effects.squid_rotate.name, visual effects.armor_stand_hit.pattern, entities.gold rabbit.pattern, entities.fish hook.pattern, entities.nectar bee.pattern, tree types.dark_oak.name, biomes.eroded_badlands, enchantments.names.binding_curse, entities.cod.name, entities.evoker.pattern, inventory types.brewing, entities.zombie farmer.name, visual effects.iron_golem_rose.name, visual effects.campfire_signal_smoke.name, heal reasons.magic_regen, visual effects.mob_appearance.name, entities.zombie shepherd.name, visual effects.water_drip.name, visual effects.dripping_obsidian_tear.name, entities.armor stand.pattern
+[10:18:00] [Server thread/INFO]: [Skript] You're currently running a custom Skript version. No updates will be automatically installed.
+[10:18:06] [Server thread/INFO]: [Skript] Loaded 128260 aliases in 5958ms
+[10:18:06] [pool-18-thread-1/INFO]: [P2] (UUID) PlotSquared will fetch UUIDs in groups of 200
+[10:18:06] [pool-18-thread-1/INFO]: [P2] (UUID) PlotSquared has cached all UUIDs
+[10:18:06] [Server thread/INFO]: [Skript]  ~ erstellt von & © Peter Güttinger alias Njol ~
+[10:18:06] [Server thread/INFO]: [skUtilities] Enabling skUtilities v0.9.2*
+[10:18:06] [Server thread/INFO]: [skUtilities] v0.9.2: loaded modules (Conversions, Files, Yaml, Urls, Utilities) in 61ms
+[10:18:06] [Server thread/INFO]: [SkQuery] Enabling SkQuery v4.1.4
+[10:18:06] [Server thread/INFO]: [skQuery] Locating classes from SkQuery...
+[10:18:06] [Server thread/INFO]: [skQuery] Beginning to process a total of 138 from SkQuery
+[10:18:06] [Server thread/INFO]: [skQuery] Out of 138 classes, 136 classes were loaded from SkQuery
+[10:18:06] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v4.2.3-SNAPSHOT-b835
+[10:18:06] [Server thread/WARN]: [Multiverse-Core] "Multiverse-Core v4.2.3-SNAPSHOT-b835" has registered a listener for org.bukkit.event.entity.EntityCreatePortalEvent on method "public void com.onarandombox.MultiverseCore.listeners.MVPortalListener.entityPortalCreate(org.bukkit.event.entity.EntityCreatePortalEvent)", but the event is Deprecated. "Server performance will be affected"; please notify the authors [dumptruckman, Rigby, fernferret, lithium3141, main--].
+[10:18:06] [Server thread/INFO]: [Multiverse-Core] We are aware of the warning about the deprecated event. There is no alternative that allows us to do what we need to do and performance impact is negligible. It is safe to ignore.
+[10:18:07] [Server thread/INFO]: [Multiverse-Core] 3 - World(s) loaded.
+[10:18:07] [Server thread/INFO]: [Multiverse-Core] Version 4.2.3-SNAPSHOT-b835 (API v24) Enabled - By dumptruckman, Rigby, fernferret, lithium3141 and main--
+[10:18:07] [Server thread/INFO]: [Skellett] Enabling Skellett v1.9.11
+[10:18:08] [Server thread/INFO]: [Skellett] Registered 47 Effects, 16 Conditions, 128 Expressions and 25 Events
+[10:18:08] [Server thread/INFO]: [Skellett] Has been enabled!
+[10:18:08] [Server thread/INFO]: [Vixio] Enabling Vixio v2.0.7*
+[10:18:08] [Server thread/INFO]: [TuSKe] Enabling TuSKe v1.8.2*
+[10:18:08] [Server thread/INFO]: [TuSKe] Enabling Metrics... Done!
+[10:18:08] [Server thread/INFO]: [TuSKe] Check for updates enabled. It will check in some seconds.
+[10:18:08] [Server thread/INFO]: [TuSKe] Documentation enabled. Some files containing all syntax of all addons will be generated.
+[10:18:08] [Server thread/INFO]: [TuSKe]  
+[10:18:08] [Server thread/INFO]: [TuSKe]  A special thanks for donators:
+[10:18:08] [Server thread/INFO]: [TuSKe]  @X0Freak - 50$
+[10:18:08] [Server thread/INFO]: [TuSKe]  @RepublicanSensei - 10$
+[10:18:08] [Server thread/INFO]: [TuSKe]  
+[10:18:08] [Server thread/ERROR]: #!#! 
+[10:18:08] [Server thread/ERROR]: #!#! [Skript] Severe Error:
+[10:18:08] [Server thread/ERROR]: #!#! TuSKe's class com.github.tukenuke.tuske.effects.EffMakeDrop generated an exception while loading
+[10:18:08] [Server thread/ERROR]: #!#! 
+[10:18:08] [Server thread/ERROR]: #!#! Something went horribly wrong with Skript.
+[10:18:08] [Server thread/ERROR]: #!#! This issue is NOT your fault! You probably can't fix it yourself, either.
+[10:18:08] [Server thread/ERROR]: #!#! It looks like you are using some plugin(s) that alter how Skript works (addons).
+[10:18:08] [Server thread/ERROR]: #!#! Following plugins are probably related to this error in some way:
+[10:18:08] [Server thread/ERROR]: #!#! TuSKe (github.com/Tuke-Nuke/TuSKe) 
+[10:18:08] [Server thread/ERROR]: #!#! You should try disabling those plugins one by one, trying to find which one causes it.
+[10:18:08] [Server thread/ERROR]: #!#! If the error doesn't disappear even after disabling all listed plugins, it is probably Skript issue.
+[10:18:08] [Server thread/ERROR]: #!#! In that case, you will be given instruction on how should you report it.
+[10:18:08] [Server thread/ERROR]: #!#! On the other hand, if the error disappears when disabling some plugin, report it to author of that plugin.
+[10:18:08] [Server thread/ERROR]: #!#! Only if the author tells you to do so, report it to Skript's issue tracker.
+[10:18:08] [Server thread/ERROR]: #!#! 
+[10:18:08] [Server thread/ERROR]: #!#! Stack trace:
+[10:18:08] [Server thread/ERROR]: #!#! java.lang.NullPointerException
+[10:18:08] [Server thread/ERROR]: #!#!     at com.github.tukenuke.tuske.effects.EffMakeDrop.<clinit>(EffMakeDrop.java:25)
+[10:18:08] [Server thread/ERROR]: #!#!     at java.lang.Class.forName0(Native Method)
+[10:18:08] [Server thread/ERROR]: #!#!     at java.lang.Class.forName(Class.java:348)
+[10:18:08] [Server thread/ERROR]: #!#!     at ch.njol.skript.SkriptAddon.loadClasses(SkriptAddon.java:107)
+[10:18:08] [Server thread/ERROR]: #!#!     at com.github.tukenuke.tuske.TuSKe.onEnable(TuSKe.java:100)
+[10:18:08] [Server thread/ERROR]: #!#!     at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263)
+[10:18:08] [Server thread/ERROR]: #!#!     at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:380)
+[10:18:08] [Server thread/ERROR]: #!#!     at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:483)
+[10:18:08] [Server thread/ERROR]: #!#!     at org.bukkit.craftbukkit.v1_16_R3.CraftServer.enablePlugin(CraftServer.java:501)
+[10:18:08] [Server thread/ERROR]: #!#!     at org.bukkit.craftbukkit.v1_16_R3.CraftServer.enablePlugins(CraftServer.java:415)
+[10:18:08] [Server thread/ERROR]: #!#!     at net.minecraft.server.v1_16_R3.MinecraftServer.loadWorld(MinecraftServer.java:468)
+[10:18:08] [Server thread/ERROR]: #!#!     at net.minecraft.server.v1_16_R3.DedicatedServer.init(DedicatedServer.java:241)
+[10:18:08] [Server thread/ERROR]: #!#!     at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:943)
+[10:18:08] [Server thread/ERROR]: #!#!     at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:177)
+[10:18:08] [Server thread/ERROR]: #!#!     at java.lang.Thread.run(Thread.java:748)
+[10:18:08] [Server thread/ERROR]: #!#! 
+[10:18:08] [Server thread/ERROR]: #!#! Version Information:
+[10:18:08] [Server thread/ERROR]: #!#!   Skript: 2.5.3 (custom version)
+[10:18:08] [Server thread/ERROR]: #!#!     Flavor: selfbuilt-unknown
+[10:18:08] [Server thread/ERROR]: #!#!     Date: unknown
+[10:18:08] [Server thread/ERROR]: #!#!   Bukkit: 1.16.5-R0.1-SNAPSHOT
+[10:18:08] [Server thread/ERROR]: #!#!   Minecraft: 1.16.5
+[10:18:08] [Server thread/ERROR]: #!#!   Java: 1.8.0_282 (OpenJDK 64-Bit Server VM 25.282-b08)
+[10:18:08] [Server thread/ERROR]: #!#!   OS: Linux amd64 5.4.0-66-generic
+[10:18:08] [Server thread/ERROR]: #!#! 
+[10:18:08] [Server thread/ERROR]: #!#! Server platform: Paper
+[10:18:08] [Server thread/ERROR]: #!#! 
+[10:18:08] [Server thread/ERROR]: #!#! Current node: null
+[10:18:08] [Server thread/ERROR]: #!#! Current item: null
+[10:18:08] [Server thread/ERROR]: #!#! 
+[10:18:08] [Server thread/ERROR]: #!#! Thread: Server thread
+[10:18:08] [Server thread/ERROR]: #!#! 
+[10:18:08] [Server thread/ERROR]: #!#! Language: german
+[10:18:08] [Server thread/ERROR]: #!#! Link parse mode: STRICT
+[10:18:08] [Server thread/ERROR]: #!#! 
+[10:18:08] [Server thread/ERROR]: #!#! End of Error.
+[10:18:08] [Server thread/ERROR]: #!#! 
+[10:18:08] [Server thread/WARN]: [Skript] Undefined gender 'an' at types.inventorytype
+[10:18:08] [Server thread/WARN]: [Skript] Undefined gender 'a' at types.clicktype
+[10:18:08] [Server thread/WARN]: [Skript] Undefined gender 'an' at types.inventoryaction
+[10:18:08] [Server thread/INFO]: [TuSKe] Loaded 8 events, 12 conditions, 20 effects, 62 expressions and 0 types. Have fun!
+[10:18:08] [Server thread/INFO]: Running delayed init tasks
+[10:18:08] [Server thread/WARN]: [FastAsyncWorldEdit] Loaded class com.sk89q.worldguard.protection.association.RegionAssociable from WorldGuard v7.0.4+f7ff984 which is not a depend, softdepend or loadbefore of this plugin.
+[10:18:08] [Server thread/WARN]: [FastAsyncWorldEdit] Loaded class com.plotsquared.core.util.SchematicHandler from PlotSquared v5.13.11 which is not a depend, softdepend or loadbefore of this plugin.
+[10:18:08] [Server thread/INFO]: [com.boydti.fawe.bukkit.FaweBukkit] Plugin 'PlotSquared' found. Using it now.
+[10:18:08] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.16.4(754)
+[10:18:09] [Server thread/INFO]: [Skript] Loading variables...
+[10:18:09] [Server thread/INFO]: [Skript] Loaded 53 variables in 0.0 seconds
+[10:18:09] [Server thread/WARN]: [Skript] Possible name conflict of variables {website} and {%arg-1%} (there might be more conflicts). (main.sk, line 81: message {website}')
+[10:18:09] [Server thread/WARN]: [Skript] Possible name conflict of variables {wiki} and {%arg-1%} (there might be more conflicts). (main.sk, line 94: message {wiki}')
+[10:18:09] [Server thread/WARN]: [Skript] Possible name conflict of variables {dynmap} and {%arg-1%} (there might be more conflicts). (main.sk, line 108: send formatted "&3Die Dynmap ist erreichbar unter: &f<link:%{dynmap}%>%{dynmap}%"')
+[10:18:09] [Server thread/WARN]: [Skript] Possible name conflict of variables {prefix} and {%arg-1%} (there might be more conflicts). (main.sk, line 163: send formatted "%{prefix}% &7Dir werden nun die vollständigen Plotgrenzen angezeigt"')
+[10:18:09] [Server thread/ERROR]: [Skript] can't understand this event: 'every 4 seconds in "test"' (main.sk, line 177: every 4 seconds in "test":')
+[10:18:09] [Server thread/WARN]: [Skript] Possible name conflict of variables {serverip} and {%arg-1%} (there might be more conflicts). (main.sk, line 215: send formatted "&4&lErsteinmal, Herzlich Willkommen auf &l<tooltip:Unserem Server trittst du am besten durch die Direkte-Verbindung mit &l%{serverip}%&r her. Solltest du öfter spielen kannst du auch einen Eintrag für uns in deiner Serverliste erstellen, nutze hierfür auch ausschließlich die IP &l%{serverip}%.&r &cNutze keine Portnummern!>%{serverip}%<reset>&4&l!"')
+[10:18:09] [User Authenticator #1/INFO]: UUID of player AnderCrafterYT is 374c4bc4-ab54-43eb-8795-5e2389b25d4f
+[10:18:14] [Server thread/WARN]: [Skript] Possible name conflict of variables {format} and {%arg-1%} (there might be more conflicts). (main.sk, line 381: replace "th/"  in {_format} with "%{_hour}%"')
+[10:18:14] [Server thread/ERROR]: [Skript] Can't understand this condition/effect: play "ENTITY_PLAYER_LEVELUP" to player at volume 0.8 (tpa.sk, line 54: play "ENTITY_PLAYER_LEVELUP" to player at volume 0.8')
+[10:18:14] [Server thread/ERROR]: [Skript] Can't understand this condition/effect: play "ENTITY_PLAYER_LEVELUP" to player at volume 0.8 (tpa.sk, line 58: play "ENTITY_PLAYER_LEVELUP" to player at volume 0.8')
+[10:18:14] [Server thread/ERROR]: [Skript] Can't understand this condition/effect: play "ENTITY_PLAYER_LEVELUP" to player at volume 0.8 (tpa.sk, line 62: play "ENTITY_PLAYER_LEVELUP" to player at volume 0.8')
+[10:18:15] [Server thread/WARN]: [Skript] Possible name conflict of variables {teleport.%player%.tpa} and {%arg-1%} (there might be more conflicts). (tpa.sk, line 107: if {teleport.%player%.tpa} is set:')
+[10:18:15] [Server thread/ERROR]: [Skript] Can't understand this condition/effect: play "ENTITY_PLAYER_LEVELUP" to player at volume 0.8 (tpa.sk, line 114: play "ENTITY_PLAYER_LEVELUP" to player at volume 0.8')
+[10:18:15] [Server thread/ERROR]: [Skript] Can't understand this condition/effect: play "ENTITY_PLAYER_LEVELUP" to {teleport.%player%.tpa} at volume 0.8 (tpa.sk, line 115: play "ENTITY_PLAYER_LEVELUP" to {teleport.%player%.tpa} at volume 0.8')
+[10:18:15] [Server thread/WARN]: [Skript] Possible name conflict of variables {teleport.%player%.tpahere} and {%arg-1%} (there might be more conflicts). (tpa.sk, line 118: else if {teleport.%player%.tpahere} is set:')
+[10:18:15] [Server thread/ERROR]: [Skript] Can't understand this condition/effect: play "ENTITY_PLAYER_LEVELUP" to player at volume 0.8 (tpa.sk, line 125: play "ENTITY_PLAYER_LEVELUP" to player at volume 0.8')
+[10:18:15] [Server thread/ERROR]: [Skript] Can't understand this condition/effect: play "ENTITY_PLAYER_LEVELUP" to {teleport.%player%.tpahere} at volume 0.8 (tpa.sk, line 126: play "ENTITY_PLAYER_LEVELUP" to {teleport.%player%.tpahere} at volume 0.8')
+[10:18:15] [Server thread/INFO]: [Skript] 2 Skripte mit insgesamt 4 Triggern und 30 Befehlen wurden in 6.35 Sekunden geladen
+[10:18:15] [Server thread/INFO]: [Skript] Laden abgeschlossen.
+[10:18:15] [Server thread/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor!
+[10:18:15] [Server thread/INFO]: Done (32.049s)! For help, type "help"
+[10:18:15] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] ************************************************************
+[10:18:15] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * WARNING - YOU ARE RUNNING AN OUTDATED VERSION OF JAVA.
+[10:18:15] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * PAPER WILL STOP BEING COMPATIBLE WITH THIS VERSION OF
+[10:18:15] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * JAVA WHEN MINECRAFT 1.17 IS RELEASED.
+[10:18:15] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] *
+[10:18:15] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * Please update the version of Java you use to run Paper
+[10:18:15] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * to at least Java 11. When Paper for Minecraft 1.17 is
+[10:18:15] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * released support for versions of Java before 11 will
+[10:18:15] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * be dropped.
+[10:18:15] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] *
+[10:18:15] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * Current Java version: 1.8.0_282
+[10:18:15] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] *
+[10:18:15] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] * Check this forum post for more information: 
+[10:18:15] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] *   https://papermc.io/java11
+[10:18:15] [Server thread/WARN]: [io.papermc.paper.util.PaperJvmChecker] ************************************************************
+[10:18:15] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 6650ms or 133 ticks behind
+[10:18:15] [Server thread/INFO]: Timings Reset
+[10:18:16] [Craft Scheduler Thread - 0/INFO]: [TuSKe] Checking for latest update...
+[10:18:17] [Craft Scheduler Thread - 0/INFO]: [TuSKe] No new update was found!
+[10:18:19] [Server thread/INFO]: AnderCrafterYT joined the game
+[10:18:19] [Server thread/INFO]: AnderCrafterYT[/91.67.77.18:62092] logged in with entity id 64 at ([world]132.64891666364687, 61.10029699063705, -214.62487838930454)
+[10:18:20] [Craft Scheduler Thread - 0/INFO]: [TuSKe] Generating documentation of Skript & Addons.
+[10:18:20] [Craft Scheduler Thread - 0/INFO]: [TuSKe] Documentation was generated successfully.
+[10:18:27] [Server thread/INFO]: AnderCrafterYT issued server command: /gamemode creative
+[10:18:27] [Server thread/INFO]: [AnderCrafterYT: Set own game mode to Creative Mode]
+[10:18:31] [Server thread/INFO]: AnderCrafterYT issued server command: /orecontrol welcome notShowAgain
+[10:18:35] [Server thread/INFO]: AnderCrafterYT issued server command: /lrbuild
+[10:18:40] [Server thread/INFO]: AnderCrafterYT issued server command: /pl
+[10:18:44] [Server thread/INFO]: AnderCrafterYT issued server command: /ore-control:orecontrol
+[10:18:57] [Server thread/INFO]: AnderCrafterYT issued server command: /ore-control:orecontrol
+[10:19:22] [Server thread/INFO]: AnderCrafterYT issued server command: /ore-control:orecontrol
+[10:19:46] [Server thread/INFO]: AnderCrafterYT issued server command: /mv create farm
+[10:19:54] [Server thread/INFO]: AnderCrafterYT issued server command: /mv create farm normal
+[10:19:54] [Server thread/INFO]: AnderCrafterYT: Starting creation of world 'farm'...
+[10:19:54] [Server thread/INFO]: [Multiverse-Core] Loading World & Settings - 'farm' - Env: NORMAL - Type: NORMAL
+[10:19:57] [Server thread/INFO]: Preparing start region for dimension minecraft:farm
+[10:19:58] [Server thread/INFO]: Loaded 0 spawn chunks for world farm
+[10:19:58] [Server thread/INFO]: AnderCrafterYT issued server command: /ore-control:orecontrol
+[10:19:58] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[10:19:58] [Server thread/INFO]: Time elapsed: 490 ms
+[10:19:58] [Server thread/INFO]: [WorldGuard] Default configuration file written: config_world.yml
+[10:19:58] [Server thread/INFO]: [WorldGuard] Default configuration file written: blacklist.txt
+[10:19:58] [Server thread/INFO]: [WorldGuard] (farm) TNT ignition is PERMITTED.
+[10:19:58] [Server thread/INFO]: [WorldGuard] (farm) Lighters are PERMITTED.
+[10:19:58] [Server thread/INFO]: [WorldGuard] (farm) Lava fire is PERMITTED.
+[10:19:58] [Server thread/INFO]: [WorldGuard] (farm) Fire spread is UNRESTRICTED.
+[10:19:58] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'farm'
+[10:19:58] [Server thread/INFO]: AnderCrafterYT: Complete!
+[10:19:59] [Server thread/INFO]: AnderCrafterYT issued server command: /ore-control:orecontrol
+[10:22:46] [Server thread/INFO]: AnderCrafterYT issued server command: /mvtp farm
+[10:22:48] [Server thread/INFO]: AnderCrafterYT issued server command: /gamemode creative
+[10:22:48] [Server thread/INFO]: [AnderCrafterYT: Set own game mode to Creative Mode]
+[10:22:49] [Server thread/INFO]: AnderCrafterYT issued server command: /gamemode spectator
+[10:22:49] [Server thread/INFO]: [AnderCrafterYT: Set own game mode to Spectator Mode]
+[10:22:53] [Server thread/WARN]: [Skellett] Loaded class org.json.JSONObject from SkQuery v4.1.4 which is not a depend, softdepend or loadbefore of this plugin.
+[10:23:05] [Server thread/INFO]: AnderCrafterYT issued server command: /effect give AnderCrafterYT minecraft:night_vision 999999 250 true
+[10:23:05] [Server thread/INFO]: [AnderCrafterYT: Applied effect Night Vision to AnderCrafterYT]
+[10:23:10] [Server thread/INFO]: AnderCrafterYT issued server command: /gamemode creative
+[10:23:10] [Server thread/INFO]: [AnderCrafterYT: Set own game mode to Creative Mode]
+[10:23:25] [Server thread/INFO]: AnderCrafterYT issued server command: /gamemode spectator
+[10:23:25] [Server thread/INFO]: [AnderCrafterYT: Set own game mode to Spectator Mode]
+[10:23:42] [Server thread/INFO]: AnderCrafterYT issued server command: /mvtp farm
+[10:23:42] [Server thread/WARN]: AnderCrafterYT moved too quickly! 19.02003459930484,35.70166829074141,-12.257486076566266
+[10:23:43] [Server thread/INFO]: AnderCrafterYT issued server command: /warp
+[10:23:45] [Server thread/INFO]: AnderCrafterYT issued server command: /gamemode creative
+[10:23:45] [Server thread/INFO]: [AnderCrafterYT: Set own game mode to Creative Mode]
+[10:28:48] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
+[10:28:52] [Server thread/WARN]: AnderCrafterYT moved too quickly! 9.537062778841339,3.533833287875197,2.2036201765414205
+[10:29:16] [Server thread/INFO]: AnderCrafterYT issued server command: /setfarm
+[10:29:16] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /setfarm
+[10:29:19] [Server thread/INFO]: AnderCrafterYT issued server command: /farm
+[10:29:19] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /farm
+[10:33:20] [Server thread/INFO]: AnderCrafterYT issued server command: /dynmap
+[10:33:23] [Server thread/INFO]: AnderCrafterYT issued server command: /karte
+[10:33:23] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /karte
+[10:34:38] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
+[10:35:01] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
+[10:35:07] [Server thread/INFO]: AnderCrafterYT issued server command: /karte
+[10:35:07] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /karte
+[10:35:31] [Server thread/INFO]: AnderCrafterYT issued server command: /setdynmap https://dynmap.venicity.de
+[10:35:31] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /setdynmap https://dynmap.venicity.de
+[10:35:38] [Server thread/INFO]: AnderCrafterYT issued server command: /karte
+[10:35:38] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /karte
+[10:36:06] [Server thread/INFO]: AnderCrafterYT issued server command: /farm
+[10:36:06] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /farm
+[10:36:42] [Server thread/INFO]: AnderCrafterYT issued server command: /tps
+[10:37:01] [Server thread/INFO]: AnderCrafterYT issued server command: /gamemode spectator
+[10:37:01] [Server thread/INFO]: [AnderCrafterYT: Set own game mode to Spectator Mode]
+[10:38:22] [Server thread/INFO]: AnderCrafterYT issued server command: /gamemode creative
+[10:38:22] [Server thread/INFO]: [AnderCrafterYT: Set own game mode to Creative Mode]
+[10:38:32] [Server thread/INFO]: AnderCrafterYT issued server command: /setfarm
+[10:38:32] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /setfarm
+[10:38:47] [Server thread/INFO]: AnderCrafterYT issued server command: /setfarm
+[10:38:47] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /setfarm
+[10:38:48] [Server thread/INFO]: AnderCrafterYT issued server command: /farm
+[10:38:48] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /farm
+[10:38:49] [Server thread/INFO]: AnderCrafterYT issued server command: /farm
+[10:38:49] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /farm
+[10:38:49] [Server thread/INFO]: AnderCrafterYT issued server command: /farm
+[10:38:49] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /farm
+[10:38:51] [Server thread/INFO]: AnderCrafterYT issued server command: /farm
+[10:38:51] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /farm
+[10:38:52] [Server thread/INFO]: AnderCrafterYT issued server command: /farm
+[10:38:52] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /farm
+[10:38:53] [Server thread/INFO]: AnderCrafterYT issued server command: /farm
+[10:38:53] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /farm
+[10:38:53] [Server thread/INFO]: AnderCrafterYT issued server command: /farm
+[10:38:53] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /farm
+[10:40:46] [Server thread/INFO]: AnderCrafterYT issued server command: /setdynmap https://dynmap.venicity.de
+[10:40:46] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /setdynmap https://dynmap.venicity.de
+[10:40:51] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
+[10:40:55] [Server thread/WARN]: AnderCrafterYT moved too quickly! 9.19706064092611,4.249187078744683,-20.344582060323845
+[10:40:57] [Server thread/INFO]: AnderCrafterYT issued server command: /farm
+[10:40:57] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /farm
+[10:41:00] [Server thread/INFO]: AnderCrafterYT issued server command: /setfarm
+[10:41:00] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /setfarm
+[10:41:09] [Server thread/INFO]: AnderCrafterYT issued server command: /p tp world;0;0
+[10:41:12] [Server thread/INFO]: AnderCrafterYT issued server command: /setfarm
+[10:41:12] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /setfarm
+[10:41:18] [Server thread/INFO]: AnderCrafterYT issued server command: /mvtp farm
+[10:41:25] [Server thread/INFO]: AnderCrafterYT issued server command: /tp 653.49 79 -54.57
+[10:41:25] [Server thread/INFO]: [AnderCrafterYT: Teleported AnderCrafterYT to 653.49, 79.0, -54.57]
+[10:41:32] [Server thread/INFO]: AnderCrafterYT issued server command: /setfarm
+[10:41:32] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /setfarm
+[10:41:34] [Server thread/INFO]: AnderCrafterYT issued server command: /p tp world
+[10:41:36] [Server thread/INFO]: AnderCrafterYT issued server command: /p tp world;0;0
+[10:41:39] [Server thread/INFO]: AnderCrafterYT issued server command: /farm
+[10:41:39] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /farm
+[10:41:40] [Server thread/INFO]: AnderCrafterYT issued server command: /p tp world;0;0
+[10:41:46] [Server thread/INFO]: AnderCrafterYT issued server command: /effect clear AnderCrafterYT
+[10:41:46] [Server thread/INFO]: [AnderCrafterYT: Removed every effect from AnderCrafterYT]
+[10:41:52] [Server thread/INFO]: AnderCrafterYT issued server command: /gamemode creative
+[10:41:52] [Server thread/INFO]: [AnderCrafterYT: Set own game mode to Creative Mode]
+[10:42:52] [Server thread/INFO]: AnderCrafterYT issued server command: /mvtp world
+[10:43:00] [Server thread/INFO]: AnderCrafterYT issued server command: /time set day
+[10:43:00] [Server thread/INFO]: [AnderCrafterYT: Set the time to 1000]
+[10:43:59] [Server thread/INFO]: AnderCrafterYT issued server command: /setworldspawn
+[10:43:59] [Server thread/INFO]: [AnderCrafterYT: Set the world spawn point to 89, 68, -52 [0.0]]
+[10:45:09] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
+[10:45:30] [Server thread/INFO]: AnderCrafterYT issued server command: /skript reload main.sk
+[10:45:35] [Server thread/INFO]: AnderCrafterYT issued server command: /setspawn
+[10:45:35] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /setspawn
+[10:45:37] [Server thread/INFO]: AnderCrafterYT issued server command: /spawn
+[10:45:37] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /spawn
+[10:45:39] [Server thread/INFO]: AnderCrafterYT issued server command: /spawn
+[10:45:39] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /spawn
+[10:45:45] [Server thread/INFO]: AnderCrafterYT issued server command: /farm
+[10:45:45] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /farm
+[10:45:53] [Server thread/INFO]: AnderCrafterYT issued server command: /spawn
+[10:45:53] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /spawn
+[10:46:00] [Server thread/INFO]: AnderCrafterYT issued server command: /farm
+[10:46:00] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /farm
+[10:46:14] [Server thread/INFO]: AnderCrafterYT issued server command: /gamemode creative
+[10:46:14] [Server thread/INFO]: [AnderCrafterYT: Set own game mode to Creative Mode]
+[10:46:31] [Server thread/INFO]: AnderCrafterYT issued server command: /spawn
+[10:46:31] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /spawn
+[10:47:10] [Server thread/INFO]: AnderCrafterYT issued server command: /farm
+[10:47:10] [Server thread/INFO]: AnderCrafterYT [374c4bc4-ab54-43eb-8795-5e2389b25d4f]: /farm
+[10:47:12] [Server thread/INFO]: AnderCrafterYT issued server command: /gamemode creative
+[10:47:12] [Server thread/INFO]: [AnderCrafterYT: Set own game mode to Creative Mode]

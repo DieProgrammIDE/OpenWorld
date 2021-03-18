@@ -4,14 +4,14 @@ Events:
 		Patterns:
 			[on] discord command <([^\s]+)( .+)?$>
 		Event values:
-			event-user
 			event-member
+			event-user
+			event-guild
 			event-message
+			event-discordcommand
 			event-messagechannel
 			event-bot
-			event-discordcommand
 			event-channel
-			event-guild
 		Cancellable: true
 	On bot connect:
 		ID: bot_connect
@@ -25,30 +25,30 @@ Events:
 		Patterns:
 			[on] bot (join|enter) [new] guild [seen by %-string%]
 		Event values:
-			event-bot
 			event-guild
+			event-bot
 		Cancellable: false
 	On bot leave guild:
 		ID: bot_leave_guild
 		Patterns:
 			[on] bot (leave|exit) guild [seen by %-string%]
 		Event values:
-			event-bot
 			event-guild
+			event-bot
 		Cancellable: false
 	On guild message received:
 		ID: guild_message_received
 		Patterns:
 			[on] (guild|server) message (1¦receive[d] [seen]|2¦ sent) [by %-string%]
 		Event values:
-			event-user
 			event-member
+			event-user
+			event-guild
 			event-message
-			event-messagechannel
 			event-string
+			event-messagechannel
 			event-bot
 			event-channel
-			event-guild
 		Cancellable: false
 	On join voice:
 		ID: join_voice
@@ -56,12 +56,12 @@ Events:
 			[on] user join voice [seen by %-string%]
 			[on] voice [channel] join [seen by %-string%]
 		Event values:
-			event-user
 			event-member
+			event-user
+			event-guild
 			event-voicechannel
 			event-bot
 			event-channel
-			event-guild
 		Cancellable: false
 	On leave voice:
 		ID: leave_voice
@@ -69,79 +69,79 @@ Events:
 			[on] user leave voice [seen by %-string%]
 			[on] voice [channel] leave [seen by %-string%]
 		Event values:
-			event-user
 			event-member
+			event-user
+			event-guild
 			event-voicechannel
 			event-bot
 			event-channel
-			event-guild
 		Cancellable: false
 	On member add role:
 		ID: member_add_role
 		Patterns:
 			[on] member role add[ed] [seen by %-string%]
 		Event values:
-			event-role
-			event-user
 			event-member
-			event-bot
+			event-user
 			event-guild
+			event-role
+			event-bot
 		Cancellable: false
 	On member nickname change:
 		ID: member_nickname_change
 		Patterns:
 			[on] [member] nick[name] (change|update) [seen by %-string%]
 		Event values:
-			event-user
 			event-member
-			event-bot
+			event-user
 			event-guild
+			event-bot
 		Cancellable: false
 	On member remove role:
 		ID: member_remove_role
 		Patterns:
 			[on] member role remove[d] [seen by %-string%]
 		Event values:
-			event-role
-			event-user
 			event-member
-			event-bot
+			event-user
 			event-guild
+			event-role
+			event-bot
 		Cancellable: false
 	On member switch voice channel:
 		ID: member_switch_voice_channel
 		Patterns:
 			[on] member (switch|move) [voice] channel [seen by %-string%]
 		Event values:
-			event-user
 			event-member
+			event-user
+			event-guild
 			event-bot
 			event-channel
-			event-guild
 		Cancellable: false
 	On message delete[d]:
 		ID: message_delete[d]
 		Patterns:
 			[on] message delete[d] [seen by %-string%]
 		Event values:
-			event-message
-			event-messagechannel
-			event-bot
-			event-channel
 			event-guild
+			event-message
+			event-bot
+			event-messagechannel
+			event-channel
 		Cancellable: false
 	On message received:
 		ID: message_received
 		Patterns:
 			[on] message receive[d] [seen by %-string%]
 		Event values:
-			event-user
 			event-member
+			event-user
+			event-guild
+			event-string
 			event-message
 			event-messagechannel
-			event-string
 			event-bot
-			event-guild
 			event-channel
 		Cancellable: false
 	On private message received:
@@ -151,21 +151,21 @@ Events:
 		Event values:
 			event-user
 			event-message
-			event-messagechannel
 			event-bot
+			event-messagechannel
 		Cancellable: false
 	On reaction added:
 		ID: reaction_added
 		Patterns:
 			[on] reaction add[ed] [seen by %-string%]
 		Event values:
-			event-user
 			event-member
+			event-user
+			event-guild
 			event-emote
 			event-message
-			event-messagechannel
 			event-bot
-			event-guild
+			event-messagechannel
 			event-channel
 		Cancellable: false
 	On reaction remove[d]:
@@ -173,13 +173,13 @@ Events:
 		Patterns:
 			[on] reaction remove[d] [seen by %-string%]
 		Event values:
-			event-user
 			event-member
+			event-user
+			event-guild
 			event-emote
 			event-message
-			event-messagechannel
 			event-bot
-			event-guild
+			event-messagechannel
 			event-channel
 		Cancellable: false
 	On track end:
@@ -187,27 +187,27 @@ Events:
 		Patterns:
 			[on] track end [seen by %-string%]
 		Event values:
+			event-guild
 			event-track
 			event-bot
-			event-guild
 		Cancellable: false
 	On track start:
 		ID: track_start
 		Patterns:
 			[on] track seek [seen by %-string%]
 		Event values:
+			event-guild
 			event-track
 			event-bot
-			event-guild
 		Cancellable: false
 	On track start:
 		ID: track_start
 		Patterns:
 			[on] track start [seen by %-string%]
 		Event values:
+			event-guild
 			event-track
 			event-bot
-			event-guild
 		Cancellable: false
 	On user banned:
 		ID: user_banned
@@ -215,28 +215,28 @@ Events:
 			[on] user ban[ned] [seen by %-string%]
 		Event values:
 			event-user
-			event-bot
 			event-guild
+			event-bot
 		Cancellable: false
 	On user join guild:
 		ID: user_join_guild
 		Patterns:
 			[on] (user|member) join (guild|server) [seen by %-string%]
 		Event values:
-			event-user
 			event-member
-			event-bot
+			event-user
 			event-guild
+			event-bot
 		Cancellable: false
 	On user join guild:
 		ID: user_join_guild
 		Patterns:
 			[on] (guild|member) leave (guild|server) [seen by %-string%]
 		Event values:
-			event-user
 			event-member
-			event-bot
+			event-user
 			event-guild
+			event-bot
 		Cancellable: false
 	On user unbanned:
 		ID: user_unbanned
@@ -244,22 +244,22 @@ Events:
 			[on] user unban[ned] [seen by %-string%]
 		Event values:
 			event-user
-			event-bot
 			event-guild
+			event-bot
 		Cancellable: false
 	On vixio command event:
 		ID: vixio_command_event
 		Patterns:
 			[on] vixio command [%-string%]
 		Event values:
-			event-user
 			event-member
+			event-user
+			event-guild
 			event-message
+			event-discordcommand
 			event-messagechannel
 			event-bot
-			event-discordcommand
 			event-channel
-			event-guild
 		Cancellable: true
 Conditions:
 	CondAttachmentIsImage:

@@ -1,6 +1,6 @@
 configuration_version: v5
 worlds:
-  test:
+  world:
     plot:
       height: 255
       size: 16

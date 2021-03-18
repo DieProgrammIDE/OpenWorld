@@ -1,0 +1,149 @@
+options:
+	TPA_permission_tptoggle: tpa.use
+	TPA_permission_tpa: tpa.use
+	TPA_permission_tpahere: tpa.use
+	TPA_permission_tpaccept: tpa.use
+	TPA_permission_tpdeny: tpa.use
+	TPA_permissionMessage: &cDu hast keine Rechte, um diesen Befehl zu nutzen!
+	
+	TPA_Prefix: &f[&6TPA&f] &f
+	TPA_aktiviert: &7Du &akannst &7nun TPA-Anfragen erhalten!
+	TPA_deaktiviert: &7Du kannst nun &ckeine &7TPA-Anfragen mehr erhalten!
+	TPA_keinArgument: &cDu musst ein &eArgument angeben! &e/tpatoggle
+	TPA_keinSpieler: &cDu musst einen &eNamen &cangeben! &e/tpa <Name>
+	TPA_USERdeaktiviert: &cDieser Spieler hat Teleport-Anfragen deaktiviert! &e/tptoggle
+	TPA_erhaltenZeile1: &a%player% &emöchte sich zu dir teleportieren.
+	TPA_erhaltenZeile2: &7Tippe &e/tpaccept, &7um die Anfrage &aanzunehmen!
+	TPA_erhaltenZeile3: &7Tippe &e/tpdeny, &7um die anfrage &cabzulehnen!
+	TPA_gesendet: &7Teleport-Anfrage &aerfolgreich &7geschickt!
+	TPA_SpielerOffline: &cDieser spieler ist derzeit &4offline.
+	TPAhere_keinSpieler: &cDu musst einen &eNamen &cangeben! &e/tpahere <Name>
+	TPAhere_erhaltenZeile1: &a%player% &emöchte, dass du dich zu ihm teleportierst.
+	TPAhere_erhaltenZeile2: &7Tippe &e/tpaccept, &7um die Anfrage &aanzunehmen!
+	TPAhere_erhaltenZeile3: &7Tippe &e/tpdeny, &7um die anfrage &cabzulehnen!
+	TPA_Teleportiert: &aDu wurdtest zu &e%player% &ateleportiert!
+	TPA_Teleportiert1: &e%{teleport.%player%.tpa}% &awurde zu dir teleportiert!
+	TPA_Teleportiert2: &e%player% &ahat sich zu dir teleportiert!
+	TPA_Teleportiert3: &aDu wurdest zu &e%{teleport.%player%.tpahere}% &ateleportiert!
+	TPA_keineAnfragen: &cDu hast keine Teleport-Anfragen!
+	TPA_abgelehnt1: &cDu hast die Teleport-Anfrage von &e%{teleport.%player%.tpa}% &cabgelehnt! 
+	TPA_abgelehnt2: &cDu hast die Teleport-Anfrage von &e%{teleport.%player%.tpahere}% &cabgelehnt!
+	TPA_abgelehnt3: &e%player% &chat deine Teleport-Anfrage abgelehnt!
+	TPA_abgelehnt4: &e%player% &chat deine Teleport-Anfrage abgelehnt!
+	
+	Version: 1.0
+
+# Allgemeine Geschäftsbedingungen (AGB):
+	
+	1.: Dieses Skript wurde von BeneYT verfasst und darf zum Eigengebrauch beliebig editiert werden.
+	2.: Du darfst dich nicht als Urheber dieses Skriptes ausgeben.
+	3.: Du darfst dieses Skript nirgendwo zum Download bereit stellen.
+	
+#
+# Um SOUNDS zu nutzen brauchst du skRayFall: https://dev.bukkit.org/bukkit-plugins/skrayfall/ 
+#
+
+command /tptoggle:
+	permission: {@TPA_permission_tptoggle}
+	permission message: {@TPA_permissionMessage}
+	aliases: /tpatoggle, /toggle, /tpset, /tpaset
+	trigger:
+		if {tptoggle.%player%} is not set:			
+			set {tptoggle.%player%} to "false"
+			send "{@TPA_Prefix}{@TPA_deaktiviert}"
+			play "ENTITY_PLAYER_LEVELUP" to player at volume 0.8
+		else if {tptoggle.%player%} is "false":
+			set {tptoggle.%player%} to "true"
+			send "{@TPA_Prefix}{@TPA_aktiviert}"
+			play "ENTITY_PLAYER_LEVELUP" to player at volume 0.8
+		else if {tptoggle.%player%} is "true":			
+			set {tptoggle.%player%} to "false"
+			send "{@TPA_Prefix}{@TPA_deaktiviert}"
+			play "ENTITY_PLAYER_LEVELUP" to player at volume 0.8
+
+command /tpa [<player>]:
+	permission: {@TPA_permission_tpa}
+	permission message: {@TPA_permissionMessage}
+	trigger:
+		if arg-1 is not set:
+			send "{@TPA_Prefix}{@TPA_keinSpieler}"
+		else if arg-1 is set:
+			if arg-1 is online:
+				if {tptoggle.%arg-1%} is "false":
+					send "{@TPA_Prefix}{@TPA_USERdeaktiviert}"
+				else:
+					send "{@TPA_Prefix}{@TPA_gesendet}"
+					send "{@TPA_Prefix}{@TPA_erhaltenZeile1}" to arg-1
+					send "{@TPA_Prefix}{@TPA_erhaltenZeile2}" to arg-1
+					Send "{@TPA_Prefix}{@TPA_erhaltenZeile3}" to arg-1
+					set {teleport.%arg-1%.tpa} to player
+					set {teleport.%arg-1%.request} to true
+			else if arg-1 is offline:
+				send "{@TPA_Prefix}{@TPA_SpielerOffline}"
+				
+command /tpahere [<player>]:
+	permission: {@TPA_permission_tpahere}
+	permission message: {@TPA_permissionMessage}
+	trigger:
+		if arg-1 is not set:
+			send "{@TPA_Prefix}{@TPAhere_keinSpieler}"
+		else if arg-1 is set:
+			if arg-1 is online:
+				if {tptoggle.%arg-1%} is "false":
+					send "{@TPA_Prefix}{@TPA_USERdeaktiviert}"
+				else:
+					send "{@TPA_Prefix}{@TPA_gesendet}"
+					send "{@TPA_Prefix}{@TPAhere_erhaltenZeile1}" to arg-1
+					send "{@TPA_Prefix}{@TPAhere_erhaltenZeile2}" to arg-1
+					Send "{@TPA_Prefix}{@TPAhere_erhaltenZeile3}" to arg-1
+					set {teleport.%arg-1%.tpahere} to player
+					set {teleport.%arg-1%.request} to true
+					
+command /tpaccept:
+	permission: {@TPA_permission_tpaccept}
+	permission message: {@TPA_permissionMessage}
+	trigger:
+		if {teleport.%player%.request} is true:			
+			if {teleport.%player%.tpa} is set:
+				send "{@TPA_Prefix}&eTeleport in 3 Sekunden" to {teleport.%player%.tpa}
+				send "{@TPA_Prefix}&eTeleport in 3 Sekunden"
+				wait 3 seconds
+				teleport {teleport.%player%.tpa} to player
+				send "{@TPA_Prefix}{@TPA_Teleportiert}" to {teleport.%player%.tpa}
+				send "{@TPA_Prefix}{@TPA_Teleportiert1}"
+				play "ENTITY_PLAYER_LEVELUP" to player at volume 0.8
+				play "ENTITY_PLAYER_LEVELUP" to {teleport.%player%.tpa} at volume 0.8
+				clear {teleport.%player%.tpa}
+				clear {teleport.%player%.request}
+			else if {teleport.%player%.tpahere} is set:
+				send "{@TPA_Prefix}&eTeleport in 3 Sekunden" to {teleport.%player%.tpahere}
+				send "{@TPA_Prefix}&eTeleport in 3 Sekunden"
+				wait 3 seconds
+				teleport player to {teleport.%player%.tpahere}
+				send "{@TPA_Prefix}{@TPA_Teleportiert2}" to {teleport.%player%.tpahere}
+				send "{@TPA_Prefix}{@TPA_Teleportiert3}"
+				play "ENTITY_PLAYER_LEVELUP" to player at volume 0.8
+				play "ENTITY_PLAYER_LEVELUP" to {teleport.%player%.tpahere} at volume 0.8
+				clear {teleport.%player%.tpahere}
+				clear {teleport.%player%.request}
+		else:
+			send "{@TPA_Prefix}{@TPA_keineAnfragen}"
+			
+command /tpdeny:
+	permission: {@TPA_permission_tpdeny}
+	permission message: {@TPA_permissionMessage}
+	aliases: /tpadeny
+	trigger:
+		if {teleport.%player%.request} is true:
+			if {teleport.%player%.tpa} is online:
+				send "{@TPA_Prefix}{@TPA_abgelehnt1}"
+				send "{@TPA_Prefix}{@TPA_abgelehnt3}" to {teleport.%player%.tpa}
+				clear {teleport.%player%.tpa}
+				clear {teleport.%player%.request}
+			else if {teleport.%player%.tpahere} is online:
+				send "{@TPA_Prefix}{@TPA_abgelehnt4}" to {teleport.%player%.tpahere}
+				send "{@TPA_Prefix}{@TPA_abgelehnt2}"
+				clear {teleport.%player%.tpahere}
+				clear {teleport.%player%.request}
+		else:
+			send "{@TPA_Prefix}{@TPA_keineAnfragen}"

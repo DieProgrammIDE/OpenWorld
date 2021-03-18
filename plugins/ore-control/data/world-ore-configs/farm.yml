@@ -1,0 +1,42 @@
+# This file is machine generated, please use the in game commands and gui to change values. 
+# Modifying this file per hand on your own risk.
+value:
+  ==: OreControl#WorldOreConfig
+  name: farm
+  ore-settings:
+  - ==: OreControl#OreSettings
+    settings:
+      VEIN_SIZE: 10.0
+    ore: DIAMOND
+  - ==: OreControl#OreSettings
+    settings:
+      VEIN_SIZE: 20.0
+    ore: COAL
+  - ==: OreControl#OreSettings
+    settings:
+      HEIGHT_RANGE: 75.0
+      VEINS_PER_CHUNK: 25.0
+      VEIN_SIZE: 12.0
+    ore: IRON
+  - ==: OreControl#OreSettings
+    ore: DIORITE
+    status: false
+  - ==: OreControl#OreSettings
+    ore: ANDESITE
+    status: false
+  - ==: OreControl#OreSettings
+    ore: INFESTED_STONE
+    status: false
+  - ==: OreControl#OreSettings
+    settings:
+      VEINS_PER_CHUNK: 13.0
+      VEIN_SIZE: 12.0
+    ore: REDSTONE
+  - ==: OreControl#OreSettings
+    settings:
+      ORES_PER_CHUNK_RANGE: 10.0
+    ore: EMERALD
+  - ==: OreControl#OreSettings
+    settings:
+      VEIN_SIZE: 15.0
+    ore: GOLD

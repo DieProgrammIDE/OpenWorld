@@ -1,34 +1,3 @@
-#
-# A simple message of the day script.
-# The MOTD can be set with the /setmotd command,
-# and it will be sent to each player when they log in
-# and when they use the /motd command.
-#
-# FORMATS:    DESCRIPTION:       EXAMPLES:
-#
-#   DAY:
-#     dd/     day (number)       1
-#     ddo/    day (ordered)      1st
-#     dm/     month (number)     1
-#     dmw/    month (word)       January
-#     dy/     year (2 digits)    20
-#     dyf/    year (4 digits)    2020
-#
-#   TIME:
-#     th/     hour (12 hour)     12
-#     thh/    hour (24 hour)     24
-#     tm/     minute             60
-#     tme/    meridiem           am
-#     tmee/   meridiem           AM
-# 
-#             EXAMPLES:
-#
-# ddo/ dmw/ dyf/ - thh/:tm/      12th February 2020 - 20:25
-# dd//dm//dyf/ - thh/:tm/        12/2/2020 - 20:25
-# ddo/ dmw/ dyf/                 12th February 2020
-# th/:tm/ tmee/                  8:25 PM
-
-
 command /bcmessage [<text="">] [<text="">]:
 	permission: skript.admin
 	aliases: /bcmessages
@@ -36,10 +5,10 @@ command /bcmessage [<text="">] [<text="">]:
 	trigger:
 		#send "%{bcmessages::*}%"
 		if arg-1 == "":
-			send formatted "Gib <tooltip:Klicke um den Command einzugeben><suggest command:/bcmessage add >&l/bcmessage add <Nachricht><reset> zum hinzufügen ein"
-			send formatted "Gib <tooltip:Klicke um den Command einzugeben><suggest command:/bcmessage list>&l/bcmessage list<reset> zum Auflisten der Nachrichten"
-			send formatted "Gib <tooltip:Klicke um den Command einzugeben><suggest command:/bcmessage remove >&l/bcmessage remove <Nummer><reset> zum löschen ein"
-			#send formatted "Gib /bcmessage interval <Minuten> ein um die Wartedauer festzulegen"
+			send formatted "%{prefix}% Gib <tooltip:Klicke um den Command einzugeben><suggest command:/bcmessage add >&l/bcmessage add <Nachricht><reset> zum hinzufügen ein"
+			send formatted "%{prefix}% Gib <tooltip:Klicke um den Command einzugeben><suggest command:/bcmessage list>&l/bcmessage list<reset> zum Auflisten der Nachrichten"
+			send formatted "%{prefix}% Gib <tooltip:Klicke um den Command einzugeben><suggest command:/bcmessage remove >&l/bcmessage remove <Nummer><reset> zum löschen ein"
+			#send formatted "%{prefix}% Gib /bcmessage interval <Minuten> ein um die Wartedauer festzulegen"
 		if arg-1 == "add":
 			if arg-2 != "":
 				add arg-2 to {bcmessages::*}
@@ -57,7 +26,7 @@ command /bcmessage [<text="">] [<text="">]:
 		set {bcmessage.length} to 0
 		loop {bcmessages::*}:
 			add 1 to {bcmessage.length}
-		send formatted "&aInsgesamt sind %{bcmessage.length}% Nachrichten eingespeichert"
+		send formatted "%{prefix}% &aInsgesamt sind %{bcmessage.length}% Nachrichten eingespeichert"
 
 
 every 5 minutes:
@@ -65,50 +34,50 @@ every 5 minutes:
 	send formatted "%{bcmessages::%{_bcmessage.random}%}%" to all players
 
 command /setmotd <text>:
-	permission: skript.motdadmin
+	permission: skript.admin.motd
 	description: MOTD setzen
 	trigger:
-		send formatted "&aMOTD gesetzt auf '%argument%<reset>'"
+		send formatted "%{prefix}% &aMOTD gesetzt auf '%argument%<reset>'"
 		set {motd} to argument
 command /nomotd:
-	permission: skript.motdadmin
+	permission: skript.admin.motd
 	description: Keine MOTD
 	trigger:
-		message "&aMOTD geleert"
+		message "%{prefix}% &aMOTD geleert"
 		set {motd} to ""
 
 command /motd:
 	description: MOTD anzeigen
 	trigger:
 		if {motd} != "":
-			send formatted "&4%{motd}%"
+			send formatted "%{prefix}% &4%{motd}%"
 		if {motd} = "":
-			send formatted "&eAktuell ist keine MOTD festgelegt"
+			send formatted "%{prefix}% &eAktuell ist keine MOTD festgelegt"
 
 command /discord:
 	description: Link zum Discord abrufen
 	trigger:
-		send formatted "&3Unser Discord:"
+		send formatted "%{prefix}% &3Unser Discord:"
 		message {discord}
 
 command /setdiscord <text>:
-	permission: skript.admin
+	permission: skript.admin.discord
 	description: Link zum Discord einstellen
 	trigger:
 		set {discord} to argument
-		send formatted "&3Discord Einladungslink gesetzt auf %{discord}%"
+		send formatted "%{prefix}% &3Discord Einladungslink gesetzt auf %{discord}%"
 command /setvariable <text> <text>:
-	permission: skript.admin
+	permission: skript.admin.super
 	description: Variablen setzen
 	trigger:
 		set {%arg-1%} to arg-2
-		send formatted "&3Variable %arg-1% gesetzt auf %arg-2%"
+		send formatted "%{prefix}% &3Variable %arg-1% gesetzt auf %arg-2%"
 
 command /website:
 	description: Link zur Website abrufen
 	aliases: /web
 	trigger:
-		send formatted "&3Unsere Website:"
+		send formatted "%{prefix}% &3Unsere Webseite:"
 		message {website}
 
 command /setwebsite <text>:
@@ -116,27 +85,27 @@ command /setwebsite <text>:
 	description: Link zur Website einstellen
 	trigger:
 		set {website} to argument
-		send formatted "&3Website auf %{website}% gesetzt"
+		send formatted "%{prefix}% &3Website auf %{website}% gesetzt"
 
 command /wiki:
 	description: Link zum Wiki abrufen
 	trigger:
-		send formatted "&3Unser Wiki:"
+		send formatted "%{prefix}% &3Unser Wiki:"
 		message {wiki}
 
 command /setwiki <text>:
-	permission: skript.admin
+	permission: skript.admin.wiki
 	description: Link zum Wiki einstellen
 	trigger:
 		set {wiki} to argument
-		send formatted "&3Wiki zu %{wiki}% gesetzt"
+		send formatted "%{prefix}% &3Wiki zu %{wiki}% gesetzt"
 
 
 command /karte:
 	description: Link zur Dynmap abrufen
 	aliases: /map
 	trigger:
-		send formatted "&3Die Dynmap ist erreichbar unter: &f<link:%{dynmap}%>%{dynmap}%"
+		send formatted "%{prefix}% &3Die Dynmap ist erreichbar unter: &f<link:%{dynmap}%>%{dynmap}%"
 		set {_x.coord} to player's x coordinate
 		set {_y.coord} to 64
 		set {_z.coord} to player's z coordinate
@@ -148,25 +117,19 @@ command /karte:
 		send formatted "&3 oder &f<link:%{_dynmapplayer}%>dich verfolgend"
 
 command /setdynmap <text>:
-	permission: skript.admin
+	permission: skript.admin.dynmap
 	description: Grund-Link zur Dynmap einstellen
 	trigger:
 		set {dynmap} to argument
-		send formatted "&3Dynmap-Grundlink zu %{dynmap}% gesetzt"
+		send formatted "%{prefix}% &3Dynmap-Grundlink zu %{dynmap}% gesetzt"
 
 command /realtime:
 	description: Zeit anzeigen
 	aliases: /zeit
 	trigger:
-		set {_datumformatiert} to formatTime("%now%", "dd/. dmw/ dyf/")
+		set {_datumformatiert} to formatTime("%now%", "dd/. dmw/ dy/")
 		set {_zeitformatiert} to formatTime("%now%", "thh/:tm/")
-		send formatted "&7Es ist aktuell der &9&l%{_datumformatiert}%&r&7 um &9&l%{_zeitformatiert}%"
-
-command /spawn:
-	description: Zum Spawn teleportieren
-	trigger:
-		send "&eTeleport zum Spawn in 3 Sekunden"
-		execute player command "/p tp world;-17,-18"
+		send formatted "%{prefix}% &7Es ist aktuell der &9&l%{_datumformatiert}%&r&7 um &9&l%{_zeitformatiert}%"
 
 
 command /sudo [<player>] [<text>]:
@@ -183,7 +146,7 @@ command /executecmd <text>:
 command /suggestcmd [<text>]:
 	description: Command vorschlagen
 	trigger:
-		send formatted "&7<tooltip:Klicke um den Command einzugeben><suggest command:/%arg-1%>&l/%arg-1%<reset>"
+		send formatted "%{prefix}% &7<tooltip:Klicke um den Command einzugeben><suggest command:/%arg-1%>&l/%arg-1%<reset>"
 
 
 command /chunktooltip:
@@ -205,7 +168,7 @@ command /chunktooltip:
 		#send "%{chunktooltip.%player%}%"
 		
 
-every 4 seconds in "test":
+every 4 seconds in "world":
 	loop all players:
 		if {chunktooltip.%loop-player%} > 0:
 			set {_x.chunk} to rounded down loop-player's x coordinate / 16
@@ -261,8 +224,7 @@ command /gui [<text="">] [<text="">]:
 		if arg-1 != "":
 			if arg-1 == "punclaim":
 				if arg-2 == "confirm":
-					send formatted "Unclaim!"
-					make player run command "p setowner none" as op
+					execute player command "p setowner none"
 				else:
 					execute player command "confirmationdialog gui punclaim confirm"
 			if arg-1 == "pmusic":
@@ -314,7 +276,7 @@ command /gui [<text="">] [<text="">]:
 			wait 5 ticks
 			open chest with 5 row named "&cGUI" to player
 			wait 3 ticks
-			format slot 0 of player with diamond sword named "Überlebensmodus" with lore "/gm0" to run [make player execute command "/gm0"]
+			format slot 0 of player with gray stained glass pane named " " to be unstealable
 			format slot 1 of player with gray stained glass pane named " " to be unstealable
 			format slot 2 of player with gray stained glass pane named " " to be unstealable
 			format slot 3 of player with gray stained glass pane named " " to be unstealable
@@ -323,7 +285,7 @@ command /gui [<text="">] [<text="">]:
 			format slot 6 of player with gray stained glass pane named " " to be unstealable
 			format slot 7 of player with gray stained glass pane named " " to be unstealable
 			format slot 8 of player with gray stained glass pane named " " to be unstealable
-			format slot 9 of player with wooden axe named "Kreativmodus" with lore "/gm1" to run [make player execute command "/gm1"]
+			format slot 9 of player with gray stained glass pane named " " to be unstealable
 			format slot 10 of player with gray stained glass pane named " " to be unstealable
 			format slot 11 of player with gray stained glass pane named " " to be unstealable
 			format slot 12 of player with gray stained glass pane named " " to be unstealable
@@ -332,7 +294,7 @@ command /gui [<text="">] [<text="">]:
 			format slot 15 of player with gray stained glass pane named " " to be unstealable
 			format slot 16 of player with gray stained glass pane named " " to be unstealable
 			format slot 17 of player with gray stained glass pane named " " to be unstealable
-			format slot 18 of player with totem of undying named "Abenteuermodus" with lore "/gm2" to run [make player execute command "/gm2"]
+			format slot 18 of player with gray stained glass pane named " " to be unstealable
 			format slot 19 of player with gray stained glass pane named " " to be unstealable
 			format slot 20 of player with gray stained glass pane named " " to be unstealable
 			format slot 21 of player with gray stained glass pane named " " to be unstealable
@@ -341,7 +303,7 @@ command /gui [<text="">] [<text="">]:
 			format slot 24 of player with gray stained glass pane named " " to be unstealable
 			format slot 25 of player with gray stained glass pane named " " to be unstealable
 			format slot 26 of player with gray stained glass pane named " " to be unstealable
-			format slot 27 of player with potion of invisibility named "Zuschauermodus" with lore "/gm3" to run [make player execute command "/gm3"]
+			format slot 27 of player with gray stained glass pane named " " to be unstealable
 			format slot 28 of player with gray stained glass pane named " " to be unstealable
 			format slot 29 of player with gray stained glass pane named " " to be unstealable
 			format slot 30 of player with gray stained glass pane named " " to be unstealable
@@ -367,7 +329,7 @@ command /sethome:
 	executable by: players
 	trigger:
 		set {homes.%player%.location} to location of player
-		message "Dein Zuhause ist jetzt bei <grey>%location of player%<reset>"
+		message "%{prefix}% Dein Zuhause ist jetzt bei <grey>%location of player%<reset>"
 
 command /home:
 	description: Zum Home Teleportieren
@@ -375,9 +337,35 @@ command /home:
 	executable by: players
 	trigger:
 		if {homes.%player%.location} is not set:
-			message "Du hast noch garkein Home gesetzt!"
+			message "%{prefix}% Du hast noch garkein Home gesetzt!"
 			stop trigger
 		teleport player to {homes.%player%.location}
+		send formatted "%{prefix}% Du wurdest zu deinem Haus teleportiert!"
+
+command /setfarm [<text>]:
+	permission: skript.admin.farm
+	trigger:
+		set {location.farm} to player's location
+		message "%{prefix}% Der Farmwelt Spawn ist jetzt bei <grey>%location of player%<reset>"
+
+command /farm:
+	aliases: /farmwelt
+	trigger:
+		teleport player to {location.farm}
+		send formatted "%{prefix}% Du wurdest in die Farmwelt teleportiert!"
+
+command /setspawn [<text>]:
+	permission: skript.admin.spawn
+	trigger:
+		set {location.spawn} to player's location
+		message "%{prefix}% Der Spawn ist jetzt bei <grey>%location of player%<reset>"
+
+command /spawn:
+	aliases: /back
+	trigger:
+		teleport player to {location.spawn}
+		send formatted "%{prefix}% Du wurdest zum Spawn teleportiert!"
+
 
 on disconnect:
 	set {chunktooltip.%player%} to 0
@@ -386,9 +374,9 @@ on disconnect:
 on join:
 	if {motd} != "":
 		send formatted "&4%{motd}%"
-	set {_datumformatiert} to formatTime("%now%", "dd/. dmw/ dyf/")
+	set {_datumformatiert} to formatTime("%now%", "dd/. dmw/ dy/")
 	set {_zeitformatiert} to formatTime("%now%", "thh/:tm/")
-	send formatted "&7Es ist aktuell der &9&l%{_datumformatiert}%&r&7 um &9&l%{_zeitformatiert}%"
+	send formatted "%{prefix}% &7Es ist aktuell der &9&l%{_datumformatiert}%&r&7 um &9&l%{_zeitformatiert}%"
 
 
 
@@ -406,13 +394,14 @@ function formatTime(now: text, format: text) :: text:
 	set {_day}      to {_day::1} parsed as a number
 	set {_month}    to {_day::2} parsed as a number
 	set {_year}     to {_day::3}
+	replace "," in {_year} with ""
 	set {_hour}     to {_time::1} parsed as a number
 	set {_minute}   to {_time::2}
 	set {_meridiem} to {_split::3}
 	replace "th/"  in {_format} with "%{_hour}%"
 	if {_meridiem} = "PM":
 		add 12 to {_hour}
-	replace "thh/" in {_format} with "%{_hour}%"
+	replace "thh/" in {_format} with "%{_hour}+1%"
 	replace "tm/"  in {_format} with {_minute}
 	replace "tme/"  in {_format} with {_meridiem} in lower case
 	replace "tmee/"  in {_format} with {_meridiem}

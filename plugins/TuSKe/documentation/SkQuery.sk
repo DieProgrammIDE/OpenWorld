@@ -11,12 +11,12 @@ Events:
 		Patterns:
 			[on] block land
 		Event values:
-			event-itemstack
 			event-commandsender
-			event-entity
 			event-location
-			event-world
 			event-block
+			event-itemstack
+			event-world
+			event-entity
 		Cancellable: true
 	Tab Complete:
 		ID: tab_complete

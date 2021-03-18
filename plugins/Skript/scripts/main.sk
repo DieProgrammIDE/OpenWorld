@@ -169,12 +169,11 @@ command /chunktooltip:
 		
 
 every 4 seconds in "world":
-	loop all players:
+	loop all players in "world":
 		if {chunktooltip.%loop-player%} > 0:
 			set {_x.chunk} to rounded down loop-player's x coordinate / 16
 			set {_y.chunk} to rounded down loop-player's y coordinate / 16
-			#set {_y.coord} to rounded loop-player's y coordinate + 1
-			set {_y.coord} to 65
+			set {_y.coord} to rounded loop-player's y coordinate + 5
 			set {_z.chunk} to rounded down loop-player's z coordinate / 16
 			set {_x.chunk} to {_x.chunk} - 2
 			set {_z.chunk} to {_z.chunk} - 2
@@ -254,7 +253,7 @@ command /gui [<text="">] [<text="">]:
 				format slot 2 of player with creeper spawn egg named "PVE" with lore "Spieler gegen Einheit(en) erlauben" to be unstealable
 				format slot 3 of player with ender pearl named "Teleport zum Plot" with lore "Erlaubt das nicht-Mitglieder sich zu diesem Plot teleportieren können" to be unstealable
 				format slot 4 of player with hopper named "Item-Drop" with lore "Erlaubt, dass Spieler, welche nicht mitbauen, Items droppen können" to be unstealable
-				format slot 5 of player with iron door named "Benutzen" with lore "Erlaubt das Nicht-Mitglieder Knöpfe drücken, Türen offnen etc. können" to be unstealable
+				#format slot 5 of player with iron door named "Benutzen" with lore "Erlaubt das Nicht-Mitglieder Knöpfe drücken, Türen offnen etc. können" to be unstealable
 				format slot 9 of player with red wool named "Deaktivieren" with lore "Setzt den Flag 'pvp'" and "auf 'false'" to run [make player execute command "/p flag set pvp false"]
 				format slot 10 of player with red wool named "Deaktivieren" with lore "Setzt den Flag 'explosion'" and "auf 'false'" to run [make player execute command "/p flag set explosion false"]
 				format slot 11 of player with red wool named "Deaktivieren" with lore "Setzt den Flag 'pve'" and "auf 'false'" to run [make player execute command "/p flag set pve false"]
@@ -283,8 +282,7 @@ command /gui [<text="">] [<text="">]:
 			format slot 4 of player with gray stained glass pane named " " to be unstealable
 			format slot 5 of player with gray stained glass pane named " " to be unstealable
 			format slot 6 of player with gray stained glass pane named " " to be unstealable
-			format slot 7 of player with gray stained glass pane named " " to be unstealable
-			format slot 8 of player with gray stained glass pane named " " to be unstealable
+			format slot 14 of player with gray stained glass pane named " " to be unstealable
 			format slot 9 of player with gray stained glass pane named " " to be unstealable
 			format slot 10 of player with gray stained glass pane named " " to be unstealable
 			format slot 11 of player with gray stained glass pane named " " to be unstealable
@@ -311,15 +309,26 @@ command /gui [<text="">] [<text="">]:
 			format slot 32 of player with gray stained glass pane named " " to be unstealable
 			format slot 33 of player with gray stained glass pane named " " to be unstealable
 			format slot 34 of player with gray stained glass pane named " " to be unstealable
-			format slot 14 of player with cartography table named "Deine Plots zeigen" with lore "Zeigt dir alle deine Plots im Chat an" and "Gemergte Plots werden als ganzes angezeigt!" to close then run [make player execute command "/p list mine"]
+			format slot 7 of player with cartography table named "Deine Plots zeigen" with lore "Zeigt dir alle deine Plots im Chat an" and "Gemergte Plots werden als ganzes angezeigt!" to run [make player execute command "/p list mine"]
+			format slot 8 of player with oak fence named "Plot claimen" with lore "Claimt den Plot auf dem du stehst" to run [make player execute command "/p claim"]
 			format slot 17 of player with jukebox named "Musik" with lore "Spiel Minecraft Musik auf deinem Plot ab!" and "PROTIPP: /gui pmusic" and "&cACHTUNG: Nervig" to close then run "sudo %player% gui pmusic"
 			format slot 26 of player with anvil named "Flags" with lore "Stelle deinen Plot ein!" and "PROTIPP: Du kannst auch /gui pflag eingeben" to close then run "sudo %player% gui pflag"
 			format slot 35 of player with tnt named "Plot freigeben" with lore "Dein Plot kann dadurch von jedem geclaimt werden!" to close then run "sudo %player% gui punclaim"
-			format slot 36 of player with ender pearl named "Heimporter" with lore "Teleportiere dich zu deinem ersten Plot" to close then run "sudo %player% p home"
-			format slot 37 of player with eye of ender named "Teleportpunkt dieses Plots setzen" to close then run [make player execute command "/p sh"]
-			format slot 39 of player with redstone repeater named "Testwelt" with lore "Teleportiert dich zum Testwelt-Spawn" to close then run [make player execute command "/testwelt"]
+			if {homes.%player%.location} is set:
+				format slot 36 of player with ender pearl named "Heimporter" with lore "Teleportiere dich zu deinem Homepunkt" to close then run "sudo %player% home"
+			else:
+				format slot 36 of player with eye of ender named "Homepunkt setzen" with lore "Setze deinen Homepunkt" to close then run "sudo %player% sethome"
+			if {chunktooltip.%player%} == 0:
+				format slot 37 of player with barrier named "Plot-Grenzen anzeigen" with lore "Zeige die Plot-Grenzen für bessere Orientierung an" to run [make console execute command "sudo %player% chunktooltip"] -> [make console execute command "sudo %player% gui"]
+			else:
+				if {chunktooltip.%player%} == 1:
+					format slot 37 of player with barrier named "Durchgehende Plot-Grenzen anzeigen" with lore "Zeige die Plot-Grenzen mit einer durchgehenden Barrier-Linie für bessere Orientierung an" and "Zweimal drücken um Plot-Grenzen auszublenden" to run [make console execute command "sudo %player% chunktooltip"] -> [make console execute command "sudo %player% gui"]
+				else:
+					if {chunktooltip.%player%} == 2:
+						format slot 37 of player with barrier named "Plot-Grenzen ausblenden" with lore "Keine Plotgrenzen mehr anzeigen" to run [make console execute command "sudo %player% chunktooltip"] -> [make console execute command "sudo %player% gui"]
+			format slot 39 of player with grass named "Farmwelt" with lore "Teleportiert dich zum Farmwelt-Spawn" to close then run [make player execute command "/farm"]
 			format slot 40 of player with redstone block named "Spawn" with lore "Teleportiert dich zum Spawn" to close then run [make player execute command "/spawn"]
-			format slot 41 of player with sunflower named "Minigames" with lore "Teleport zum Minigames-Bereich" and "Coming soon!" to close then run [make player execute command "/minigames"]
+			format slot 41 of player with netherrack named "Nether-Farmwelt" with lore "Teleport zur Nether-Farmwelt" to close then run [make player execute command "/farmnether"]
 			format slot 43 of player with compass named "Hilfe!" with lore "Hier erhältst du Hife zum Konzept und den Commands" and "Außerdem kannst du unsere Regeln abrufen" to close then run "sudo %player% hilfe"
 			format slot 44 of player with player's head named "Freunde" with lore "Verwalte deine Freunde, welche gerade online sind!" and "Füg Freunde mit /friends add <freund> hinzu" to close then run "sudo %player% friends"
 
@@ -340,19 +349,43 @@ command /home:
 			message "%{prefix}% Du hast noch garkein Home gesetzt!"
 			stop trigger
 		teleport player to {homes.%player%.location}
-		send formatted "%{prefix}% Du wurdest zu deinem Haus teleportiert!"
+		send formatted "%{prefix}% &7Du wurdest zu deinem Homepunkt teleportiert!"
 
 command /setfarm [<text>]:
 	permission: skript.admin.farm
 	trigger:
 		set {location.farm} to player's location
-		message "%{prefix}% Der Farmwelt Spawn ist jetzt bei <grey>%location of player%<reset>"
+		message "%{prefix}% &2Der Farmwelt Spawn ist jetzt bei <grey>%location of player%<reset>"
 
 command /farm:
 	aliases: /farmwelt
 	trigger:
 		teleport player to {location.farm}
-		send formatted "%{prefix}% Du wurdest in die Farmwelt teleportiert!"
+		send formatted "%{prefix}% &2Du wurdest in die Farmwelt teleportiert!"
+
+command /setfarmnether [<text>]:
+	permission: skript.admin.farmnether
+	trigger:
+		set {location.farmnether} to player's location
+		message "%{prefix}% &4Der Farmwelt-Nether Spawn ist jetzt bei <grey>%location of player%<reset>"
+
+command /farmnether:
+	aliases: /netherfarmwelt
+	trigger:
+		teleport player to {location.farmnether}
+		send formatted "%{prefix}% &4Du wurdest in die Nether-Farmwelt teleportiert!"
+
+command /setfarmend [<text>]:
+	permission: skript.admin.farmend
+	trigger:
+		set {location.farmend} to player's location
+		message "%{prefix}% &gDer Farmwelt-Ende Spawn ist jetzt bei <grey>%location of player%<reset>"
+
+command /farmend:
+	aliases: /endfarmwelt
+	trigger:
+		teleport player to {location.farmend}
+		send formatted "%{prefix}% &eDu wurdest in die End-Farmwelt teleportiert!"
 
 command /setspawn [<text>]:
 	permission: skript.admin.spawn
@@ -364,12 +397,122 @@ command /spawn:
 	aliases: /back
 	trigger:
 		teleport player to {location.spawn}
-		send formatted "%{prefix}% Du wurdest zum Spawn teleportiert!"
+		send formatted "%{prefix}% &6Du wurdest zum Spawn teleportiert!"
+
+
+command /setwarp [<text>]:
+	permission: skript.player.warp.set
+	trigger:
+		if arg 1 is not set:
+			send "%{prefix}% &7Korrekte Verwendung: &c/setwarp (Warp)"
+		if {warp.%arg-1%} is set:
+			send "%{prefix}% &7Dieser Warp wird schon vom Server beansprucht!"
+			stop
+
+		if {plwarp.%arg-1%} is set:
+			send "%{prefix}% &7Dieser Warp wurde bereits gesetzt!"
+			stop
+
+		set {plwarp.%arg-1%} to location of player
+		set {plwarp.player.%arg-1%} to player
+		message "%{prefix}% &7Warp gesetzt!"
+		add arg-1 to {plwarps::*}
+
+command /setadminwarp [<text>]:
+	permission: skript.admin.warp.set
+	trigger:
+		if arg 1 is not set:
+			send "%{prefix}% &7Korrekte Verwendung: &c/setwarp (Warp)"
+		if {warp.%arg-1%} is set:
+			send "%{prefix}% &7Dieser Warp wurde bereits gesetzt!"
+		if {warp.%arg-1%} is not set:
+			set {warp.%arg-1%} to location of player
+			message "%{prefix}% &7Warp gesetzt!"
+			add arg-1 to {warps::*}
+
+			
+
+
+command /delwarp [<text>]:
+	permission: skript.player.warp.delete
+	trigger:
+		if arg 1 is not set:
+			send "%{prefix}% &7Korrekte Verwendung: &c/delwarp (Warp)"
+		if arg-1 is set:
+			if {plwarp.%arg-1%} is set:
+				delete {plwarp.%arg-1%}
+				message "%{prefix}% &7Warp gelöscht!"
+				remove arg-1 from {plwarps::*}
+			else:
+				message "%{prefix}% &7Diesen Warp gibt es nicht!"
+				make player execute command "/warps"
+
+command /deladminwarp [<text>]:
+	permission: skript.admin.warp.delete
+	trigger:
+		if arg 1 is not set:
+			send "%{prefix}% &7Korrekte Verwendung: &c/delwarp (Warp)"
+		if arg-1 is set:
+			if {warp.%arg-1%} is set:
+				delete {warp.%arg-1%}
+				message "%{prefix}% &7Warp gelöscht!"
+				remove arg-1 from {warps::*}
+			else:
+				message "%{prefix}% &7Diesen Warp gibt es nicht!"
+				make player execute command "/warps"
+			
+command /warp [<text>]:
+	aliases: w
+	trigger:
+		if arg 1 is not set:
+			send "%{prefix}% &7Korrekte Verwendung: &c/warp (Warp)"
+		If arg-1 is arg-1:
+			If  {warp.%arg-1%} is set:
+				teleport player to {warp.%arg-1%}
+				message "%{prefix}% &7Du wurdest zum Warp &9%arg-1% &7teleportiert!"
+			If {warp.%arg-1%} is not set:
+				If {plwarp.%arg-1%} is not set:
+					message "%{prefix}% &7Diesen Warp gibt es nicht!"
+					make player execute command "/warps"
+				else:
+					send formatted "%{prefix}% &7Spieler-Warps können &cgefährlich&r&7 sein. Bist du sicher, dass du dich zum Spieler-Warp &9%arg-1%&r&7 von &9%{plwarp.player.%arg-1%}%&r&7 teleportieren möchtest? &2<tooltip:Durch Druck auf Ja wirst du auf eigenes Risiko zum Warp von %{plwarp.player.%arg-1%}% teleportiert!><run command:/plwarp %arg-1%>[Ja]<reset>&r&7 &4<tooltip:Du brauchst nichts weiter tun ...>[Nein]<reset>&r"
+
+command /plwarp [<text>]:
+	aliases: w
+	trigger:
+		if arg 1 is not set:
+			send "%{prefix}% &7Korrekte Verwendung: &c/plwarp (Warp)"
+		If arg-1 is arg-1:
+			If  {plwarp.%arg-1%} is set:
+				teleport player to {plwarp.%arg-1%}
+				message "%{prefix}% &7Du wurdest zum Spieler-Warp &9%arg-1% &7teleportiert!"
+			If {plwarp.%arg-1%} is not set:
+				message "%{prefix}% &7Diesen Spieler-Warp gibt es nicht!"
+				make player execute command "/warps"
+				
+command /warps:
+	trigger:
+		message "&6&lWarps:"
+		loop {warps::*}:
+			send formatted "  &f&l➟&7 <tooltip:Teleportiere dich zu %loop-value%><run command:/warp %loop-value%>%loop-value%<reset>"
+		message "&6&lSpieler-Warps:"
+		loop {plwarps::*}:
+			send formatted "  &f&l➟&7 <tooltip:Teleportiere dich zu %loop-value%><run command:/warp %loop-value%>%loop-value% (%{plwarp.player.%loop-value%}%)<reset>"
+			
+
 
 
 on disconnect:
 	set {chunktooltip.%player%} to 0
 		
+
+on first join:
+	teleport player to {location.spawn}
+	send formatted "%{prefix}% &6Du wurdest zum Spawn teleportiert!"
+
+on respawn:
+	teleport player to {location.spawn}
+	send formatted "%{prefix}% &6Du wurdest zum Spawn teleportiert!"
 
 on join:
 	if {motd} != "":

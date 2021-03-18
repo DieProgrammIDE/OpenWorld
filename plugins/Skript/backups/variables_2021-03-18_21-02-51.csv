@@ -1,0 +1,63 @@
+# === Skript's variable storage ===
+# Please do not modify this file manually!
+#
+# version: 2.5.3
+
+andercrafteryt.gamemode, long, 0000000000000001
+bcmessage.length, long, 0000000000000002
+bcmessages::1, string, 800454657374
+bcmessages::2, string, 80055465737469
+chunktooltip.374c4bc4-ab54-43eb-8795-5e2389b25d4f, long, 0000000000000002
+chunktooltip.andercrafteryt, long, 0000000000000002
+dynmap, string, 801A68747470733A2F2F64796E6D61702E76656E69636974792E6465
+formattime::day::1, string, 80054572737465
+formattime::day::2, string, 80065A7765697465
+formattime::day::3, string, 8006447269747465
+formattime::day::4, string, 8006566965727465
+formattime::day::5, string, 800746C3BC6E667465
+formattime::day::6, string, 800753656368737465
+formattime::day::7, string, 80054163687465
+formattime::day::8, string, 80064E65756E7465
+formattime::day::9, string, 80065A65686E7465
+formattime::day::10, string, 8005456C667465
+formattime::day::11, string, 80085A77C3B66C667465
+formattime::day::12, string, 80023132
+formattime::day::13, string, 80023133
+formattime::day::14, string, 80023134
+formattime::day::15, string, 80023135
+formattime::day::16, string, 80023136
+formattime::day::17, string, 80023137
+formattime::day::18, string, 80023138
+formattime::day::19, string, 80023139
+formattime::day::20, string, 80023230
+formattime::day::21, string, 80023231
+formattime::day::22, string, 80023232
+formattime::day::23, string, 80023233
+formattime::day::24, string, 80023234
+formattime::day::25, string, 80023235
+formattime::day::26, string, 80023236
+formattime::day::27, string, 80023237
+formattime::day::28, string, 80023238
+formattime::day::29, string, 80023239
+formattime::day::30, string, 80023330
+formattime::day::31, string, 80023331
+formattime::month::1, string, 80064A616E756172
+formattime::month::2, string, 800746656272756172
+formattime::month::3, string, 80054DC3A4727A
+formattime::month::4, string, 8005417072696C
+formattime::month::5, string, 80034D6169
+formattime::month::6, string, 80044A756E69
+formattime::month::7, string, 80044A756C69
+formattime::month::8, string, 8006417567757374
+formattime::month::9, string, 800953657074656D626572
+formattime::month::10, string, 80074F6B746F626572
+formattime::month::11, string, 80084E6F76656D626572
+formattime::month::12, string, 800844657A656D626572
+homes.374c4bc4-ab54-43eb-8795-5e2389b25d4f.location, location, 8605776F726C6480FF0000000181046E616D65208005776F726C640178094054BDC9C3E0BFBC0179094050000000000000017A09C0516F2BFA278A3E0570697463680841C133110379617708436C3F74
+location.farm, location, 8605776F726C6480FF0000000181046E616D652080046661726D01780940846BEB851EB8520179094053C00000000000017A09C04B48F5C28F5C2905706974636808BFD333610379617708433199A3
+location.spawn, location, 8605776F726C6480FF0000000181046E616D65208005776F726C6401780940565630D8A244E70179094051000000000000017A09C049FA7080010DB705706974636808BFF99D650379617708C31BB2C9
+motd, string, 8006486579686F21
+prefix, string, 8015C2A733C2A76C56656E69636974792E64653AC2A772
+tptoggle.374c4bc4-ab54-43eb-8795-5e2389b25d4f, string, 800474727565
+website, string, 801368747470733A2F2F76656E69636974792E6465
+

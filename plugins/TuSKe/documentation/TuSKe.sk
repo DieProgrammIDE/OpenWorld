@@ -23,8 +23,8 @@ Events:
 			[on] gui (action|click)
 		Event values:
 			event-player
-			event-clicktype
 			event-inventory
+			event-clicktype
 			event-string
 			event-integer
 			event-itemstack
@@ -53,10 +53,10 @@ Events:
 		Patterns:
 			[on] [tuske] prepare item craft
 		Event values:
+			event-slot
 			event-player
 			event-inventory
 			event-string
-			event-slot
 			event-recipe
 			event-itemstack
 		Cancellable: false
@@ -67,19 +67,19 @@ Events:
 		Event values:
 			event-player
 			event-itemtype
-			event-itemstack
 			event-world
+			event-itemstack
 		Cancellable: true
 	On Spawner spawn:
 		ID: spawner_spawn
 		Patterns:
 			[on] [mob] spawner spawn
 		Event values:
-			event-commandsender
-			event-location
 			event-block
-			event-world
 			event-entity
+			event-location
+			event-world
+			event-commandsender
 		Cancellable: true
 Conditions:
 	CondCanEat:

@@ -43,7 +43,7 @@ lighting:
   #  - 0 = None (Do no relighting)
   #  - 1 = Optimal (Relight changed light sources and changed blocks)
   #  - 2 = All (Slowly relight every blocks)
-  mode: 1
+  mode: 2
   # If existing lighting should be removed before relighting
   remove-first: true
   # Calculate and set heightmaps when relighting
@@ -141,11 +141,11 @@ queue:
     #  - false = disabled
     #  - title = Display progress titles
     #  - chat = Display progress in chat
-    display: "false"
+    display: "chat"
     # How often edit progress is displayed
     interval: 1
     # Delay sending progress in milliseconds (so quick edits don't spam)
-    delay: 5000
+    delay: 2500
   # When doing edits that effect more than this many chunks:
   #  - FAWE will start placing before all calculations are finished
   #  - A larger value will use slightly less CPU time
@@ -204,7 +204,7 @@ history:
   # 8 = 1 x high, 1 x medium, 2 x fast
   # 9 = 1 x high, 1 x medium, 3 x fast (best compression)
   # NOTE: If using disk, do some compression (3+) as smaller files save faster
-  compression-level: 3
+  compression-level: 5
   # The buffer size for compression:
   #  - Larger = better ratio but uses more upfront memory
   #  - Must be in the range [64, 33554432]
@@ -267,7 +267,7 @@ region-restrictions-options:
 limits:
   default:
     # Max actions that can be run concurrently (i.e. commands)
-    max-actions: 1
+    max-actions: 2
     # Max number of block changes (e.g. by `//set stone`).
     max-changes: 50000000
     # Max number of blocks checked (e.g. `//count stone` which doesn't change blocks)

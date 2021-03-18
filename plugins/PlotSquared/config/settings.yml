@@ -117,7 +117,7 @@ ratings:
 # Claim related settings
 claim:
   # The max plots claimed in a single `/plot auto <size>` command
-  max-auto-area: 4
+  max-auto-area: 5
 
 # Redstone related settings
 redstone:
@@ -135,7 +135,7 @@ teleport:
   # Teleport to your plot on login
   on-login: false
   # Teleport to your plot on claim
-  on-claim: true
+  on-claim: false
   # Add a delay to all teleport commands
   # Assign `plots.teleport.delay.bypass` to bypass the cooldown.
   delay: 0
@@ -153,9 +153,9 @@ backup:
   # Automatically backup plots when destructive commands are performed, e.g. /plot clear
   automatic-backups: true
   # Maximum amount of backups associated with a plot
-  backup-limit: 3
+  backup-limit: 5
   # Whether or not backups should be deleted when the plot is unclaimed
-  delete-on-unclaim: true
+  delete-on-unclaim: false
 
 # Relating to how many plots someone can claim
 limit:
@@ -176,13 +176,13 @@ chat:
 # Misc settings
 done:
   # Require a plot marked as done to download (/plot download)
-  required-for-download: false
+  required-for-download: true
   # Only plots marked as done can be rated
-  required-for-ratings: false
+  required-for-ratings: true
   # Restrict building when a plot is marked as done
-  restrict-building: false
+  restrict-building: true
   # The limit being how many plots a player can claim
-  counts-towards-limit: true
+  counts-towards-limit: false
 
 # Schematic and Asset interface related settings
 web:

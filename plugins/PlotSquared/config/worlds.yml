@@ -8,8 +8,8 @@ worlds:
       floor: minecraft:grass_block
       bedrock: true
       biome: minecraft:forest
-      auto_merge: false
-      create_signs: true
+      auto_merge: true
+      create_signs: false
     wall:
       block: minecraft:stone_slab
       block_claimed: minecraft:sandstone_slab

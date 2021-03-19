@@ -35,6 +35,12 @@
     },
     "done": true
   },
+  "minecraft:end/elytra": {
+    "criteria": {
+      "elytra": "2021-03-19 08:59:07 +0000"
+    },
+    "done": true
+  },
   "minecraft:end/find_end_city": {
     "criteria": {
       "in_city": "2021-03-18 16:11:49 +0000"
@@ -64,7 +70,8 @@
   },
   "minecraft:nether/explore_nether": {
     "criteria": {
-      "minecraft:nether_wastes": "2021-03-18 16:13:41 +0000"
+      "minecraft:nether_wastes": "2021-03-18 16:13:41 +0000",
+      "minecraft:basalt_deltas": "2021-03-19 09:21:10 +0000"
     },
     "done": false
   },

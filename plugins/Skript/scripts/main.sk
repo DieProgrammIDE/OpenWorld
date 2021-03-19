@@ -189,12 +189,12 @@ every 4 seconds in "world":
 					if {chunktooltip.%loop-player%} == 2:
 						loop 16 times:
 							set {_counterx2} to {_counterx2} + 1
-							play barrier at location at ((({_x.chunk}+{_counterx})*16)+{_counterx2}, {_y.coord}, ({_z.chunk}+{_counterz})*16) to the loop-player
+							play barrier at location at ((({_x.chunk}+{_counterx})*16)+{_counterx2}, {_y.coord}, (({_z.chunk}+{_counterz})*16)+1) to the loop-player
 						loop 16 times:
 							set {_counterz2} to {_counterz2} + 1
-							play barrier at location at (({_x.chunk}+{_counterx})*16, {_y.coord}, (({_z.chunk}+{_counterz})*16)+{_counterz2}) to the loop-player
+							play barrier at location at (({_x.chunk}+{_counterx})*16, {_y.coord}, ((({_z.chunk}+{_counterz})*16)+{_counterz2})+1) to the loop-player
 					else:
-						play barrier at location at (({_x.chunk}+{_counterx})*16, {_y.coord}, ({_z.chunk}+{_counterz})*16) to the loop-player
+						play barrier at location at (({_x.chunk}+{_counterx})*16, {_y.coord}, (({_z.chunk}+{_counterz})*16)+1) to the loop-player
 					#send "Test %{_counterx}% %{_counterz}%" to loop-player
 				set {_counterz} to 0
 			set {_counterx} to 0
@@ -440,9 +440,17 @@ command /delwarp [<text>]:
 			send "%{prefix}% &7Korrekte Verwendung: &c/delwarp (Warp)"
 		if arg-1 is set:
 			if {plwarp.%arg-1%} is set:
-				delete {plwarp.%arg-1%}
-				message "%{prefix}% &7Warp gelöscht!"
-				remove arg-1 from {plwarps::*}
+				if {plwarp.player.%arg-1%} = player:
+					delete {plwarp.%arg-1%}
+					message "%{prefix}% &7Spieler-Warp gelöscht!"
+					remove arg-1 from {plwarps::*}
+				else:
+					if player has permission "skript.admin.warp.delete":
+						delete {plwarp.%arg-1%}
+						message "%{prefix}% &7Spieler-Warp über Admin-Rechte gelöscht!"
+						remove arg-1 from {plwarps::*}
+					else:
+						message "%{prefix}% &7Du hast keine Rechte diesen Spieler-Warp zu löschen!"
 			else:
 				message "%{prefix}% &7Diesen Warp gibt es nicht!"
 				make player execute command "/warps"
@@ -477,6 +485,8 @@ command /warp [<text>]:
 				else:
 					send formatted "%{prefix}% &7Spieler-Warps können &cgefährlich&r&7 sein. Bist du sicher, dass du dich zum Spieler-Warp &9%arg-1%&r&7 von &9%{plwarp.player.%arg-1%}%&r&7 teleportieren möchtest? &2<tooltip:Durch Druck auf Ja wirst du auf eigenes Risiko zum Warp von %{plwarp.player.%arg-1%}% teleportiert!><run command:/plwarp %arg-1%>[Ja]<reset>&r&7 &4<tooltip:Du brauchst nichts weiter tun ...>[Nein]<reset>&r"
 
+
+		
 command /plwarp [<text>]:
 	aliases: w
 	trigger:

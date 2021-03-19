@@ -1,0 +1,5 @@
+on tab completer for "/warp":
+	loop {warps::*}:
+		add loop-value to completions
+	loop {plwarps::*}:
+		add loop-value to completions
